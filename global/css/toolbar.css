@@ -1,0 +1,261 @@
+#toolbar #buttons button,
+#toolbar #buttons select {
+  cursor: pointer;
+  margin-left: 3px;
+  margin-right: 3px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+ }
+
+#toolbar #buttons button:not(.bt-social-button),
+#toolbar #buttons select {
+  height: 25px;
+}
+ 
+ 
+#toolbar #buttons select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#toolbar #buttons option:first-child {
+  display: none;
+}
+
+#toolbar #buttons option {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  height: 20px;
+}
+
+#toolbar #buttons select option,
+#toolbar #buttons select:hover option {
+  color: black;
+}
+
+#toolbar #buttons select option[disabled] {
+  color: gray;
+}
+
+#toolbar #buttons button[liststyleimage][type="search"] img {
+  bottom: 2px;
+}
+
+#toolbar #buttons button[liststyleimage][type="home"] img {
+ bottom: 2px;
+}
+
+#toolbar #buttons button[liststyleimage] img {
+ position: relative;
+ bottom: 2px;
+ vertical-align: middle;
+}
+
+#toolbar #buttons button img.hover,
+#toolbar #buttons button:hover img.norm,
+#toolbar #feedreader button img.hover,
+#toolbar #feedreader button:hover img.norm,
+#social-buttons button img.hover,
+#social-buttons button:hover img.norm {
+  display: none;
+}
+
+#toolbar #buttons button img.norm,
+#toolbar #buttons button:hover img.hover,
+#toolbar #feedreader button img.norm,
+#toolbar #feedreader button:hover img.hover,
+#social-buttons  button img.norm,
+#social-buttons button:hover img.hover {
+  display: inline-block;
+}
+
+#toolbar #feedreader-next:focus,
+#toolbar #feedreader-previous:focus,
+#toolbar #feedreader-text:focus,
+#toolbar #buttons button:focus,
+#social-buttons button:focus {
+  outline:0;
+}
+
+.bt-social-button {
+  background: none;
+  border: none;
+  background-repeat: no-repeat;
+  border: none;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+  border-radius: 0px;
+  padding: 0px !important;
+  cursor: pointer;  
+  vertical-align: middle;
+}
+
+#feedreader {
+  display: none;
+}
+
+#feedreader[visible] {
+  margin-bottom: 5px;
+  margin-top: 3px;
+  display: block;
+}
+
+#feedreader-previous img,
+#feedreader-next img {
+   position: relative;
+}
+
+#feedreader-previous {
+ border-bottom-right-radius: 0px;
+ border-top-right-radius: 0px;
+ padding-left: 0px;
+ padding-right: 0px;
+ padding-top: 0px;
+ margin-right: 0px;
+ cursor: pointer;
+ height: 20px;
+ display: inline-block;
+ vertical-align: middle;
+ text-align: center;
+}
+#feedreader-next {
+ border-radius: 0px;
+ padding-left: 0px;
+ padding-right: 0px;
+ padding-top: 0px;
+ margin-right: 0px;
+ margin-left: -1px;
+ cursor: pointer;
+ height: 20px;
+ display: inline-block;
+ vertical-align: middle;
+}
+#feedreader-text {
+ border-bottom-left-radius: 0px;
+ border-top-left-radius: 0px;
+ margin-left: -1px;
+ width: 250px;
+ min-width: 250px;
+ max-width: 250px;
+ text-align: left;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ height: 20px;
+ cursor: pointer;
+ display: inline-block;
+ vertical-align: middle;
+ background-color: white;
+ }
+#feedreader-text[href]:hover {
+ text-decoration: underline;
+}
+.feedreader-innertext {
+ width: 236px; /* 14 less than width - 6px padding, 1px border */
+ overflow: hidden;
+ white-space: nowrap;
+ display: block;
+ text-overflow: ellipsis;
+ padding-left: 5px;
+ font-weight: bold;
+}
+#bt-logo {
+   border: none;
+   background: none;
+   cursor: pointer;
+   z-index: 1;
+   position: relative;
+}
+
+
+#top-area,
+#bottom-area {
+  border: none !important;
+  border-radius: 0px !important;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 640px) {
+  #toolbar {
+/*    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25); */
+  }
+  body {
+/*    overflow: hidden; */
+  }
+}
+
+
+/* Weather */
+
+#weather {
+  /*max-width: 150px;*/
+  display: inline-block;
+  padding: 0;
+}
+
+#weather a {
+  text-decoration: none;
+}
+
+#weather .weather-inner {
+  min-width: 40px;
+  padding:5px 5px 0;
+  vertical-align:middle;
+  line-height: 24px;
+  background-color:#222;
+  border-radius:5px;
+  border:2px solid #444;
+}
+
+#weather .weather-inner img.weather_icon {
+  float:left; 
+  max-height: 20px;
+  margin-right: 5px;
+}
+
+#weather .weather-inner span.current_temp {
+  color:#eee;
+  font-size:15px;
+  font-weight:bold;
+/*   float:left; */
+}
+
+#weather_zip {
+  display:none; 
+}
+
+#weather_zip .zip-inner {
+  min-width: 40px;
+  padding:5px;
+  background-color:#222;
+  border-radius:5px;
+  border:2px solid #444;
+}
+
+#weather_zip .zip-inner input#zip_code {
+  border:0;
+  margin:0;
+  background-color:#444;
+  width:60px;
+  height:12px;
+  padding:3px;
+  display:inline-block;
+  outline:0;color:#fff;
+}
+
+button#go_zip {
+  background:#ccc;
+  color: #333;
+  height: auto !important;
+  margin: 0 0 0 5px !important;
+  padding: 4px;
+  border:0;
+  border-radius: 5px;
+}

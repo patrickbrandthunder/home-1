@@ -1,0 +1,118 @@
+
+  /* Generics */
+  
+  .logged_out, .logged_in {
+    display: none;
+  }
+  
+  /* Top right controls */
+  
+  #top_fb_controls {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+  }  
+    #top_fb_controls a {
+      cursor: pointer;
+      width: 200px;
+      text-decoration: none;
+    }
+    
+    #top_fb_controls a:hover {
+      color: #336699;  
+      cursor: pointer;
+    }
+    
+      #top_fb_controls a label {
+        font-size: 13px;
+        color: #FFF;
+      }
+
+
+  /* Screen 1 */
+  
+  #osu_fb_voting {
+    display: none; 
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    margin-left: -325px; /* accounts for padding */
+    margin-top: -275px; /* accounts for padding */
+    padding: 25px; 
+    border: 2px solid black;
+    background-color: #ffffff;
+    width: 600px;
+    height: 500px;
+    z-index: 100; 
+  }
+    
+    #osu_fb_voting p {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      width: 500px;
+      margin: 0 auto;
+    }
+    
+    #osu_fb_voting button {
+      background-color: #CD043E;
+      margin-top: 20px;
+      padding: 5px 15px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      border: 2px groove #ccc;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+    }
+    
+  .fb-button {
+    background-color: #5E77AD;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 15px;
+    font-size: 14px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+
+
+  #results {
+    margin-top: 30px;
+    clear: both;
+  }
+  
+  #results div {
+    height: 40px;
+    clear: both;
+    margin-bottom: 15px;
+  }
+  
+    #results div label {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle;
+      font-weight: bold;
+    }
+  
+    #results div p {
+      display:inline-block;
+      background-color:#ccc;
+      height:40px;
+      width:400px;
+      clear:both;
+      
+      background-image: url(/ohiostate/img/meter_bg.png);
+      background-repeat: no-repeat;
+      background-position: -498px center;
+    }
+    
+    #results div p span {
+      position: relative;
+      left: 360px;
+      font-weight:bold;
+      color:#fff;
+      line-height:40px;
+    }
