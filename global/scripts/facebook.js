@@ -97,7 +97,7 @@
     function shareTheme() {
       FB.ui({
         method: 'feed',
-        link: 'http://gallery.mgrowth.com/en-US/theme/christmas2013',
+        link: 'https://gallery.mgrowth.com/en-US/theme/christmas2013',
         caption: 'MGROWTH - Christmas 2013',
       }, function(response){});
     }
@@ -112,8 +112,8 @@
           'Some text goes here'
         ),
         ref : 'theme,xmasgold,anniv_cntst',
-        link: 'http://apps.facebook.com/mgrowth/',
-        picture: 'http://'
+        link: 'https://apps.facebook.com/mgrowth/',
+        picture: 'https://'
       }, function(response) {
         if (response && response.post_id) {
           FB.api('/me', function(response) {

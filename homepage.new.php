@@ -17,14 +17,14 @@ if ( isset($customSearchCode) ) {
 }
 ?>
 <!doctype html>
-<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="http://www.facebook.com/2008/fbml">
+<html lang="en-US" xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
   <head>
 	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
       <link rel="stylesheet" type="text/css" href="/fonts/mystart-font/mystart-font.css">
 <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
 		<title><?= $title ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php
@@ -44,7 +44,7 @@ if (isset($facebookImage)) {
 if (isset($_GET['extension'])) {
 ?>
     <meta property="og:title" content="<?= $title?> New Tab Page" />
-    <meta property="og:url" content="http://home.mgrowth.com/<?=$tid?>/?extension" />
+    <meta property="og:url" content="https://home.mgrowth.com/<?=$tid?>/?extension" />
     <meta property="og:description" content="" />
 <?php
 } else {
@@ -59,8 +59,8 @@ if (isset($_GET['extension'])) {
 //}
 ?>
 		<link rel="icon" type="image/png" href="<?= $icon ?>">
-    <link rel="stylesheet" href="http://home.mgrowth.com/global/css/styles.css" type="text/css">
-    <link rel="chrome-webstore-item" href="http://chrome.google.com/webstore/detail/<?=$extensionID?>">
+    <link rel="stylesheet" href="https://home.mgrowth.com/global/css/styles.css" type="text/css">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/<?=$extensionID?>">
 
     <?php //css overrides ?>
 		<?php
@@ -147,19 +147,19 @@ if (isset($_GET['extension'])) {
 		}
 		</style>
 
-    <script type="text/javascript" src="http://home.mgrowth.com/global/js/jquery.min.js"></script>
-    <script type="text/javascript" src="http://home.mgrowth.com/global/js/jquery.watch.min.js"></script>
-    <script type="text/javascript" src="http://home.mgrowth.com/global/js/jquery-ui.custom.min.js"></script>
-    <script type="text/javascript" src="http://home.mgrowth.com/global/js/colorbox/jquery.colorbox-min.js"></script>
-    <script type="text/javascript" src="http://home.mgrowth.com/global/scripts/toolbar.js"></script>
-    <script type="text/javascript" src="http://home.mgrowth.com/global/scripts/weather.js"></script>
+    <script type="text/javascript" src="https://home.mgrowth.com/global/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://home.mgrowth.com/global/js/jquery.watch.min.js"></script>
+    <script type="text/javascript" src="https://home.mgrowth.com/global/js/jquery-ui.custom.min.js"></script>
+    <script type="text/javascript" src="https://home.mgrowth.com/global/js/colorbox/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://home.mgrowth.com/global/scripts/toolbar.js"></script>
+    <script type="text/javascript" src="https://home.mgrowth.com/global/scripts/weather.js"></script>
 <?php
 if (!isset($noShare)) {
 ?>
 
 	<script type="text/javascript">
 	var addthis_share = {
-	   url: "http://home.mgrowth.com/<?=$tid?>/?extension",
+	   url: "https://home.mgrowth.com/<?=$tid?>/?extension",
 	   title: "<?= $title?> New Tab Page"
 	}
 
@@ -169,10 +169,10 @@ if (!isset($noShare)) {
 }
 ?>
 
-        <link rel="stylesheet" href="http://home.home.mgrowth.com.com/global/css/toolbar.css" type="text/css">
+        <link rel="stylesheet" href="https://home.home.mgrowth.com.com/global/css/toolbar.css" type="text/css">
 
     <!--?php if (isset($snow) || isset($_GET['snow'])) { ?-->
-        <!--script type="text/javascript" id="holiday-script" deviceType="< ?=$deviceType?>" src="http://home.mgrowth.com/global/holiday.js"></script-->
+        <!--script type="text/javascript" id="holiday-script" deviceType="< ?=$deviceType?>" src="https://home.mgrowth.com/global/holiday.js"></script-->
 <!-- ? } ? -->
 
   <script type="text/javascript">
@@ -192,7 +192,7 @@ if (isset($_GET['extension'])) {
 
     (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('http:' == document.location.protocol ? 'http://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
@@ -319,7 +319,7 @@ $(document).ready(function() {
   if (!function_exists('apache_request_headers')) {
     function apache_request_headers() {
       foreach ($_SERVER as $key => $value) {
-        if (substr($key, 0, 5) == "HTTP_") {
+        if (substr($key, 0, 5) == "https_") {
           $key = str_replace(" ", "-", ucwords(strtolower(str_replace("_", " ", substr($key, 5)))));
           $out[$key] = $value;
         } else {
@@ -344,8 +344,8 @@ $(document).ready(function() {
 
     <link rel="stylesheet" href="/global/css/facebook.css" type="text/css">
     <link rel="stylesheet" href="/global/css/modal.css" type="text/css">
-    <script src="http://home.mgrowth.com//www.parsecdn.com/js/parse-1.2.16.min.js"></script>
-    <script type="text/javascript" src="http://home.mgrowth.com/global/scripts/facebook_connect.js"></script>
+    <script src="https://home.mgrowth.com//www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+    <script type="text/javascript" src="https://home.mgrowth.com/global/scripts/facebook_connect.js"></script>
 
     <?php include_once("global/inc/fb_connect.php"); ?>
 
@@ -363,23 +363,23 @@ $(document).ready(function() {
         </div><!-- /header -->
 
 <?php if (isset($extraafter)) { echo $extraafter; } ?>
-        <?php /*<a target="_top" href="http://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="http://home.mgrowth.com/images/weather.png"></a> */ ?>
+        <?php /*<a target="_top" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.mgrowth.com/images/weather.png"></a> */ ?>
       </div><!-- /social-buttons -->
 
 <div id="module-search">
 <?php if (isset($testSearch)) { ?>
-<form action="http://searchroute-1560352588.us-west-2.elb.amazonaws.com/api/mlscnscohext/search" target="_top" method="get" id="form">
+<form action="https://searchroute-1560352588.us-west-2.elb.amazonaws.com/api/mlscnscohext/search" target="_top" method="get" id="form">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="p">
 <input name="subid" id="subid" type="hidden" value="101">
 <?php } else if (isset($testSearch2)) { ?>
-<form action="http://myfirsttab.com/api/redirect-search" target="_top" method="get" id="form">
+<form action="https://myfirsttab.com/api/redirect-search" target="_top" method="get" id="form">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="t">
 <input name="sid" id="sid" type="hidden" value="3025">
 <?php } else if (isset($testSearch3)) { ?>
-<form action="http://bt.fastsearch.me/" target="_top" method="get" id="form">
+<form action="https://bt.fastsearch.me/" target="_top" method="get" id="form">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q">
 <?php } else { ?>
-<form action="http://www.trovi.com/results.aspx" target="_top" method="get" id="form">
+<form action="https://www.trovi.com/results.aspx" target="_top" method="get" id="form">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q">
 <input name="gd" id="gd" type="hidden" value="SY1000885">
 <?php } ?>
@@ -410,7 +410,7 @@ $(document).ready(function() {
 </script>
 <div id="upperleft">
 <div id="homepage">
-    <img id="content" src="http://home.mgrowth.com/images/<?=$homeIcon?>">
+    <img id="content" src="https://home.mgrowth.com/images/<?=$homeIcon?>">
 </div>
 </div>
 <script>
@@ -558,7 +558,7 @@ if (isset($madonnasig)) {
 <div id="video-controls" style="position: absolute; top: 5px;right:5px;cursor: pointer;">
     <img id="muteunmute" src="<?=$protocol?>://home.mgrowth.com/images/speaker.png">
 </div>
-<script src="http://www.youtube.com/player_api"></script>
+<script src="https://www.youtube.com/player_api"></script>
 <script>
   var player;
 
@@ -624,13 +624,13 @@ if (isset($madonnasig)) {
 <?php } ?>
 <?php if (isset($brandSearch) || (isset($_GET['search']))) {
   if (!isset($brandSearchURL)) {
-	$brandSearchURL = 'http://search.yahoo.com/search?ei=utf-8&fr=tightropetb&type=btsyc&p='.$title;
+	$brandSearchURL = 'https://search.yahoo.com/search?ei=utf-8&fr=tightropetb&type=btsyc&p='.$title;
   }
 ?>
 <div class="addlContent" style="position: absolute; right: 25px; top: 25px;">
 <a onclick="_gaq.push(['_trackEvent', 'Brand Search', 'Click', tid]);" target="_top" href="<?=$brandSearchURL?>">
 <img style="position: absolute; right: 128px; top: 15px;" src="<?=$icon?>">
-<img border="none" src="http://home.mgrowth.com/images/latest-news-btn.png">
+<img border="none" src="https://home.mgrowth.com/images/latest-news-btn.png">
 </a>
 </div>
 <?php } ?>
@@ -652,7 +652,7 @@ if (isset($madonnasig)) {
       $lightboxAddlParams = '';
 
     if (!isset($lightboxOpener))
-      $lightboxOpener = '<img src="http://home.mgrowth.com/images/play-button25.png">';
+      $lightboxOpener = '<img src="https://home.mgrowth.com/images/play-button25.png">';
     echo <<<EOD
 
     <link rel="stylesheet" type="text/css" href="/global/lightbox.css" />
@@ -764,7 +764,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 <?php if (isset($adcontent)) { ?>
 <?php if (isset($showGenericAd) && $showGenericAd == true) { ?>
 <div style="text-align: right;font-size: xx-small;">
-<a style="color: rgb(152, 152, 152);text-decoration: none;" target="_blank" href="http://mgrowth.com/websearch/">About this ad</a>
+<a style="color: rgb(152, 152, 152);text-decoration: none;" target="_blank" href="https://mgrowth.com/websearch/">About this ad</a>
 </div>
 <?php } ?>
 <?=$adcontent?>
@@ -1033,7 +1033,7 @@ $genericBannerAd = <<<EOD
 
 //--></script>
 
-<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/mgrowthcom/ROS/tags.js"></script>
+<script type="text/javascript" src="https://tags.expo9.exponential.com/tags/mgrowthcom/ROS/tags.js"></script>
 </div>
 EOD;
 echo $genericBannerAd;
@@ -1051,7 +1051,7 @@ echo $genericBannerAd;
   fbq('init', '229313004074638');
   fbq('track', "PageView");</script>
   <noscript><img height="1" width="1" style="display:none"
-  src="http://www.facebook.com/tr?id=229313004074638&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=229313004074638&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
 
@@ -1059,7 +1059,7 @@ echo $genericBannerAd;
 <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
 <script type="text/javascript">twttr.conversion.trackPid('nusm3', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
 <noscript>
-<img height="1" width="1" style="display:none;" alt="" src="http://analytics.twitter.com/i/adsct?txn_id=nusm3&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nusm3&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
 <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nusm3&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
 </noscript>
 <!-- End Twitter universal website tag code -->
@@ -1095,11 +1095,11 @@ if (array_key_exists($tid, $chromeStore)) {
     font-size: 26px;
 }
 </style>
-<a title="Rate this app" href="http://chrome.google.com/webstore/detail/<?=$chromeStore->$tid?>/reviews" id="btn-rate"></a>
+<a title="Rate this app" href="https://chrome.google.com/webstore/detail/<?=$chromeStore->$tid?>/reviews" id="btn-rate"></a>
 <script type="text/javascript">
 if ("chrome" in window) {
   if ("myweb" in window){
-    document.getElementById("btn-rate").setAttribute("href", "http://chrome.google.com/webstore/detail/cnbiadnhebmicjcbpgajglfemclnlagh/reviews");
+    document.getElementById("btn-rate").setAttribute("href", "https://chrome.google.com/webstore/detail/cnbiadnhebmicjcbpgajglfemclnlagh/reviews");
   }
   document.getElementById("btn-rate").style.visibility = "visible";
 }
@@ -1130,7 +1130,7 @@ if (!isset($noLegal)) {
   }
 </style>
 <div id="legal">
-<a href="http://mgrowth.com/privacy/" target="blank">Privacy</a> <a href="http://mgrowth.com/contact/" target="blank">Contact</a> MGROWTH &copy;2018
+<a href="https://mgrowth.com/privacy/" target="blank">Privacy</a> <a href="https://mgrowth.com/contact/" target="blank">Contact</a> MGROWTH &copy;2018
 </div>
 <?php
 }
@@ -1186,7 +1186,7 @@ var _sf_async_config={uid:3241,domain:"home.mgrowth.com",useCanonical:true};
 
   function getFeedItemHTMLNew($item)
   {
-    // Extract data (http://simplepie.org/api/class-SimplePie_Item.html)
+    // Extract data (https://simplepie.org/api/class-SimplePie_Item.html)
     $title = $item->get_title();
     $desc  = $item->get_description();
     $link  = $item->get_link();

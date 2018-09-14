@@ -1,6 +1,6 @@
 /*
 Snow Fall 1 - no images - Java Script
-Visit http://rainbow.arch.scriptmania.com/scripts/
+Visit https://rainbow.arch.scriptmania.com/scripts/
   for this script and many more
 */
 
@@ -212,7 +212,7 @@ function showHolidayMessage() {
         searchbox = document.getElementById("form-holder");
       }
       var holidaymessage = document.createElement("div");
-      holidaymessage.style.cssText = "position: relative;z-index:1;background-repeat:no-repeat;text-align: center;margin-top: 50px;width: 458px;height:441px;margin-left: auto;margin-right: auto;background-image: url('http://home.mgrowth.com/global/holiday-box-noicons.png');";
+      holidaymessage.style.cssText = "position: relative;z-index:1;background-repeat:no-repeat;text-align: center;margin-top: 50px;width: 458px;height:441px;margin-left: auto;margin-right: auto;background-image: url('https://home.mgrowth.com/global/holiday-box-noicons.png');";
       searchbox.parentNode.appendChild(holidaymessage);
       var img = document.createElement("img");
       img.setAttribute("src", "/images/facebook64.png");
@@ -271,7 +271,7 @@ function createSnow() {
 	"color: white;" +
 "}" +
 "#mgrowth_snow #mgrowth_snowbutton {" +
-  "background-image: url('http://home.mgrowth.com/images/setsnow-btn-white.png');" +
+  "background-image: url('https://home.mgrowth.com/images/setsnow-btn-white.png');" +
   "min-width: 129px;" +
   "height: 45px;" +
   "background-repeat: no-repeat;" +

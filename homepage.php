@@ -1,8 +1,8 @@
 <?php
 //include("variables.php");
-//if(empty($_SERVER['http']) || $_SERVER['http'] == "off"){
-//    $redirect = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-//    header('HTTP/1.1 301 Moved Permanently');
+//if(empty($_SERVER['https']) || $_SERVER['https'] == "off"){
+//    $redirect = 'https://' . $_SERVER['https_HOST'] . $_SERVER['REQUEST_URI'];
+//    header('https/1.1 301 Moved Permanently');
 //    header('Location: ' . $redirect);
 //    exit();
 //}
@@ -86,7 +86,7 @@ $cachetime = 30*60; // 30 minutes * 60 seconds
 if (file_exists($chromecachefile) && (time() - $cachetime < filemtime($chromecachefile))) {
   $chromeStore = json_decode(file_get_contents($chromecachefile));
 } else {
-  $url = 'http://spreadsheets.google.com/feeds/list/1u9qyFx4gkT3xZbfans0ezFMqUuy8GYG7YP5eFwj517U/1/public/values?alt=json';
+  $url = 'https://spreadsheets.google.com/feeds/list/1u9qyFx4gkT3xZbfans0ezFMqUuy8GYG7YP5eFwj517U/1/public/values?alt=json';
   $file= file_get_contents($url);
   $json = json_decode($file);
   $rows = $json->{'feed'}->{'entry'};
@@ -107,7 +107,7 @@ if (isset($_GET['extension'])) {
 //if (file_exists($iecachefile) && (time() - $cachetime < filemtime($iecachefile))) {
 //  $ieBuilds = json_decode(file_get_contents($iecachefile));
 //} else {
-//  $url = 'http://spreadsheets.google.com/feeds/list/1u9qyFx4gkT3xZbfans0ezFMqUuy8GYG7YP5eFwj517U/1/public/values?alt=json';
+//  $url = 'https://spreadsheets.google.com/feeds/list/1u9qyFx4gkT3xZbfans0ezFMqUuy8GYG7YP5eFwj517U/1/public/values?alt=json';
 //  $file= file_get_contents($url);
 //  $json = json_decode($file);
 //  $rows = $json->{'feed'}->{'entry'};
@@ -127,7 +127,7 @@ if (isset($_GET['extension'])) {
 if (file_exists($firefoxcachefile) && (time() - $cachetime < filemtime($firefoxcachefile))) {
   $ffXPIs = json_decode(file_get_contents($firefoxcachefile));
 } else {
-  $url = 'http://spreadsheets.google.com/feeds/list/1u9qyFx4gkT3xZbfans0ezFMqUuy8GYG7YP5eFwj517U/1/public/values?alt=json';
+  $url = 'https://spreadsheets.google.com/feeds/list/1u9qyFx4gkT3xZbfans0ezFMqUuy8GYG7YP5eFwj517U/1/public/values?alt=json';
   $file= file_get_contents($url);
   $json = json_decode($file);
   $rows = $json->{'feed'}->{'entry'};
@@ -146,23 +146,23 @@ if (file_exists($firefoxcachefile) && (time() - $cachetime < filemtime($firefoxc
 
   $chromeShopping = false;
   $dontShowAd = "true";
-  $appleStoreURL = 'http://itunes.apple.com/us/app/my-web/id917512241?mt=8';
+  $appleStoreURL = 'https://itunes.apple.com/us/app/my-web/id917512241?mt=8';
   $playStoreURL = '';
   $extensionID = '';
   if (array_key_exists($tid, $chromeStore)) {
 	$extensionID = $chromeStore->$tid;
   }
   //if (array_key_exists($tid, $ieBuilds)) {
-  //  $ieURL = 'http://downloads.mgrowth.com/ie/setup-'.$tid.'persona.exe';
+  //  $ieURL = 'https://downloads.mgrowth.com/ie/setup-'.$tid.'persona.exe';
   //} else {
   //  $ieURL = '';
   //}
-//  $xpiURL = 'http://downloads.mgrowth.com/'.$tid.'persona.xpi';
+//  $xpiURL = 'https://downloads.mgrowth.com/'.$tid.'persona.xpi';
   if (!isset($xpiURL)) {
     if (array_key_exists($tid, $ffXPIs)) {
       $xpiURL = $ffXPIs->$tid;
     } else {
-      $xpiURL = 'http://addons.mozilla.org/firefox/downloads/latest/myweb-new-tab/addon-687563-latest.xpi?src=extra-'.$tid;
+      $xpiURL = 'https://addons.mozilla.org/firefox/downloads/latest/myweb-new-tab/addon-687563-latest.xpi?src=extra-'.$tid;
     }
   }
   if ($deviceType == 'tablet' || $deviceType == 'phone') {
@@ -197,10 +197,10 @@ if (file_exists($firefoxcachefile) && (time() - $cachetime < filemtime($firefoxc
 //        if (!("mynewtab" in window)) {
 //          if ("chrome" in window) {
 //            if ("webstore" in window.chrome) {
-//              chrome.webstore.install("http://chrome.google.com/webstore/detail/$extensionID", function() {}, function(e) {console.log(e)});
+//              chrome.webstore.install("https://chrome.google.com/webstore/detail/$extensionID", function() {}, function(e) {console.log(e)});
 //            } else {
 //        document.getElementById("extensiontext").innerHTML = "<p style='line-height: 1.5'>Go to Settings and " +
-//        "set your homepage to</p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>http://home.mgrowth.com/{$tid}</b></div>"
+//        "set your homepage to</p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.mgrowth.com/{$tid}</b></div>"
 //    window.setTimeout(function() {
 //      $.fn.colorbox({
 //            onLoad: showLightboxContent,
@@ -226,7 +226,7 @@ if (file_exists($firefoxcachefile) && (time() - $cachetime < filemtime($firefoxc
 //              document.location.href = "{$ieURL}"
 //            } else {
 //              document.getElementById("extensiontext").innerHTML = "<p style='line-height: 1.5'>Go to Internet Options. " +
-//                  "Set your Home page to: </p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>http://home.mgrowth.com/{$tid}</b></div>" +
+//                  "Set your Home page to: </p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.mgrowth.com/{$tid}</b></div>" +
 //                  "<p>Click Tabs. Set it to open your first home page when a new tab is opened.</p>"
 //              window.setTimeout(function() {
 //                $.fn.colorbox({
@@ -241,7 +241,7 @@ if (file_exists($firefoxcachefile) && (time() - $cachetime < filemtime($firefoxc
 //            }
 //		  } else if (navigator.userAgent.indexOf("Safari") > -1) {
 //            document.getElementById("extensiontext").innerHTML = "<p style='line-height: 1.5'>Go to Safari->Preferences and " +
-//            "set your homepage to</p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>http://home.mgrowth.com/{$tid}</b></div><p>on the General tab.</p>"
+//            "set your homepage to</p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.mgrowth.com/{$tid}</b></div><p>on the General tab.</p>"
 //		    window.setTimeout(function() {
 //		      $.fn.colorbox({
 //                onLoad: showLightboxContent,
