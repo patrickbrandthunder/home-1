@@ -379,9 +379,9 @@ $(document).ready(function() {
 <form action="https://bt.fastsearch.me/" target="_top" method="get" id="form">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q">
 <?php } else { ?>
-<form action="https://www.trovi.com/results.aspx" target="_top" method="get" id="form">
+<form action="https://mgrowth.fastsearch.me/" target="_top" method="get" id="form">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q">
-<input name="gd" id="gd" type="hidden" value="SY1000885">
+<!--input name="gd" id="gd" type="hidden" value="SY1000885"-->
 <?php } ?>
             <div id="btn-search"></div>
 </form>
