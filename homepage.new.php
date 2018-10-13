@@ -44,7 +44,7 @@ if (isset($facebookImage)) {
 if (isset($_GET['extension'])) {
 ?>
     <meta property="og:title" content="<?= $title?> New Tab Page" />
-    <meta property="og:url" content="https://home.mgrowth.com/<?=$tid?>/?extension" />
+    <meta property="og:url" content="https://home.newtabgallery.com/<?=$tid?>/?extension" />
     <meta property="og:description" content="" />
 <?php
 } else {
@@ -59,7 +59,7 @@ if (isset($_GET['extension'])) {
 //}
 ?>
 		<link rel="icon" type="image/png" href="<?= $icon ?>">
-    <link rel="stylesheet" href="https://home.mgrowth.com/global/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/styles.css" type="text/css">
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/<?=$extensionID?>">
 
     <?php //css overrides ?>
@@ -147,19 +147,19 @@ if (isset($_GET['extension'])) {
 		}
 		</style>
 
-    <script type="text/javascript" src="https://home.mgrowth.com/global/js/jquery.min.js"></script>
-    <script type="text/javascript" src="https://home.mgrowth.com/global/js/jquery.watch.min.js"></script>
-    <script type="text/javascript" src="https://home.mgrowth.com/global/js/jquery-ui.custom.min.js"></script>
-    <script type="text/javascript" src="https://home.mgrowth.com/global/js/colorbox/jquery.colorbox-min.js"></script>
-    <script type="text/javascript" src="https://home.mgrowth.com/global/scripts/toolbar.js"></script>
-    <script type="text/javascript" src="https://home.mgrowth.com/global/scripts/weather.js"></script>
+    <script type="text/javascript" src="https://home.newtabgallery.com/global/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://home.newtabgallery.com/global/js/jquery.watch.min.js"></script>
+    <script type="text/javascript" src="https://home.newtabgallery.com/global/js/jquery-ui.custom.min.js"></script>
+    <script type="text/javascript" src="https://home.newtabgallery.com/global/js/colorbox/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://home.newtabgallery.com/global/scripts/toolbar.js"></script>
+    <script type="text/javascript" src="https://home.newtabgallery.com/global/scripts/weather.js"></script>
 <?php
 if (!isset($noShare)) {
 ?>
 
 	<script type="text/javascript">
 	var addthis_share = {
-	   url: "https://home.mgrowth.com/<?=$tid?>/?extension",
+	   url: "https://home.newtabgallery.com/<?=$tid?>/?extension",
 	   title: "<?= $title?> New Tab Page"
 	}
 
@@ -169,10 +169,10 @@ if (!isset($noShare)) {
 }
 ?>
 
-        <link rel="stylesheet" href="https://home.home.mgrowth.com.com/global/css/toolbar.css" type="text/css">
+        <link rel="stylesheet" href="https://home.home.newtabgallery.com.com/global/css/toolbar.css" type="text/css">
 
     <!--?php if (isset($snow) || isset($_GET['snow'])) { ?-->
-        <!--script type="text/javascript" id="holiday-script" deviceType="< ?=$deviceType?>" src="https://home.mgrowth.com/global/holiday.js"></script-->
+        <!--script type="text/javascript" id="holiday-script" deviceType="< ?=$deviceType?>" src="https://home.newtabgallery.com/global/holiday.js"></script-->
 <!-- ? } ? -->
 
   <script type="text/javascript">
@@ -344,8 +344,8 @@ $(document).ready(function() {
 
     <link rel="stylesheet" href="/global/css/facebook.css" type="text/css">
     <link rel="stylesheet" href="/global/css/modal.css" type="text/css">
-    <script src="https://home.mgrowth.com//www.parsecdn.com/js/parse-1.2.16.min.js"></script>
-    <script type="text/javascript" src="https://home.mgrowth.com/global/scripts/facebook_connect.js"></script>
+    <script src="https://home.newtabgallery.com//www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+    <script type="text/javascript" src="https://home.newtabgallery.com/global/scripts/facebook_connect.js"></script>
 
     <?php include_once("global/inc/fb_connect.php"); ?>
 
@@ -363,7 +363,7 @@ $(document).ready(function() {
         </div><!-- /header -->
 
 <?php if (isset($extraafter)) { echo $extraafter; } ?>
-        <?php /*<a target="_top" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.mgrowth.com/images/weather.png"></a> */ ?>
+        <?php /*<a target="_top" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.newtabgallery.com/images/weather.png"></a> */ ?>
       </div><!-- /social-buttons -->
 
 <div id="module-search">
@@ -410,7 +410,7 @@ $(document).ready(function() {
 </script>
 <div id="upperleft">
 <div id="homepage">
-    <img id="content" src="https://home.mgrowth.com/images/<?=$homeIcon?>">
+    <img id="content" src="https://home.newtabgallery.com/images/<?=$homeIcon?>">
 </div>
 </div>
 <script>
@@ -433,8 +433,8 @@ if (isset($addlContent))
 <?
 if (isset($game)) {
 ?>
-<img id="game-close" onclick="onGame(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.mgrowth.com/images/games-close.png">
-<img id="game-play" onclick="onGame(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.mgrowth.com/images/games-play.png">
+<img id="game-close" onclick="onGame(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.newtabgallery.com/images/games-close.png">
+<img id="game-play" onclick="onGame(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.newtabgallery.com/images/games-play.png">
 <script type="text/javascript">
   var gamecookie = readCookie("<?=$tid?>_display");
   if (gamecookie) {
@@ -468,8 +468,8 @@ if (isset($game)) {
 <?
 if (isset($specialContent)) {
 ?>
-<img id="special_content-close" onclick="onGame(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.mgrowth.com/images/video-close.png">
-<img id="special_content-play" onclick="onGame(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.mgrowth.com/images/video-play.png">
+<img id="special_content-close" onclick="onGame(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.newtabgallery.com/images/video-close.png">
+<img id="special_content-play" onclick="onGame(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.newtabgallery.com/images/video-play.png">
 <script type="text/javascript">
   var special_contentcookie = readCookie("<?=$tid?>_display");
   if (special_contentcookie) {
@@ -503,8 +503,8 @@ if (isset($specialContent)) {
 <?
 if (isset($video)) {
 ?>
-<img id="video-close" onclick="onVideo(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.mgrowth.com/images/video-close.png">
-<img id="video-play" onclick="onVideo(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.mgrowth.com/images/video-play.png">
+<img id="video-close" onclick="onVideo(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.newtabgallery.com/images/video-close.png">
+<img id="video-play" onclick="onVideo(event)" style="cursor:pointer;position: absolute;top: 5px; right: 5px;" class="addlContent" src="<?=$protocol?>://home.newtabgallery.com/images/video-play.png">
 <script type="text/javascript">
   var videocookie = readCookie("<?=$tid?>_video");
   if (videocookie) {
@@ -543,20 +543,20 @@ if (isset($video)) {
 <?php
 if (isset($disclosure)) {
 ?>
-<img src="<?=$protocol?>://home.mgrowth.com/images/<?=$disclosure?>" style="position:absolute;bottom:0px;right:0px;">
+<img src="<?=$protocol?>://home.newtabgallery.com/images/<?=$disclosure?>" style="position:absolute;bottom:0px;right:0px;">
 <?php
 }
 ?>
 <?php
 if (isset($madonnasig)) {
 ?>
-<img src="<?=$protocol?>://home.mgrowth.com/images/<?=$madonnasig?>" style="position:absolute;bottom:0px;left:0px;">
+<img src="<?=$protocol?>://home.newtabgallery.com/images/<?=$madonnasig?>" style="position:absolute;bottom:0px;left:0px;">
 <?php
 }
 ?>
 <?php if (isset($backgroundVideo)) { ?>
 <div id="video-controls" style="position: absolute; top: 5px;right:5px;cursor: pointer;">
-    <img id="muteunmute" src="<?=$protocol?>://home.mgrowth.com/images/speaker.png">
+    <img id="muteunmute" src="<?=$protocol?>://home.newtabgallery.com/images/speaker.png">
 </div>
 <script src="https://www.youtube.com/player_api"></script>
 <script>
@@ -630,7 +630,7 @@ if (isset($madonnasig)) {
 <div class="addlContent" style="position: absolute; right: 25px; top: 25px;">
 <a onclick="_gaq.push(['_trackEvent', 'Brand Search', 'Click', tid]);" target="_top" href="<?=$brandSearchURL?>">
 <img style="position: absolute; right: 128px; top: 15px;" src="<?=$icon?>">
-<img border="none" src="https://home.mgrowth.com/images/latest-news-btn.png">
+<img border="none" src="https://home.newtabgallery.com/images/latest-news-btn.png">
 </a>
 </div>
 <?php } ?>
@@ -652,7 +652,7 @@ if (isset($madonnasig)) {
       $lightboxAddlParams = '';
 
     if (!isset($lightboxOpener))
-      $lightboxOpener = '<img src="https://home.mgrowth.com/images/play-button25.png">';
+      $lightboxOpener = '<img src="https://home.newtabgallery.com/images/play-button25.png">';
     echo <<<EOD
 
     <link rel="stylesheet" type="text/css" href="/global/lightbox.css" />
@@ -764,7 +764,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 <?php if (isset($adcontent)) { ?>
 <?php if (isset($showGenericAd) && $showGenericAd == true) { ?>
 <div style="text-align: right;font-size: xx-small;">
-<a style="color: rgb(152, 152, 152);text-decoration: none;" target="_blank" href="https://mgrowth.com/websearch/">About this ad</a>
+<a style="color: rgb(152, 152, 152);text-decoration: none;" target="_blank" href="https://newtabgallery.com/websearch/">About this ad</a>
 </div>
 <?php } ?>
 <?=$adcontent?>
@@ -1130,7 +1130,7 @@ if (!isset($noLegal)) {
   }
 </style>
 <div id="legal">
-<a href="https://mgrowth.com/privacy/" target="blank">Privacy</a> <a href="https://mgrowth.com/contact/" target="blank">Contact</a> MGROWTH &copy;2018
+<a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> <a href="https://newtabgallery.com/contact/" target="blank">Contact</a> MGROWTH &copy;2018
 </div>
 <?php
 }
@@ -1161,7 +1161,7 @@ if (isset($alertTitle) && isset($alertText) && strlen($alertText) > 0) {
 }
 ?>
 <script type="text/javascript">
-var _sf_async_config={uid:3241,domain:"home.mgrowth.com",useCanonical:true};
+var _sf_async_config={uid:3241,domain:"home.newtabgallery.com",useCanonical:true};
 (function(){
   function loadChartbeat() {
     window._sf_endpt=(new Date()).getTime();

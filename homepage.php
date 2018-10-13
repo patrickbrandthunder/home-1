@@ -153,11 +153,11 @@ if (file_exists($firefoxcachefile) && (time() - $cachetime < filemtime($firefoxc
 	$extensionID = $chromeStore->$tid;
   }
   //if (array_key_exists($tid, $ieBuilds)) {
-  //  $ieURL = 'https://downloads.mgrowth.com/ie/setup-'.$tid.'persona.exe';
+  //  $ieURL = 'https://downloads.newtabgallery.com/ie/setup-'.$tid.'persona.exe';
   //} else {
   //  $ieURL = '';
   //}
-//  $xpiURL = 'https://downloads.mgrowth.com/'.$tid.'persona.xpi';
+//  $xpiURL = 'https://downloads.newtabgallery.com/'.$tid.'persona.xpi';
   if (!isset($xpiURL)) {
     if (array_key_exists($tid, $ffXPIs)) {
       $xpiURL = $ffXPIs->$tid;
@@ -200,7 +200,7 @@ if (file_exists($firefoxcachefile) && (time() - $cachetime < filemtime($firefoxc
 //              chrome.webstore.install("https://chrome.google.com/webstore/detail/$extensionID", function() {}, function(e) {console.log(e)});
 //            } else {
 //        document.getElementById("extensiontext").innerHTML = "<p style='line-height: 1.5'>Go to Settings and " +
-//        "set your homepage to</p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.mgrowth.com/{$tid}</b></div>"
+//        "set your homepage to</p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.newtabgallery.com/{$tid}</b></div>"
 //    window.setTimeout(function() {
 //      $.fn.colorbox({
 //            onLoad: showLightboxContent,
@@ -226,7 +226,7 @@ if (file_exists($firefoxcachefile) && (time() - $cachetime < filemtime($firefoxc
 //              document.location.href = "{$ieURL}"
 //            } else {
 //              document.getElementById("extensiontext").innerHTML = "<p style='line-height: 1.5'>Go to Internet Options. " +
-//                  "Set your Home page to: </p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.mgrowth.com/{$tid}</b></div>" +
+//                  "Set your Home page to: </p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.newtabgallery.com/{$tid}</b></div>" +
 //                  "<p>Click Tabs. Set it to open your first home page when a new tab is opened.</p>"
 //              window.setTimeout(function() {
 //                $.fn.colorbox({
@@ -241,7 +241,7 @@ if (file_exists($firefoxcachefile) && (time() - $cachetime < filemtime($firefoxc
 //            }
 //		  } else if (navigator.userAgent.indexOf("Safari") > -1) {
 //            document.getElementById("extensiontext").innerHTML = "<p style='line-height: 1.5'>Go to Safari->Preferences and " +
-//            "set your homepage to</p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.mgrowth.com/{$tid}</b></div><p>on the General tab.</p>"
+//            "set your homepage to</p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.newtabgallery.com/{$tid}</b></div><p>on the General tab.</p>"
 //		    window.setTimeout(function() {
 //		      $.fn.colorbox({
 //                onLoad: showLightboxContent,
