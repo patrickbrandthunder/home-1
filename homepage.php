@@ -1,4 +1,6 @@
 <?php
+//error_reporting(E_ALL);
+//ini_set('display_errors', '1');
 //include("variables.php");
 //if(empty($_SERVER['https']) || $_SERVER['https'] == "off"){
 //    $redirect = 'https://' . $_SERVER['https_HOST'] . $_SERVER['REQUEST_URI'];

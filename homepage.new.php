@@ -181,11 +181,11 @@ if (!isset($noShare)) {
 if (isset($_GET['extension'])) {
 ?>
     _gaq.push(['_setAccount', '']);
-<?
+<?php
 } else {
 ?>
     _gaq.push(['_setAccount', '']);
-<?
+<?php
 }
 ?>
     _gaq.push(['_trackPageview']);
