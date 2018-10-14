@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'mystart-font';
+  src: url('mystart-font.eot?11774475');
+  src: url('mystart-font.eot?11774475#iefix') format('embedded-opentype'),
+       url('mystart-font.woff2?11774475') format('woff2'),
+       url('mystart-font.woff?11774475') format('woff'),
+       url('mystart-font.ttf?11774475') format('truetype'),
+       url('mystart-font.svg?11774475#mystart-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
