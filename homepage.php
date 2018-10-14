@@ -1,292 +1,285 @@
 <?php
 //error_reporting(E_ALL);
 //ini_set('display_errors', '1');
-//include("variables.php");
-//if(empty($_SERVER['https']) || $_SERVER['https'] == "off"){
-//    $redirect = 'https://' . $_SERVER['https_HOST'] . $_SERVER['REQUEST_URI'];
-//    header('https/1.1 301 Moved Permanently');
-//    header('Location: ' . $redirect);
-//    exit();
-//}
 
-//$snow = true;
-
-// Not sure if we'll need Apple store stuff, comment out for now
-//if (!isset($appID)) {
-//  if ($tid != 'bobmarley' &&
-//      $tid != 'bobmarley2013' &&
-//      $tid != 'blackhawks' &&
-//      $tid != 'nfltexans' &&
-//      $tid != 'ziggymarley') {
-//    $appID = '917512241';
-//  }
-//}
+$cachefile = __DIR__.'/'.$tid.'/'.$tid.'.json';
+$cachetime = 24*60*5*60; // 24 hours
+if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
+  $images = json_decode(file_get_contents($cachefile));
+} else {
+  $images = glob(__DIR__.'/'.$tid.'/*{*.jpeg,*.jpg}', GLOB_BRACE);
+  for ($i = 0; $i < sizeof($images); $i++) {
+    $images[$i] = basename($images[$i]);  
+  }
+  $fp = fopen($cachefile, 'w');
+  fwrite($fp, json_encode(array_values($images)));
+  fclose($fp);
+}
+$backgroundImage = 'https://home.newtabgallery.com/'.$tid.'/'.$images[array_rand($images)];
+$backgroundColor = '#000000';
+$backgroundAlign = 'bottom center';
+$backgroundRepeat = 'no-repeat';
+$backgroundSize = 'cover';
+$showGenericAd = true;
+$homeIcon = 'home-black.png';
+$icon = 'https://home.brandthunder.com/'.$tid.'/site_icon.png';
+$showGenericBannerAd = true;
 
 // Set device type, will be used elsewhere to display content
 include_once("global/inc/Mobile_Detect.php");
 $detect = new Mobile_Detect;
 $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
 
-// This looks like a Chrome store ID
-if (!isset($extensionID)) {
-  $extensionID = 'gjgpklibihonndjdhpkkbefifghlknoh';
+if (isset($_GET['ad'])) {
+  $alwaysAd = 'true';
 }
+if ($deviceType == 'tablet' || $deviceType == 'phone') {
+  $dontShowAd = 'true';
+}
+if (isset($mobileAd)) {
+  $mobileAd = 'true';
+  $dontShowAd = 'false';
+} else {
+  $mobileAd = 'false';
+}
+$searchType = $tid;
+if ( isset($customSearchCode) ) {
+    $searchType = $customSearchCode;
+}
+?>
+<!doctype html>
+<html lang="en-US" xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+  <head>
+	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+      <link rel="stylesheet" type="text/css" href="/fonts/mystart-font/mystart-font.css">
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+		<title><?= $title ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+if (isset($facebookImage)) {
+?>
+    <meta property="og:image" content="<?= $facebookImage?>" />
+<?php
+} else {
+?>
+    <meta property="og:image" content="<?= $backgroundImage?>" />
+<?php
+}
+?>
+  <meta property="og:image:width" content="277" />
+  <meta property="og:image:height" content="200" />
+<?php
+if (isset($_GET['extension'])) {
+?>
+    <meta property="og:title" content="<?= $title?> New Tab Page" />
+    <meta property="og:url" content="https://home.newtabgallery.com/<?=$tid?>/?extension" />
+    <meta property="og:description" content="" />
+<?php
+} else {
+?>
+    <meta property="og:title" content="<?= $title?>" />
+<?php
+}
+//  if (isset($appID)) {
+?>
+  <!-- meta name="apple-itunes-app" content="app-id=< ?$appID?>"/ -->
+<?php
+//}
+?>
+		<link rel="icon" type="image/png" href="<?= $icon ?>">
+    <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/styles.css" type="text/css">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/<?=$extensionID?>">
 
-// Can probably get rid of the theme offer (no themes), and shopping
-//$chromeShopping = false;
+    <?php //css overrides ?>
+		<?php
+
+		  //error_reporting(E_ALL); // UNCOMMENT WHEN DEVELOPING
+		  //
+		  //  Set major page properties
+		  //
+
+		  // mobile detect. currently we're just turning off the search as it's built into the browser
+		  if($deviceType == 'tablet' || $deviceType == 'phone'){
+			?>
+			<style>
+				#form-holder{ display: none; }
+				#newsearch-form-holder{ display: none; }
+				#module-search{ display: none; }
+			</style>
+			<?php
+		  }
+		  //  If "?align" is set, set the background-position property
+		  //  for the "body" background image
+		  if (isset($_GET['align'])) {
+		    $backgroundAlign = $_GET['align'];
+		  } else if (!isset($backgroundAlign)) {
+			$backgroundAlign = "center";
+		  }
+
+		  //  If $backgroundRepeat is not set in index.php, default it
+		  //  to no-repeat
+		  if (!isset($backgroundRepeat)) {
+		    $backgroundRepeat = 'no-repeat';
+		  }
+
+		  //  If $backgroundSize is not set in index.php, default it
+		  //  to auto auto
+		  if (!isset($backgroundSize)) {
+		    $backgroundSize = 'auto auto';
+		  }
+
+		  //  If $searchBackground is not set in index.php, default it
+		  //  to white at 75% opacity
+		  if (!isset($searchBackground)) {
+		    $searchBackground = 'rgba(255,255,255,0.75)';
+		  }
 
 
-if (!isset($lightboxChromeOnly)) {
-  $lightboxChromeOnly = false;
-}
+		  if (strpos($backgroundImage, 'url') === false) {
+		    $backgroundImage = 'url("'.$backgroundImage.'")';
+		  }
 
-if (!isset($alwaysAd)) {
-  $alwaysAd = "false";
-}
-if (!isset($dontShowAd)) {
-  $dontShowAd = "false";
-}
-if (!isset($chromeRating)) {
-  $chromeRating = false;
-}
-if (0) {
-$lightboxContent = <<<EOD
-<style>
-#cboxBottomLeft,
-#cboxBottomRight,
-#cboxTopRight,
-#cboxTopLeft,
-#cboxBottomCenter,
-#cboxTopCenter,
-#cboxRightCenter,
-#cboxMiddleRight,
-#cboxMiddleLeft,
-#cboxLeftCenter {
-  display: none;
-}
-#cboxContent {
-    background: none !important;
-}
-#cboxOverlay {
-    opacity: 0 !important;
-}
-#cboxClose {
-  top: 0px !important;
-  right: 0px !important;
-  background-color: transparent;
+		?>
+    <style>
+    	#body {
+		  height: 100%;
+	      background-color: <?=$backgroundColor?>;
+	      background-repeat: <?=$backgroundRepeat?>;
+	      background-position: <?=$backgroundAlign?>;
+	      background-image: <?=$backgroundImage?>;
+	      background-size: <?=$backgroundSize?>;
+		}
+		body {
+	      background-color: <?=$backgroundColor?>;
+		}
+		#body-spacer {
+		  height: 0px;
+		  background-color: transparent;
+		}
+		</style>
+
+	<script type="text/javascript">
+	var addthis_share = {
+	   url: "https://home.newtabgallery.com/<?=$tid?>",
+	   title: "<?= $title?> New Tab Page"
+	}
+
+	</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bb95001324284f3"></script>
+   <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-127110494-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="body">
+	<div id="body-spacer">
+
+	</div>
+  <img style="opacity: 0;position: absolute;top:0; left:0"
+     src="<?= $backgroundImage?>">
+
+
+      <div id="wrapper">
+      <div class="container">
+        <div id="header">
+        <?php if(isset($icon)): ?>
+          <a href="#" id="logo">
+            <img src="<?= $icon ?>" style="display: none" alt="" />
+          </a>
+		<?php endif; ?>
+
+        </div><!-- /header -->
+
+<?php if (isset($extraafter)) { echo $extraafter; } ?>
+        <?php /*<a target="_top" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.newtabgallery.com/images/weather.png"></a> */ ?>
+      </div><!-- /social-buttons -->
+
+<div id="module-search">
+<form action="https://mgrowth.fastsearch.me/" target="_top" method="get" id="form">
+<input type="text" id="newsearchinput" placeholder="Search the web" name="q">
+            <div id="btn-search"></div>
+</form>
+</div>
+
+      </div><!-- /container -->
+
+    </div><!-- /wrapper -->
+
+
+
+
+<script type="text/javascript">
+  var tid = document.getElementById("tid");
+  if (tid && tid.value == "btpersonas") {
+    var ev = document.createEvent('Events');
+    ev.initEvent('mgrowthEvent', true, false);
+    tid.dispatchEvent(ev);
+  }
+  try {
+    document.getElementById("searchTerm").focus();
+  } catch (e) {}
+  try {
+    document.getElementById("newsearchinput").focus();
+  } catch (e) {}
+</script>
+<?php
+if (isset($addlContent))
+  echo $addlContent;
+?>
+
+</div>
+</div>
+<style type="text/css">
+#banner_ad {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
 }
 </style>
-EOD;
-$lightboxAddlParams = '';
-$lightboxOpener = '';
-$lightboxCookie = 'sharing_10_2017_'.$tid;
-}
-$chromecachefile = '../chromestore.json';
-//$iecachefile = '../iebuilds.json';
-$firefoxcachefile = '../ffxpi.json';
-$cachetime = 30*60; // 30 minutes * 60 seconds
-if (file_exists($chromecachefile) && (time() - $cachetime < filemtime($chromecachefile))) {
-  $chromeStore = json_decode(file_get_contents($chromecachefile));
-} else {
-  $url = 'https://spreadsheets.google.com/feeds/list/1u9qyFx4gkT3xZbfans0ezFMqUuy8GYG7YP5eFwj517U/1/public/values?alt=json';
-  $file= file_get_contents($url);
-  $json = json_decode($file);
-  $rows = $json->{'feed'}->{'entry'};
-  $chromeStore = new stdClass();
-  foreach($rows as $row) {
-    $chromestoreid = $row->{'gsx$chromestoreid'}->{'$t'};
-    if ($chromestoreid && strlen($chromestoreid) != 0) {
-      $temptid = $row->{'gsx$tid'}->{'$t'};
-      $chromeStore->$temptid = $chromestoreid;
-    }
-  }
-  $fp = fopen($chromecachefile, 'w');
-  fwrite($fp, json_encode($chromeStore));
-  fclose($fp);
-}
+<div id="banner_ad" class="addlContent">
+ <script type="text/javascript"><!--
 
-if (isset($_GET['extension'])) {
-//if (file_exists($iecachefile) && (time() - $cachetime < filemtime($iecachefile))) {
-//  $ieBuilds = json_decode(file_get_contents($iecachefile));
-//} else {
-//  $url = 'https://spreadsheets.google.com/feeds/list/1u9qyFx4gkT3xZbfans0ezFMqUuy8GYG7YP5eFwj517U/1/public/values?alt=json';
-//  $file= file_get_contents($url);
-//  $json = json_decode($file);
-//  $rows = $json->{'feed'}->{'entry'};
-//  $ieBuilds = new stdClass();
-//  foreach($rows as $row) {
-//    $ie = $row->{'gsx$ie'}->{'$t'};
-//    if ($ie && strlen($ie) != 0) {
-//      $temptid = $row->{'gsx$tid'}->{'$t'};
-//      $ieBuilds->$temptid = true;
-//    }
-//  }
-//  $fp = fopen($iecachefile, 'w');
-//  fwrite($fp, json_encode($ieBuilds));
-//  fclose($fp);
-//}
+                e9 = new Object();
 
-if (file_exists($firefoxcachefile) && (time() - $cachetime < filemtime($firefoxcachefile))) {
-  $ffXPIs = json_decode(file_get_contents($firefoxcachefile));
-} else {
-  $url = 'https://spreadsheets.google.com/feeds/list/1u9qyFx4gkT3xZbfans0ezFMqUuy8GYG7YP5eFwj517U/1/public/values?alt=json';
-  $file= file_get_contents($url);
-  $json = json_decode($file);
-  $rows = $json->{'feed'}->{'entry'};
-  $ffXPIs = new stdClass();
-  foreach($rows as $row) {
-    $xpiurl = $row->{'gsx$xpiurl'}->{'$t'};
-    if ($xpiurl && strlen($xpiurl) != 0) {
-      $temptid = $row->{'gsx$tid'}->{'$t'};
-      $ffXPIs->$temptid = $xpiurl;
-    }
-  }
-  $fp = fopen($firefoxcachefile, 'w');
-  fwrite($fp, json_encode($ffXPIs));
-  fclose($fp);
-}
+ e9.size = "728x90,300x250";
 
-  $chromeShopping = false;
-  $dontShowAd = "true";
-  $appleStoreURL = 'https://itunes.apple.com/us/app/my-web/id917512241?mt=8';
-  $playStoreURL = '';
-  $extensionID = '';
-  if (array_key_exists($tid, $chromeStore)) {
-	$extensionID = $chromeStore->$tid;
-  }
-  //if (array_key_exists($tid, $ieBuilds)) {
-  //  $ieURL = 'https://downloads.newtabgallery.com/ie/setup-'.$tid.'persona.exe';
-  //} else {
-  //  $ieURL = '';
-  //}
-//  $xpiURL = 'https://downloads.newtabgallery.com/'.$tid.'persona.xpi';
-  if (!isset($xpiURL)) {
-    if (array_key_exists($tid, $ffXPIs)) {
-      $xpiURL = $ffXPIs->$tid;
-    } else {
-      $xpiURL = 'https://addons.mozilla.org/firefox/downloads/latest/myweb-new-tab/addon-687563-latest.xpi?src=extra-'.$tid;
-    }
-  }
-  if ($deviceType == 'tablet' || $deviceType == 'phone') {
-//    $lightboxContent = <<<EOD
-//    <script type="text/javascript">
-//      function onExtensionClick() {
-//        _gaq.push(['_trackEvent', 'Extension Install Mobile', 'Click', '{$tid}']);
-//        createCookie('setnewtab', '${tid}', 1);
-//		var iOS = /iPad|iPhone|iPod/.test( navigator.userAgent );
-//		if (iOS) {
-//		  document.location.href = "{$appleStoreURL}";
-//		} else {
-//		  document.location.href = "{$playStoreURL}";
-//		}
-//        $.fn.colorbox.close();
-//      }
-//    </script>
-//  <div id="extensiontext" style="text-align: center; padding: 10px; width: 300px; height: 125px; color: black;">
-//<p style="font-size: 100%;margin:0px;padding:0px;line-height: 1.2;
-//font-family: Helvetica,Arial,sans-serif;">Do you want to see this page when you open a new tab?</p><br/>
-//<a href="#" onclick="onExtensionClick();"><img src="/images/yes_button.png"></a>
-//  </div>
-//EOD;
+//--></script>
 
-  } else {
-//    $holiday_temp =(isset($holiday) && !isset($_GET['extension'])) ? 'true' : 'false';
-//    $lightboxContent = <<<EOD
-//    <script type="text/javascript">
-//      function onExtensionClick() {
-//        _gaq.push(['_trackEvent', 'Extension Install', 'Click', '{$tid}']);
-//        createCookie('setnewtab', '${tid}');
-//        if (!("mynewtab" in window)) {
-//          if ("chrome" in window) {
-//            if ("webstore" in window.chrome) {
-//              chrome.webstore.install("https://chrome.google.com/webstore/detail/$extensionID", function() {}, function(e) {console.log(e)});
-//            } else {
-//        document.getElementById("extensiontext").innerHTML = "<p style='line-height: 1.5'>Go to Settings and " +
-//        "set your homepage to</p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.newtabgallery.com/{$tid}</b></div>"
-//    window.setTimeout(function() {
-//      $.fn.colorbox({
-//            onLoad: showLightboxContent,
-//            onCleanup: hideLightboxContent,
-//            scrolling: false,
-//            inline:true,
-//            overlayClose: false,
-//            href:"#lightbox-content"
-//          });
-//        }, 500);
-//            }
-//          } else if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-//            if (!("mynewtab" in window)) {
-//              var params = {
-//                "My Web": { URL: "{$xpiURL}",
-//                       toString: function () { return this.URL; }
-//                }
-//              };
-//              InstallTrigger.install(params);
-//            }
-//          } else if ((navigator.userAgent.indexOf("MSIE") > -1 || navigator.userAgent.indexOf("Trident") > -1)) {
-//            if ("{$ieURL}") {
-//              document.location.href = "{$ieURL}"
-//            } else {
-//              document.getElementById("extensiontext").innerHTML = "<p style='line-height: 1.5'>Go to Internet Options. " +
-//                  "Set your Home page to: </p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.newtabgallery.com/{$tid}</b></div>" +
-//                  "<p>Click Tabs. Set it to open your first home page when a new tab is opened.</p>"
-//              window.setTimeout(function() {
-//                $.fn.colorbox({
-//                      onLoad: showLightboxContent,
-//                      onCleanup: hideLightboxContent,
-//                      scrolling: false,
-//                      inline:true,
-//                      overlayClose: false,
-//                      href:"#lightbox-content"
-//                    });
-//                  }, 500);
-//            }
-//		  } else if (navigator.userAgent.indexOf("Safari") > -1) {
-//            document.getElementById("extensiontext").innerHTML = "<p style='line-height: 1.5'>Go to Safari->Preferences and " +
-//            "set your homepage to</p><div style='margin-top: 10px;margin-bottom:10px;font-size: 12px;'><b>https://home.newtabgallery.com/{$tid}</b></div><p>on the General tab.</p>"
-//		    window.setTimeout(function() {
-//		      $.fn.colorbox({
-//                onLoad: showLightboxContent,
-//                onCleanup: hideLightboxContent,
-//                scrolling: false,
-//                inline:true,
-//                overlayClose: false,
-//                href:"#lightbox-content"
-//              });
-//            }, 500);
-//		  }
-//        }
-//        $.fn.colorbox.close();
-//      }
-//    </script>
-//  <div id="extensiontext" style="text-align: center; padding: 10px; width: 300px; height: 130px; color: black;">
-//<p id="whee" style="font-size: 100%;margin:0px;padding:0px;line-height: 1.2;
-//font-family: Helvetica,Arial,sans-serif;">Do you want to see this page when you open a new tab?</p><br/>
-//<a href="#" onclick="onExtensionClick();"><img id="extension-button" src="/images/yes_button.png"></a>
-//<p style="font-size: smaller" id="firefoxtext"></p>
-//  </div>
-//  <script type="text/javascript">
-//  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1 && '{$tid}' != 'puppies2015') {
-////    document.getElementById("firefoxtext").textContent = "Firefox Exclusive: Includes a theme!";
-//  } else if (("chrome" in window) && ("webstore" in window.chrome)) {
-//    var button = document.getElementById("extension-button");
-//    button.src = "/images/chrome_yes_button.png";
-//    button.style.marginTop = "20px";
-//    if ({$holiday_temp}) {
-//      button.src = "/images/myweb-holiday-small-box.jpg";
-//      button.style.marginTop = "";
-//      document.getElementById("extensiontext").style.width = "796px";
-//      document.getElementById("extensiontext").style.height = "586px";
-//      document.getElementById("extensiontext").style.padding = "0";
-//      document.getElementById("whee").style.display = "none";
-//    }
-//    
-//  }
-//  </script>
-//EOD;
+<script type="text/javascript" src="https://tags.expo9.exponential.com/tags/mgrowthcom/ROS/tags.js"></script>
+</div>
+<style type="text/css">
+  #legal a {
+	text-decoration: none;
+	color: rgb(93, 99, 96);
   }
-  $lightboxOpener = '';
-  // NEED TO TURN OFF AD AS WELL
-}
-include('homepage.new.php');
-exit();
+  #legal a:hover {
+	color: white;
+  }
+  #legal {
+	background-color: black;
+	color: rgb(93, 99, 96);
+	position: absolute;
+	right: 0px;
+	bottom:0px;
+	padding: 2px;
+	font-size: 10px;
+  }
+</style>
+<div id="legal">
+<a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> <a href="https://newtabgallery.com/contact/" target="blank">Contact</a> MGROWTH &copy;2018
+</div>
+</body>
+</html>
