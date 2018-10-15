@@ -19,7 +19,8 @@ include('../homepage.php');
 
 7. At the bottom of the page, click "Commit New file"
 8. Click "Upload Files"
-9. Upload all your images here (they must end in jpg or jpeg)
+9. Upload all your images here (they must end in jpg or jpeg).
+IMPORTANT - Make sure you are not on the master branch.
 10. Click Commit changes
 11. Click "Compare and pull request"
 12. For the reviewer, select tom or me.
