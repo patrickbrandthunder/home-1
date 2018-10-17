@@ -243,7 +243,7 @@ if (isset($extensionID)) {
   }, 2500);
 </script>
 <div id="extension-offer">
-<a href="https://chrome.google.com/webstore/detail/<?=$extensionID?>" target="blank">Like what you see? Click here to install the extension on Chrome!</a>
+<a href="https://chrome.google.com/webstore/detail/<?=$extensionID?>" target="blank"><img src="https://home.newtabgallery.com/global/images/chromestore.png"></a>
 </div>
 <?php
 }
