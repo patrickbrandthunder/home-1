@@ -22,7 +22,6 @@ $backgroundRepeat = 'no-repeat';
 $backgroundSize = 'cover';
 $showGenericAd = true;
 $homeIcon = 'home-black.png';
-$icon = 'https://home.brandthunder.com/'.$tid.'/site_icon.png';
 $showGenericBannerAd = true;
 
 // Set device type, will be used elsewhere to display content
@@ -58,38 +57,14 @@ if ( isset($customSearchCode) ) {
     <meta https-equiv="X-UA-Compatible" content="IE=edge">
 		<title><?= $title ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<?php
-if (isset($facebookImage)) {
-?>
-    <meta property="og:image" content="<?= $facebookImage?>" />
-<?php
-} else {
-?>
-    <meta property="og:image" content="<?= $backgroundImage?>" />
-<?php
-}
-?>
-  <meta property="og:image:width" content="277" />
-  <meta property="og:image:height" content="200" />
-<?php
-if (isset($_GET['extension'])) {
-?>
+    <meta property="og:image" content="https://home.newtabgallery.com/<?=$tid?>/icon256.png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
     <meta property="og:title" content="<?= $title?> New Tab Page" />
-    <meta property="og:url" content="https://home.newtabgallery.com/<?=$tid?>/?extension" />
-    <meta property="og:description" content="" />
-<?php
-} else {
-?>
-    <meta property="og:title" content="<?= $title?>" />
-<?php
-}
-//  if (isset($appID)) {
-?>
-  <!-- meta name="apple-itunes-app" content="app-id=< ?$appID?>"/ -->
-<?php
-//}
-?>
-		<link rel="icon" type="image/png" href="<?= $icon ?>">
+    <meta property="og:url" content="https://home.newtabgallery.com/<?=$tid?>/" />
+    <meta property="og:description" content="I use this and love it, thought I’d share it for others to see.  I’m using just one of hundreds of unique new tab page experiences from New Tab Gallery. (Works best on your desktop or laptop.)" />
+		<meta property="og:type" content="website"/>
+		<link rel="icon" type="image/png" href="https://home.newtabgallery.com/<?=$tid?>/icon32.png">
     <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/styles.css" type="text/css">
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/<?=$extensionID?>">
 
