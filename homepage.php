@@ -65,7 +65,7 @@ if ( isset($customSearchCode) ) {
     <meta property="og:url" content="https://home.newtabgallery.com/<?=$tid?>/" />
     <meta property="og:description" content="I use this and love it, thought I’d share it for others to see.  I’m using just one of hundreds of unique new tab page experiences from New Tab Gallery. (Works best on your desktop or laptop.)" />
 		<meta property="og:type" content="website"/>
-		<link rel="icon" type="image/png" href="<?= $icon ?>">
+		<link rel="icon" type="image/png" href="https://home.newtabgallery.com/<?=$tid?>/icon32.png">
     <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/styles.css" type="text/css">
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/<?=$extensionID?>">
 
