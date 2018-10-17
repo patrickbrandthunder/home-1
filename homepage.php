@@ -215,6 +215,39 @@ if (isset($addlContent))
 
 </div>
 </div>
+<?php
+if (isset($extensionID)) {
+?>
+
+<style type="text/css">
+  #extension-offer a {
+	text-decoration: none;
+  }
+  #extension-offer {
+	background-color: black;
+	color: rgb(93, 99, 96);
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	padding: 2px;
+	font-size: 15px;
+	display: none;
+  }
+</style>
+<script type="text/javascript">
+  window.setTimeout(function() {
+    let offer = document.getElementById("extension-offer");
+	if (!offer.hasAttribute("extension")) {
+	 offer.style.display = "block";
+	}
+  }, 2500);
+</script>
+<div id="extension-offer">
+<a href="https://chrome.google.com/webstore/detail/<?=$extensionID?>" target="blank">Like what you see? Click here to install the extension on Chrome!</a>
+</div>
+<?php
+}
+?>
 <style type="text/css">
   #legal a {
 	text-decoration: none;
