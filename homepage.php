@@ -241,26 +241,6 @@ if (isset($addlContent))
 </div>
 </div>
 <style type="text/css">
-#banner_ad {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  -webkit-transform: translate(-50%, 0);
-}
-</style>
-<div id="banner_ad" class="addlContent">
- <script type="text/javascript"><!--
-
-                e9 = new Object();
-
- e9.size = "728x90,300x250";
-
-//--></script>
-
-<script type="text/javascript" src="https://tags.expo9.exponential.com/tags/mgrowthcom/ROS/tags.js"></script>
-</div>
-<style type="text/css">
   #legal a {
 	text-decoration: none;
 	color: rgb(93, 99, 96);
