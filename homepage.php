@@ -58,7 +58,7 @@ if ( isset($customSearchCode) ) {
     <meta https-equiv="X-UA-Compatible" content="IE=edge">
 		<title><?= $title ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="http://home.newtabgallery.com/<?=$tid?>/icon256.png" />
+    <meta property="og:image" content="https://home.newtabgallery.com/<?=$tid?>/icon256.png" />
     <meta property="og:image:width" content="256" />
     <meta property="og:image:height" content="256" />
     <meta property="og:title" content="<?= $title?> New Tab Page" />
