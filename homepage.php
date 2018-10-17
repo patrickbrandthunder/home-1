@@ -216,7 +216,7 @@ if (isset($addlContent))
 </div>
 </div>
 <?php
-if (isset($extensionID)) {
+if (isset($extensionID) && ($extensionID != '')) {
 ?>
 
 <style type="text/css">
