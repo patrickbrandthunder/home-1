@@ -22,7 +22,6 @@ $backgroundRepeat = 'no-repeat';
 $backgroundSize = 'cover';
 $showGenericAd = true;
 $homeIcon = 'home-black.png';
-$icon = 'https://home.brandthunder.com/'.$tid.'/site_icon.png';
 $showGenericBannerAd = true;
 
 // Set device type, will be used elsewhere to display content
