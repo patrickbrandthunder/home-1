@@ -1,7 +1,7 @@
 <?php
 $title = 'Tommy Genesis';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'oelkpclgcjohgjcgpngbccjegochkfcd';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
