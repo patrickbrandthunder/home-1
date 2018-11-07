@@ -1,7 +1,7 @@
 <?php
 $title = 'Yella Beezy';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'hfengnhhehahokikjpcohpamdbejlpbi';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
