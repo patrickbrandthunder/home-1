@@ -155,6 +155,27 @@ if ( isset($customSearchCode) ) {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+<?php
+if ($tid == "nutcracker") {
+?>
+  <script type="text/javascript">
+  try {
+	window.webpushConfig = {
+	  "serviceWorkerUrl": "/wp_sw.js",
+	  "affiliate": "brandthunder77",
+	  "optInType": 0
+  };
+	var a = document.createElement('script');
+	a.type = "text/javascript";
+	a.src = "//pushnews.org/wp.js?" + (Math.random() * 5);
+	a.async = 1;
+	var m = document.getElementsByTagName('script')[0];
+	m.parentNode.insertBefore(a,m);
+  } catch(e) { console.log(e); }
+  </script>
+<?php
+}
+?>
 </head>
 <body>
   <div id="body">
