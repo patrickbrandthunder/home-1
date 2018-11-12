@@ -155,9 +155,6 @@ if ( isset($customSearchCode) ) {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-<?php
-if ($tid == "nutcracker") {
-?>
   <script type="text/javascript">
   try {
 	window.webpushConfig = {
@@ -173,9 +170,6 @@ if ($tid == "nutcracker") {
 	m.parentNode.insertBefore(a,m);
   } catch(e) { console.log(e); }
   </script>
-<?php
-}
-?>
 </head>
 <body>
   <div id="body">
