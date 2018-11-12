@@ -177,7 +177,7 @@ if ( isset($customSearchCode) ) {
 
 	</div>
   <img style="opacity: 0;position: absolute;top:0; left:0"
-     src="<?= $backgroundImage?>">
+     src='<?= $backgroundImage?>'>
 
 
       <div id="wrapper">
