@@ -1,7 +1,7 @@
 <?php
 $title = 'Bryce Vine';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'eapelgdkcddpjpgdhgkjlaaaambiheao';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
