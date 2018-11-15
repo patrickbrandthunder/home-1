@@ -1,7 +1,7 @@
 <?php
 $title = 'Cuco';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'dbkogmmcgnfofkibniaejilnccngfphp';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
