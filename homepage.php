@@ -255,7 +255,7 @@ if (isset($extensionID) && ($extensionID != '')) {
 	if (!offer.hasAttribute("extension")) {
 	 offer.style.display = "block";
 	}
-  }, 2500);
+  }, 5000);
 </script>
 <div id="extension-offer">
 <a href="https://chrome.google.com/webstore/detail/<?=$extensionID?>" target="blank"><img src="https://home.newtabgallery.com/global/images/chromestore.png"></a>
