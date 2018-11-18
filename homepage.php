@@ -196,7 +196,9 @@ if ( isset($customSearchCode) ) {
       </div><!-- /social-buttons -->
 
 <div id="module-search">
-<form action="https://mgrowth.fastsearch.me/" target="_top" method="get" id="form">
+<form action="https://www.my-search.com/search" target="_top" method="get" id="form">
+<input type="hidden" name="aid" value="4898">
+<input type="hidden" name="zoneid" value="89128928">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q">
             <div id="btn-search"></div>
 </form>
