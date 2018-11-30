@@ -1,7 +1,7 @@
 <?php
 $title = 'Yin and Yang';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'feildbecioellehlgghokdfccpdkaekf';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
