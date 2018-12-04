@@ -269,7 +269,7 @@ if (isset($extensionID) && ($extensionID != '')) {
   }
 </style>
 <div id="legal">
-<a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> <a href="https://newtabgallery.com/contact/" target="blank">Contact</a> MGROWTH &copy;2018
+<a href="https://newtabgallery.com/license/" target="blank">Privacy</a> <a href="https://newtabgallery.com/contact/" target="blank">Contact</a> MGROWTH &copy;2018
 </div>
 </body>
 </html>
