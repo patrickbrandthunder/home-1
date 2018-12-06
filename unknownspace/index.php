@@ -1,7 +1,7 @@
 <?php
 $title = 'Unknown Space';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'epacpplodcfpdlfmfhncapkhgjkpenkf';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
