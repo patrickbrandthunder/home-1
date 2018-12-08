@@ -1,7 +1,7 @@
 <?php
 $title = 'Matt Ox';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'ihedoglhfmifkhklnceheljajeopapie';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
