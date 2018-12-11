@@ -1,4 +1,31 @@
 <?php
+// Function to get the client ip address
+function get_client_ip_server() {
+    $ipaddress = '';
+    if (array_key_exists('HTTP_CLIENT_IP', $_SERVER))
+        $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+    else if (array_key_exists('HTTP_X_FORWARDED_FOR', $_SERVER))
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    else if (array_key_exists('HTTP_X_FORWARDED', $_SERVER))
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+    else if (array_key_exists('HTTP_FORWARDED_FOR', $_SERVER))
+        $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+    else if (array_key_exists('HTTP_FORWARDED', $_SERVER))
+        $ipaddress = $_SERVER['HTTP_FORWARDED'];
+    else if (array_key_exists('REMOTE_ADDR', $_SERVER))
+        $ipaddress = $_SERVER['REMOTE_ADDR'];
+    else
+        $ipaddress = 'UNKNOWN';
+ 
+    return $ipaddress;
+}
+
+$baseURL = 'https://brandthunder_tiles.tiles.ampfeed.com/tiles?v=1.2&partner=brandthunder_tiles&sub1=10004&sub2=newtabgallery&results=9&ip='.get_client_ip_server().'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&rfr='.urlencode('https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+$json = json_decode(file_get_contents($baseURL));
+$tiles = $json->{'tiles'};
+?>
+
+<?php
 //error_reporting(E_ALL);
 //ini_set('display_errors', '1');
 
@@ -118,7 +145,7 @@ if ( isset($customSearchCode) ) {
 		  }
 
 		?>
-    <style>
+    <style type="text/css">
     	#body {
 		  height: 100%;
 	      background-color: <?=$backgroundColor?>;
@@ -133,6 +160,14 @@ if ( isset($customSearchCode) ) {
 		#body-spacer {
 		  height: 0px;
 		  background-color: transparent;
+		}
+		.tile {
+		  margin-left: 5px;
+		  margin-right: 5px;
+		}
+		#buttons {
+		  margin-top: 10px;
+		  margin-bottom: 10px;
 		}
 		</style>
 
@@ -187,6 +222,17 @@ if ( isset($customSearchCode) ) {
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q">
             <div id="btn-search"></div>
 </form>
+</div>
+<div id="buttons" style="width: 100%; text-align: center">
+  <?php
+foreach($tiles as $tile) {
+  if (property_exists($tile, 'image_url')) {
+    echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
+    echo '<img src="'.$tile->{'impression_url'}.'">';
+  }
+}
+
+  ?>
 </div>
 
       </div><!-- /container -->
@@ -262,14 +308,14 @@ if (isset($extensionID) && ($extensionID != '')) {
 	background-color: black;
 	color: rgb(93, 99, 96);
 	position: absolute;
-	right: 0px;
-	bottom:0px;
+	right: 20px;
+	bottom: 20px;
 	padding: 2px;
-	font-size: 10px;
+	font-size: 12px;
   }
 </style>
-<div id="legal">
-<a href="https://newtabgallery.com/license/" target="blank">License</a> <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> <a href="https://newtabgallery.com/contact/" target="blank">Contact</a> MGROWTH &copy;2018
+<div id="legal" style="text-align: center">
+&nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;2018  MGROWTH
 </div>
 </body>
 </html>
