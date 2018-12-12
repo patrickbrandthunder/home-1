@@ -1,7 +1,7 @@
 <?php
 $title = 'Last Campfire';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'lpcpopdjhfljafihjjoccfgkfihfolkl';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
