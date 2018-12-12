@@ -20,7 +20,7 @@ function get_client_ip_server() {
     return $ipaddress;
 }
 
-$baseURL = 'https://brandthunder_tiles.tiles.ampfeed.com/tiles?v=1.2&partner=brandthunder_tiles&sub1=10004&sub2=newtabgallery&results=16&ip='.get_client_ip_server().'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&rfr='.urlencode('https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+$baseURL = 'https://brandthunder_tiles.tiles.ampfeed.com/tiles?v=1.2&partner=brandthunder_tiles&sub1=10004&sub2=newtabgallery&results=20&ip='.get_client_ip_server().'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&rfr='.urlencode('https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 $json = json_decode(file_get_contents($baseURL));
 if (property_exists($json, 'tiles')) {
   $tiles = $json->{'tiles'};
@@ -228,12 +228,26 @@ if ( isset($customSearchCode) ) {
 <div id="buttons" style="width: 100%; text-align: center">
   <?php
 if (isset($tiles)) {
+	function outputTile($tile) {
+		if (property_exists($tile, 'image_url')) {
+		  echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
+		  echo '<img src="'.$tile->{'impression_url'}.'">';
+		}
+	}
+$amazonArray = array_filter(
+    $tiles,
+    function ($e) {
+        return $e->{'name'} == "Amazon";
+    }
+);
+foreach ($amazonArray as $tile) {
+  outputTile($tile);
+}
 $rand_keys = array_rand($tiles, 10);
 for ($i = 0; $i < 10; $i++) {
   $tile = $tiles[$rand_keys[$i]];
-  if (property_exists($tile, 'image_url')) {
-    echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
-    echo '<img src="'.$tile->{'impression_url'}.'">';
+  if ($tile->{'name'} != "Amazon") {
+    outputTile($tile);
   }
 }
 }
