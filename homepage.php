@@ -229,7 +229,7 @@ $rand_keys = array_rand($tiles, 10);
 for ($i = 0; $i < 10; $i++) {
   $tile = $tiles[$rand_keys[$i]];
   if (property_exists($tile, 'image_url')) {
-    echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
+    echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
     echo '<img src="'.$tile->{'impression_url'}.'">';
   }
 }
