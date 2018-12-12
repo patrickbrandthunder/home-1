@@ -320,7 +320,7 @@ if (isset($extensionID) && ($extensionID != '')) {
   }
 </style>
 <div id="legal" style="text-align: center">
-&nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;2018  MGROWTH
+&nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;2018 NewTabGallery
 </div>
 </body>
 </html>
