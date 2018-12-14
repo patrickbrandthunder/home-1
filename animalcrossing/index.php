@@ -1,7 +1,7 @@
 <?php
 $title = 'Animal Crossing';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'homdblefaeohgcjbnghdoojmejdnfmdf';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
