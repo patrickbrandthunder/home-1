@@ -234,19 +234,27 @@ if (isset($tiles)) {
 		  echo '<img src="'.$tile->{'impression_url'}.'">';
 		}
 	}
-$amazonArray = array_filter(
+$stickyArray = array_filter(
     $tiles,
     function ($e) {
-        return $e->{'name'} == "Amazon";
+        return ($e->{'name'} == "Amazon" || $e->{'name'} == "Samsung - Performics");
     }
 );
-foreach ($amazonArray as $tile) {
+function my_sort($a,$b)
+{
+if ($a->{'name'}==$b->{'name'}) return 0;
+return ($a->{'name'}<$b->{'name'})?-1:1;
+}
+usort($stickyArray, 'my_sort');
+
+foreach ($stickyArray as $tile) {
   outputTile($tile);
 }
 $rand_keys = array_rand($tiles, 10);
 for ($i = 0; $i < 10; $i++) {
   $tile = $tiles[$rand_keys[$i]];
-  if ($tile->{'name'} != "Amazon") {
+  if ($tile->{'name'} != "Amazon" &&
+	  $tile->{'name'} != "Samsung - Performics") {
     outputTile($tile);
   }
 }
