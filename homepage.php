@@ -241,7 +241,7 @@ if ( isset($customSearchCode) ) {
 </div>
 
 <script type="text/javascript">
-let baseURL = "https://home.newtabgallery.com/global/inc/suggestions.php";
+let baseURL = "https://brandthunder_cps.cps.ampfeed.com/suggestions?partner=brandthunder_cps&sub1=newtabgallery&v=1.1&results-os=8&results-ps=1";
 var xhr;
 new autoComplete({
     selector: 'input[name="q"]',
@@ -276,7 +276,7 @@ new autoComplete({
 			}
 			response(data);
 		};
-		xhr.open("GET", baseURL + "?" + "q=" + term, true);
+		xhr.open("GET", baseURL + "?" + "qt=" + term, true);
 		xhr.send();
     },
     renderItem: function (item, search){
