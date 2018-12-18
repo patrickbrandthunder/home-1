@@ -199,6 +199,8 @@ if ( isset($customSearchCode) ) {
 		display: inline-block;
 		vertical-align: middle;
 		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
 		width: 32px;
 		height: 32px;
 	}
