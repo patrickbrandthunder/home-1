@@ -97,7 +97,7 @@ if ( isset($customSearchCode) ) {
     <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/styles.css" type="text/css">
     <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/auto-complete.css" type="text/css">
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/<?=$extensionID?>">
-	<script src="https://home.newtabgallery.com/global/js/auto-complete.js" async></script>
+	<script src="https://home.newtabgallery.com/global/js/auto-complete.js"></script>
 
     <?php //css overrides ?>
 		<?php
