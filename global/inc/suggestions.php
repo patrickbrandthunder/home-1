@@ -1,7 +1,6 @@
 <?php
 // Function to get the client ip address
 function get_client_ip_server() {
-    return '104.54.208.204';
     $ipaddress = '';
     if (array_key_exists('HTTP_CLIENT_IP', $_SERVER))
         $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
