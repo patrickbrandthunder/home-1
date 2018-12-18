@@ -254,11 +254,10 @@ new autoComplete({
 		xhr.responseType = 'json';
 		xhr.onload = function() {
 			let organic_suggestions = xhr.response.organic_suggestions;
-//			let paid_suggestions = xhr.response.paid_suggestions;
-			let paid_suggestions;
+			let paid_suggestions = xhr.response.paid_suggestions;
 			let data = [];
 			if (paid_suggestions) {
-			   for (let i=0; i < paid_suggestions.length; i++) {
+			   for (let i=0; i < 1; i++) {
 				  let item = {};
 				  item.term = paid_suggestions[i].term;
 				  item.click_url = paid_suggestions[i].click_url;
