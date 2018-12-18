@@ -245,7 +245,7 @@ let baseURL = "https://home.newtabgallery.com/global/inc/suggestions.php";
 var xhr;
 new autoComplete({
     selector: 'input[name="q"]',
-	minChars: 3,
+	minChars: 1,
     source: function(term, response){
 		if (xhr) {
           try { xhr.abort(); xhr=null;} catch(e){}
