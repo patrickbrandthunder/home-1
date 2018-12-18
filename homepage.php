@@ -95,7 +95,9 @@ if ( isset($customSearchCode) ) {
 		<meta property="og:type" content="website"/>
 		<link rel="icon" type="image/png" href="https://home.newtabgallery.com/<?=$tid?>/icon32.png">
     <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/auto-complete.css" type="text/css">
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/<?=$extensionID?>">
+	<script src="https://home.newtabgallery.com/global/js/auto-complete.js" async></script>
 
     <?php //css overrides ?>
 		<?php
@@ -192,6 +194,19 @@ if ( isset($customSearchCode) ) {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+   <style type="text/css">
+	.autocomplete-suggestion img.logo {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+		width: 32px;
+		height: 32px;
+	}
+	.autocomplete-suggestion a {
+		text-decoration: none;
+		color: inherit;
+	}
+   </style>
 </head>
 <body>
   <div id="body">
@@ -221,10 +236,64 @@ if ( isset($customSearchCode) ) {
 <form action="https://www.my-search.com/search" target="_top" method="get" id="form">
 <input type="hidden" name="aid" value="4898">
 <input type="hidden" name="zoneid" value="89128928">
-<input type="text" id="newsearchinput" placeholder="Search the web" name="q">
-            <div id="btn-search"></div>
+<input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
 </form>
 </div>
+
+<script type="text/javascript">
+let baseURL = "http://home.newtabgallery.com/global/inc/suggestions.php";
+var xhr;
+new autoComplete({
+    selector: 'input[name="q"]',
+	minChars: 3,
+    source: function(term, response){
+		if (xhr) {
+          try { xhr.abort(); xhr=null;} catch(e){}
+        }
+		xhr = new XMLHttpRequest();
+		xhr.responseType = 'json';
+		xhr.onload = function() {
+			let organic_suggestions = xhr.response.organic_suggestions;
+//			let paid_suggestions = xhr.response.paid_suggestions;
+			let paid_suggestions;
+			let data = [];
+			if (paid_suggestions) {
+			   for (let i=0; i < paid_suggestions.length; i++) {
+				  let item = {};
+				  item.term = paid_suggestions[i].term;
+				  item.click_url = paid_suggestions[i].click_url;
+				  item.image_url = paid_suggestions[i].image_url;
+				  item.impression_url = paid_suggestions[i].impression_url;
+				  data.push(item);
+			   }
+			}
+			if (organic_suggestions) {
+			   for (let i=0; i < organic_suggestions.length; i++) {
+				  let item = {};
+				  item.term = organic_suggestions[i].term;
+				  item.click_url = "https://www.my-search.com/search?aid=4898&zoneid=89128928&q=" + organic_suggestions[i].term;
+				  data.push(item);
+			   }
+			}
+			response(data);
+		};
+		xhr.open("GET", baseURL + "?" + "q=" + term, true);
+		xhr.send();
+    },
+    renderItem: function (item, search){
+		if (item.image_url) {
+			return '<div class="autocomplete-suggestion"><img class="logo" src="'+item.image_url+'"><a href="'+item.click_url+'">'+item.term+'</a><img src="'+item.impression_url+'"></div>';
+        } else {
+			return '<div class="autocomplete-suggestion"><a href="'+item.click_url+'">'+item.term+'</a></div>';
+		}
+    },
+    onSelect: function(e, term, item){
+        document.location.href = item.querySelector('a').href;
+
+    }
+});
+</script>
+
 <div id="buttons" style="width: 100%; text-align: center">
   <?php
 if (isset($tiles)) {
