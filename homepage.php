@@ -241,7 +241,7 @@ if ( isset($customSearchCode) ) {
 </div>
 
 <script type="text/javascript">
-let baseURL = "http://home.newtabgallery.com/global/inc/suggestions.php";
+let baseURL = "https://home.newtabgallery.com/global/inc/suggestions.php";
 var xhr;
 new autoComplete({
     selector: 'input[name="q"]',
