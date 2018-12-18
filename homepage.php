@@ -287,8 +287,8 @@ new autoComplete({
 		}
     },
     onSelect: function(e, term, item){
+        e.preventDefault();
         document.location.href = item.querySelector('a').href;
-
     }
 });
 </script>
