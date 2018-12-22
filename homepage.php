@@ -289,8 +289,11 @@ new autoComplete({
 		}
     },
     onSelect: function(e, term, item){
-        e.preventDefault();
-        document.location.href = item.querySelector('a').href;
+		let efValue = document.getElementById("newsearchinput").value;
+		if (!efValue) {
+			e.preventDefault();
+			document.location.href = item.querySelector('a').href;
+        }
     }
 });
 </script>
