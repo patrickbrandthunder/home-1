@@ -235,15 +235,26 @@ if ( isset($customSearchCode) ) {
       </div><!-- /social-buttons -->
 
 <div id="module-search">
+<?php if (isset($testSearch1)) {
+$searchURL = 'https://lumoswifi.ampxsearch.com/?ab=12221&sub1=serp&sub2=newtabgallery&q=';
+?>
+<form action="https://lumoswifi.ampxsearch.com/" target="_top" method="get" id="form">
+<input type="hidden" name="ab" value="12221">
+<input type="hidden" name="sub1" value="serp">
+<input type="hidden" name="sub2" value="newtabgallery">
+<?php } else {
+$searchURL = 'https://www.my-search.com/search?aid=4898&zoneid=89128928&q=';
+?>
 <form action="https://www.my-search.com/search" target="_top" method="get" id="form">
 <input type="hidden" name="aid" value="4898">
 <input type="hidden" name="zoneid" value="89128928">
+<?php } ?>
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
 </form>
 </div>
 
 <script type="text/javascript">
-let baseURL = "https://home.newtabgallery.com/global/inc/suggestions.php";
+let baseURL = "http://home.newtabgallery.com/global/inc/suggestions.php";
 var xhr;
 new autoComplete({
     selector: 'input[name="q"]',
@@ -272,7 +283,7 @@ new autoComplete({
 			   for (let i=0; i < organic_suggestions.length; i++) {
 				  let item = {};
 				  item.term = organic_suggestions[i].term;
-				  item.click_url = "https://www.my-search.com/search?aid=4898&zoneid=89128928&q=" + organic_suggestions[i].term;
+				  item.click_url = "<?=$searchURL?>" + organic_suggestions[i].term;
 				  data.push(item);
 			   }
 			}
