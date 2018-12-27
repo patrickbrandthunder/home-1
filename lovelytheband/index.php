@@ -1,7 +1,7 @@
 <?php
 $title = 'lovelytheband';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'nkaafpcehanajjfjngloeenibpmfpjdm';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
