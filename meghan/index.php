@@ -2,7 +2,7 @@
 <?php
 $title = 'Meghan';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'hjfdbhlhdhnbnmofnkfhbhabfdobmogi';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
