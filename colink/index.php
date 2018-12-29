@@ -1,5 +1,5 @@
 <?php
-$title = 'COlin Kaepernickt';
+$title = 'Colin Kaepernick';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'ebdhmckcfbhogohopeocolhkkgbldaah';
 $tid = basename(__DIR__);
