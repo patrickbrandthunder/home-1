@@ -1,7 +1,7 @@
 <?php
 $title = 'DaniLeigh';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'mkgpbchcphmijihpbehdnmagplmdipoi';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
