@@ -1,7 +1,7 @@
 <?php
 $title = 'Subway Surfers';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = 'traffic101$$$$';
+$extensionID = 'kmeeaaffghooanlgfeebieiifpjjggmf';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
