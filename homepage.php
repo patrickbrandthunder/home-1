@@ -428,5 +428,9 @@ if (isset($extensionID) && ($extensionID != '')) {
 <div id="legal" style="text-align: center">
 &nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;2018 NewTabGallery
 </div>
+<?php
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+echo '<!--'.$actual_link.' -->';
+?>
 </body>
 </html>
