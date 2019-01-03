@@ -4,7 +4,7 @@ if (strlen($_SERVER['REQUEST_URI']) > 1 || isset($_GET['tid'])) {
   if (isset($_GET['tid'])) {
 	$tid = $_GET['tid'];
   } else {
-    $tid = ltrim($_SERVER['REQUEST_URI'], "/");
+    $tid = trim($_SERVER['REQUEST_URI'], "/");
   }
   if (property_exists($newtabgallery, $tid)) {
 	$title = $newtabgallery->$tid->name;
