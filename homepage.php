@@ -1,4 +1,17 @@
 <?php
+if (strlen($_SERVER['REQUEST_URI']) > 1 || isset($_GET['tid'])) {
+  $newtabgallery = json_decode(file_get_contents('http://home.newtabgallery.com/newtabgallery.php'));
+  if (isset($_GET['tid'])) {
+	$tid = $_GET['tid'];
+  } else {
+    $tid = ltrim($_SERVER['REQUEST_URI'], "/");
+  }
+  if (property_exists($newtabgallery, $tid)) {
+	$title = $newtabgallery->$tid->name;
+	$extensionID = $newtabgallery->$tid->extensionID;
+  }
+}
+
 // Function to get the client ip address
 function get_client_ip_server() {
     $ipaddress = '';
@@ -428,9 +441,5 @@ if (isset($extensionID) && ($extensionID != '')) {
 <div id="legal" style="text-align: center">
 &nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;2018 NewTabGallery
 </div>
-<?php
-$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-echo '<!--'.$actual_link.' -->';
-?>
 </body>
 </html>
