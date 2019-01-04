@@ -1,7 +1,7 @@
 <?php
 $title = 'Grim Valor';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'egcpdbmiafdngckibcjfmaahndpjaieb';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
