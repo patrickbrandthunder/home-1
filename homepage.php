@@ -61,6 +61,8 @@ if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
   fwrite($fp, json_encode(array_values($images)));
   fclose($fp);
 }
+echo '<!--'.$tid.' -->';
+echo '<!--'.array_rand($images).' -->';
 $backgroundImage = 'https://home.newtabgallery.com/'.$tid.'/'.$images[array_rand($images)];
 $backgroundColor = '#000000';
 $backgroundAlign = 'bottom center';
