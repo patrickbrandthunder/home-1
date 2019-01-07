@@ -59,7 +59,7 @@ if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
   }
 }
 if (empty($images)) {
-  $images = glob(__DIR__.'/'.$tid.'/*{*.jpeg,*.jpg}', GLOB_BRACE);
+  $images = glob(__DIR__.'/'.$tid.'/*{*.jpeg,*.jpg,*.JPG,*.JPEG}', GLOB_BRACE);
   for ($i = 0; $i < sizeof($images); $i++) {
     $images[$i] = basename($images[$i]);  
   }
