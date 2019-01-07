@@ -173,11 +173,6 @@ if ( isset($customSearchCode) ) {
 		    $searchBackground = 'rgba(255,255,255,0.75)';
 		  }
 
-
-		  if (strpos($backgroundImage, 'url') === false) {
-		    $backgroundImage = 'url("'.$backgroundImage.'")';
-		  }
-
 		?>
     <style type="text/css">
     	#body {
@@ -185,7 +180,7 @@ if ( isset($customSearchCode) ) {
 	      background-color: <?=$backgroundColor?>;
 	      background-repeat: <?=$backgroundRepeat?>;
 	      background-position: <?=$backgroundAlign?>;
-	      background-image: <?=$backgroundImage?>;
+	      background-image: url("<?=$backgroundImage?>");
 	      background-size: <?=$backgroundSize?>;
 		}
 		body {
