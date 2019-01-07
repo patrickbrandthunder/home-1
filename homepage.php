@@ -58,8 +58,12 @@ if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
     $images[$i] = basename($images[$i]);  
   }
   $fp = fopen($cachefile, 'w');
-  fwrite($fp, json_encode(array_values($images)));
-  fclose($fp);
+  if ($fp) {
+    fwrite($fp, json_encode(array_values($images)));
+    fclose($fp);
+  } else {
+	echo '<!-- Open failed for:'.$cachefile.' -->';
+  }
 }
 echo '<!--'.$tid.' -->';
 echo '<!--'.array_rand($images).' -->';
