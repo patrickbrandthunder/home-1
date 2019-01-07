@@ -47,6 +47,8 @@ if (property_exists($json, 'tiles')) {
 //ini_set('display_errors', '1');
 
 $cachefile = __DIR__.'/'.$tid.'/'.$tid.'.json';
+echo '<!--'.$cachefile.' -->';
+echo '<!--'.__DIR__.' -->';
 $cachetime = 24*60*5*60; // 24 hours
 if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
   $images = json_decode(file_get_contents($cachefile));
