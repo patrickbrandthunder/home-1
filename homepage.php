@@ -59,9 +59,14 @@ if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
   }
 }
 if (empty($images)) {
-  $images = glob(__DIR__.'/'.$tid.'/*{*.jpeg,*.jpg,*.JPG,*.JPEG}', GLOB_BRACE);
-  for ($i = 0; $i < sizeof($images); $i++) {
-    $images[$i] = basename($images[$i]);  
+  $diskimages = glob(__DIR__.'/'.$tid.'/*{*.jpeg,*.jpg,*.JPG,*.JPEG,*.png,*.PNG}', GLOB_BRACE);
+  for ($i = 0; $i < sizeof($diskimages); $i++) {
+	$imagename = basename($diskimages[$i]);
+	if ($imagename == 'icon256.png' ||
+		$imagename == 'icon32.png') {
+	  continue;
+    }
+	array_push($images, $imagename);
   }
   $fp = fopen($cachefile, 'w');
   if ($fp) {
