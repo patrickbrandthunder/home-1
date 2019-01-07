@@ -49,10 +49,17 @@ if (property_exists($json, 'tiles')) {
 $cachefile = __DIR__.'/'.$tid.'/'.$tid.'.json';
 echo '<!--'.$cachefile.' -->';
 echo '<!--'.__DIR__.' -->';
+$images = [];
 $cachetime = 24*60*5*60; // 24 hours
 if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
-  $images = json_decode(file_get_contents($cachefile));
-} else {
+  $contents = file_get_contents($cachefile);
+  if ($contents) {
+    $images = json_decode($contents);
+  } else {
+	echo '<!-- Open read failed for:'.$cachefile.' -->';
+  }
+}
+if (empty($images)) {
   $images = glob(__DIR__.'/'.$tid.'/*{*.jpeg,*.jpg}', GLOB_BRACE);
   for ($i = 0; $i < sizeof($images); $i++) {
     $images[$i] = basename($images[$i]);  
@@ -62,7 +69,7 @@ if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
     fwrite($fp, json_encode(array_values($images)));
     fclose($fp);
   } else {
-	echo '<!-- Open failed for:'.$cachefile.' -->';
+	echo '<!-- Open write failed for:'.$cachefile.' -->';
   }
 }
 echo '<!--'.$tid.' -->';
