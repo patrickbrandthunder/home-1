@@ -16,6 +16,7 @@ if (strlen($_SERVER['REQUEST_URI']) > 1 || isset($_GET['tid'])) {
 
 // Function to get the client ip address
 function get_client_ip_server() {
+  return '104.54.208.204';
     $ipaddress = '';
     if (array_key_exists('HTTP_CLIENT_IP', $_SERVER))
         $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
@@ -47,8 +48,6 @@ if (property_exists($json, 'tiles')) {
 //ini_set('display_errors', '1');
 
 $cachefile = __DIR__.'/'.$tid.'/'.$tid.'.json';
-echo '<!--'.$cachefile.' -->';
-echo '<!--'.__DIR__.' -->';
 $images = [];
 $cachetime = 24*60*5*60; // 24 hours
 if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
@@ -72,8 +71,6 @@ if (empty($images)) {
 	echo '<!-- Open write failed for:'.$cachefile.' -->';
   }
 }
-echo '<!--'.$tid.' -->';
-echo '<!--'.array_rand($images).' -->';
 $backgroundImage = 'https://home.newtabgallery.com/'.$tid.'/'.$images[array_rand($images)];
 $backgroundColor = '#000000';
 $backgroundAlign = 'bottom center';
@@ -338,6 +335,9 @@ new autoComplete({
   <?php
 if (isset($tiles)) {
 	function outputTile($tile) {
+	    if (!property_exists($tile, 'name')) {
+		  error_log(print_r($tile));
+		}
 		if (property_exists($tile, 'image_url')) {
 		  echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
 		  echo '<img src="'.$tile->{'impression_url'}.'">';
