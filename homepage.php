@@ -1,4 +1,5 @@
 <?php
+/*
 if (strlen($_SERVER['REQUEST_URI']) > 1 || isset($_GET['tid'])) {
   $newtabgallery = json_decode(file_get_contents('http://home.newtabgallery.com/newtabgallery.php'));
   if (isset($_GET['tid'])) {
@@ -11,6 +12,7 @@ if (strlen($_SERVER['REQUEST_URI']) > 1 || isset($_GET['tid'])) {
 	$extensionID = $newtabgallery->$tid->extensionID;
   }
 }
+*/
 
 // Function to get the client ip address
 function get_client_ip_server() {
