@@ -55,7 +55,7 @@ if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
   if ($contents) {
     $images = json_decode($contents);
   } else {
-	echo '<!-- Open read failed for:'.$cachefile.' -->';
+	error_log('Open read failed for:'.$cachefile);
   }
 }
 if (empty($images)) {
@@ -68,7 +68,7 @@ if (empty($images)) {
     fwrite($fp, json_encode(array_values($images)));
     fclose($fp);
   } else {
-	echo '<!-- Open write failed for:'.$cachefile.' -->';
+	error_log('Open write failed for:'.$cachefile);
   }
 }
 $backgroundImage = 'https://home.newtabgallery.com/'.$tid.'/'.$images[array_rand($images)];
