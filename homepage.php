@@ -366,8 +366,9 @@ usort($stickyArray, 'my_sort');
 foreach ($stickyArray as $tile) {
   outputTile($tile);
 }
-$rand_keys = array_rand($tiles, 10);
-for ($i = 0; $i < 10; $i++) {
+$count = sizeof($tiles);
+$rand_keys = array_rand($tiles, $count);
+for ($i = 0; $i < $count; $i++) {
   $tile = $tiles[$rand_keys[$i]];
   if ($tile->{'name'} != "Amazon" &&
 	  $tile->{'name'} != "Samsung - Performics") {
