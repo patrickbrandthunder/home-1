@@ -262,7 +262,6 @@ if ( isset($customSearchCode) ) {
 <?php if (isset($extraafter)) { echo $extraafter; } ?>
         <?php /*<a target="_top" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.newtabgallery.com/images/weather.png"></a> */ ?>
       </div><!-- /social-buttons -->
-
 <div id="module-search">
 <?php if (isset($testSearch1)) {
 $searchURL = 'https://lumoswifi.ampxsearch.com/?ab=12221&sub1=serp&sub2=newtabgallery&q=';
@@ -271,6 +270,10 @@ $searchURL = 'https://lumoswifi.ampxsearch.com/?ab=12221&sub1=serp&sub2=newtabga
 <input type="hidden" name="ab" value="12221">
 <input type="hidden" name="sub1" value="serp">
 <input type="hidden" name="sub2" value="newtabgallery">
+<?php } else  if (isset($testSearch2)) {
+$searchURL = 'https://mgrowth.fastsearch.me/?q=';
+?>
+<form action="https://mgrowth.fastsearch.me/" target="_top" method="get" id="form">
 <?php } else {
 $searchURL = 'https://www.my-search.com/search?aid=4898&zoneid=89128928&q=';
 ?>
