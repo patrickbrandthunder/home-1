@@ -345,39 +345,39 @@ new autoComplete({
   <?php
 if (isset($tiles)) {
 	function outputTile($tile) {
-	    if (!property_exists($tile, 'name')) {
-		  error_log(print_r($tile));
-		}
 		if (property_exists($tile, 'image_url')) {
 		  echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
 		  echo '<img src="'.$tile->{'impression_url'}.'">';
 		}
 	}
-$stickyArray = array_filter(
-    $tiles,
-    function ($e) {
-        return ($e->{'name'} == "Amazon" || $e->{'name'} == "Samsung - Performics");
-    }
-);
-function my_sort($a,$b)
-{
-if ($a->{'name'}==$b->{'name'}) return 0;
-return ($a->{'name'}<$b->{'name'})?-1:1;
-}
-usort($stickyArray, 'my_sort');
+	$stickyArray = array_filter(
+		$tiles,
+		function ($e) {
+			return ($e->{'name'} == "Amazon" || $e->{'name'} == "Samsung - Performics");
+		}
+	);
+	function my_sort($a,$b)
+	{
+	if ($a->{'name'}==$b->{'name'}) return 0;
+	return ($a->{'name'}<$b->{'name'})?-1:1;
+	}
+	usort($stickyArray, 'my_sort');
 
-foreach ($stickyArray as $tile) {
-  outputTile($tile);
-}
-$count = sizeof($tiles);
-$rand_keys = array_rand($tiles, $count);
-for ($i = 0; $i < $count; $i++) {
-  $tile = $tiles[$rand_keys[$i]];
-  if ($tile->{'name'} != "Amazon" &&
-	  $tile->{'name'} != "Samsung - Performics") {
-    outputTile($tile);
-  }
-}
+	foreach ($stickyArray as $tile) {
+	  outputTile($tile);
+	}
+	$count = min(sizeof($tiles), 10);
+	$rand_keys = array_rand($tiles, $count);
+	for ($i = 0; $i < $count; $i++) {
+	  $tile = $tiles[$rand_keys[$i]];
+	  if (!property_exists($tile, 'name')) {
+	    error_log(print_r($tile));
+	  }
+	if ($tile->{'name'} != "Amazon" &&
+		$tile->{'name'} != "Samsung - Performics") {
+	  outputTile($tile);
+	}
+	}
 }
   ?>
 </div>
