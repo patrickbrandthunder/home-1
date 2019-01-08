@@ -31,7 +31,10 @@ function get_client_ip_server() {
         $ipaddress = $_SERVER['REMOTE_ADDR'];
     else
         $ipaddress = 'UNKNOWN';
- 
+    // for testing
+    if ($ipaddress == '127.0.0.1') {
+      $ipaddress = '104.54.208.204';
+    }
     return $ipaddress;
 }
 
