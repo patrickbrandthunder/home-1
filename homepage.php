@@ -343,11 +343,10 @@ new autoComplete({
 
 <div id="buttons" style="width: 100%; text-align: center">
   <?php
-  error_log("TESTING 123");
 if (isset($tiles)) {
 	function outputTile($tile) {
     if (!is_object($tile)) {
-     error_log(print_r($tile));
+     error_log('OUTPUTTILE:'.print_r($tile));
     }
 		if (property_exists($tile, 'image_url')) {
 		  echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
@@ -375,7 +374,7 @@ if (isset($tiles)) {
 	for ($i = 0; $i < $count; $i++) {
 	   $tile = $tiles[$rand_keys[$i]];
      if (!is_object($tile)) {
-      error_log(print_r($tiles));
+      error_log('foo'.print_r($tiles));
      }
   	if ($tile->{'name'} != "Amazon" &&
 	  	$tile->{'name'} != "Samsung - Performics") {
