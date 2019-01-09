@@ -369,12 +369,10 @@ if (isset($tiles)) {
 	$count = min(sizeof($tiles), 10);
 	$rand_keys = array_rand($tiles, $count);
 	for ($i = 0; $i < $count; $i++) {
-    try {
-	    $tile = $tiles[$rand_keys[$i]];
-    } catch (Exception $e) {
+	   $tile = $tiles[$rand_keys[$i]];
+     if (!is_object($tile)) {
       error_log(print_r($tiles));
-      break;
-    }
+     }
   	if ($tile->{'name'} != "Amazon" &&
 	  	$tile->{'name'} != "Samsung - Performics") {
 	    outputTile($tile);
