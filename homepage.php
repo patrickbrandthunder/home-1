@@ -39,9 +39,14 @@ function get_client_ip_server() {
 }
 
 $baseURL = 'http://brandthunder_tiles.tiles.ampfeed.com/tiles?v=1.2&partner=brandthunder_tiles&sub1=10004&sub2=newtabgallery&results=20&ip='.get_client_ip_server().'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&rfr='.urlencode('https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-$json = json_decode(file_get_contents($baseURL));
+$contents = file_get_contents($baseURL);
+$json = json_decode($contents);
 if (property_exists($json, 'tiles')) {
   $tiles = $json->{'tiles'};
+  if (!is_object($tiles)) {
+    error_log('BAD TILE: '.$contents);
+    unset($tiles);
+  }
 }
 ?>
 
@@ -345,9 +350,6 @@ new autoComplete({
   <?php
 if (isset($tiles)) {
 	function outputTile($tile) {
-    if (!is_object($tile)) {
-     error_log('OUTPUTTILE:'.print_r($tile));
-    }
 		if (property_exists($tile, 'image_url')) {
 		  echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
 		  echo '<img src="'.$tile->{'impression_url'}.'">';
@@ -373,9 +375,6 @@ if (isset($tiles)) {
 	$rand_keys = array_rand($tiles, $count);
 	for ($i = 0; $i < $count; $i++) {
 	   $tile = $tiles[$rand_keys[$i]];
-     if (!is_object($tile)) {
-      error_log('foo'.print_r($tiles));
-     }
   	if ($tile->{'name'} != "Amazon" &&
 	  	$tile->{'name'} != "Samsung - Performics") {
 	    outputTile($tile);
