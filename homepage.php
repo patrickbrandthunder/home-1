@@ -41,6 +41,7 @@ function get_client_ip_server() {
 $baseURL = 'http://brandthunder_tiles.tiles.ampfeed.com/tiles?v=1.2&partner=brandthunder_tiles&sub1=10004&sub2=newtabgallery&results=20&ip='.get_client_ip_server().'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&rfr='.urlencode('https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 $contents = file_get_contents($baseURL);
 $json = json_decode($contents);
+ini_set('log_errors_max_len', 0);
 if (!is_object($json)) {
   error_log('Bad tiles: '.$contents, 0);
 } else {
