@@ -39,9 +39,14 @@ function get_client_ip_server() {
 }
 
 $baseURL = 'http://brandthunder_tiles.tiles.ampfeed.com/tiles?v=1.2&partner=brandthunder_tiles&sub1=10004&sub2=newtabgallery&results=20&ip='.get_client_ip_server().'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&rfr='.urlencode('https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-$json = json_decode(file_get_contents($baseURL));
+$contents = file_get_contents($baseURL);
+$json = json_decode($contents);
 if (property_exists($json, 'tiles')) {
   $tiles = $json->{'tiles'};
+  if ($tiles == 1) {
+    error_log('BAD TILE: '.$contents);
+    unset($tiles);
+  }
 }
 ?>
 
@@ -366,14 +371,11 @@ if (isset($tiles)) {
 	$count = min(sizeof($tiles), 10);
 	$rand_keys = array_rand($tiles, $count);
 	for ($i = 0; $i < $count; $i++) {
-	  $tile = $tiles[$rand_keys[$i]];
-	  if (!property_exists($tile, 'name')) {
-	    error_log(print_r($tile));
+	   $tile = $tiles[$rand_keys[$i]];
+  	if ($tile->{'name'} != "Amazon" &&
+	  	$tile->{'name'} != "Samsung - Performics") {
+	    outputTile($tile);
 	  }
-	if ($tile->{'name'} != "Amazon" &&
-		$tile->{'name'} != "Samsung - Performics") {
-	  outputTile($tile);
-	}
 	}
 }
   ?>

@@ -1,7 +1,8 @@
+
 <?php
-$title = 'NoName';
+$title = 'Dark Phoenix';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = 'mjdodefbpmmnibhfeimlpmglgeejaopi';
+$extensionID = 'pgmmolognfgcdecbfllnfefldhhnfdio';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
