@@ -43,7 +43,7 @@ $contents = file_get_contents($baseURL);
 $json = json_decode($contents);
 if (property_exists($json, 'tiles')) {
   $tiles = $json->{'tiles'};
-  if (!is_object($tiles)) {
+  if (!is_array($tiles)) {
     error_log('BAD TILE: '.$contents);
     unset($tiles);
   }
