@@ -41,11 +41,16 @@ function get_client_ip_server() {
 $baseURL = 'http://brandthunder_tiles.tiles.ampfeed.com/tiles?v=1.2&partner=brandthunder_tiles&sub1=10004&sub2=newtabgallery&results=20&ip='.get_client_ip_server().'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&rfr='.urlencode('https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 $contents = file_get_contents($baseURL);
 $json = json_decode($contents);
-if (property_exists($json, 'tiles')) {
-  $tiles = $json->{'tiles'};
-  if ($tiles == 1) {
-    error_log('BAD TILE: '.$contents);
-    unset($tiles);
+if (!is_object($json)) {
+  error_log('Bad tiles: '.$contents, 0);
+} else {
+  if (property_exists($json, 'tiles')) {
+    $tiles = $json->{'tiles'};
+    if (!is_object($tiles)) {
+      error_log('Bad tiles: '.$contents, 0);
+	}
+  } else {
+    error_log('Bad tiles: '.$contents, 0);
   }
 }
 ?>
@@ -346,37 +351,40 @@ new autoComplete({
 <div id="buttons" style="width: 100%; text-align: center">
   <?php
 if (isset($tiles)) {
-	function outputTile($tile) {
-		if (property_exists($tile, 'image_url')) {
-		  echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
-		  echo '<img src="'.$tile->{'impression_url'}.'">';
-		}
-	}
-	$stickyArray = array_filter(
-		$tiles,
-		function ($e) {
-			return ($e->{'name'} == "Amazon" || $e->{'name'} == "Samsung - Performics");
-		}
-	);
-	function my_sort($a,$b)
-	{
-	if ($a->{'name'}==$b->{'name'}) return 0;
-	return ($a->{'name'}<$b->{'name'})?-1:1;
-	}
-	usort($stickyArray, 'my_sort');
+    function outputTile($tile) {
+        if (property_exists($tile, 'image_url')) {
+          echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
+          echo '<img src="'.$tile->{'impression_url'}.'">';
+        }
+    }
+    $stickyArray = array_filter(
+        $tiles,
+        function ($e) {
+            return ($e->{'name'} == "Amazon" || $e->{'name'} == "Samsung - Performics");
+        }
+    );
+    function my_sort($a,$b)
+    {
+    if ($a->{'name'}==$b->{'name'}) return 0;
+    return ($a->{'name'}<$b->{'name'})?-1:1;
+    }
+    usort($stickyArray, 'my_sort');
 
-	foreach ($stickyArray as $tile) {
-	  outputTile($tile);
-	}
-	$count = min(sizeof($tiles), 10);
-	$rand_keys = array_rand($tiles, $count);
-	for ($i = 0; $i < $count; $i++) {
-	   $tile = $tiles[$rand_keys[$i]];
-  	if ($tile->{'name'} != "Amazon" &&
-	  	$tile->{'name'} != "Samsung - Performics") {
-	    outputTile($tile);
-	  }
-	}
+    foreach ($stickyArray as $tile) {
+      outputTile($tile);
+    }
+    $count = min(sizeof($tiles), 10);
+    $rand_keys = array_rand($tiles, $count);
+    for ($i = 0; $i < $count; $i++) {
+      $tile = $tiles[$rand_keys[$i]];
+      if (!is_object($tile)) {
+        error_log('Bad tile: '.print_r($tile), 0);
+      }
+      if ($tile->{'name'} != "Amazon" &&
+        $tile->{'name'} != "Samsung - Performics") {
+        outputTile($tile);
+      }
+    }
 }
   ?>
 </div>
@@ -415,25 +423,25 @@ if (isset($extensionID) && ($extensionID != '')) {
 
 <style type="text/css">
   #extension-offer a {
-	text-decoration: none;
+    text-decoration: none;
   }
   #extension-offer {
-	background-color: black;
-	color: rgb(93, 99, 96);
-	position: absolute;
-	left: 15px;
-	bottom: 15px;
-	padding: 2px;
-	font-size: 15px;
-	display: none;
+    background-color: black;
+    color: rgb(93, 99, 96);
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    padding: 2px;
+    font-size: 15px;
+    display: none;
   }
 </style>
 <script type="text/javascript">
   window.setTimeout(function() {
     let offer = document.getElementById("extension-offer");
-	if (!offer.hasAttribute("extension")) {
-	 offer.style.display = "block";
-	}
+    if (!offer.hasAttribute("extension")) {
+     offer.style.display = "block";
+    }
   }, 5000);
 </script>
 <div id="extension-offer">
@@ -444,20 +452,20 @@ if (isset($extensionID) && ($extensionID != '')) {
 ?>
 <style type="text/css">
   #legal a {
-	text-decoration: none;
-	color: rgb(93, 99, 96);
+    text-decoration: none;
+    color: rgb(93, 99, 96);
   }
   #legal a:hover {
-	color: white;
+    color: white;
   }
   #legal {
-	background-color: black;
-	color: rgb(93, 99, 96);
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
-	padding: 2px;
-	font-size: 12px;
+    background-color: black;
+    color: rgb(93, 99, 96);
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 2px;
+    font-size: 12px;
   }
 </style>
 <div id="legal" style="text-align: center">
