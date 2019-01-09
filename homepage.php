@@ -343,8 +343,12 @@ new autoComplete({
 
 <div id="buttons" style="width: 100%; text-align: center">
   <?php
+  error_log("TESTING 123");
 if (isset($tiles)) {
 	function outputTile($tile) {
+    if (!is_object($tile)) {
+     error_log(print_r($tile));
+    }
 		if (property_exists($tile, 'image_url')) {
 		  echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
 		  echo '<img src="'.$tile->{'impression_url'}.'">';
