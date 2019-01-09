@@ -244,9 +244,6 @@ if ( isset($customSearchCode) ) {
 	<div id="body-spacer">
 
 	</div>
-  <img style="opacity: 0;position: absolute;top:0; left:0"
-     src='<?= $backgroundImage?>'>
-
 
       <div id="wrapper">
       <div class="container">
