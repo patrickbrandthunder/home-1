@@ -47,7 +47,7 @@ if (!is_object($json)) {
 } else {
   if (property_exists($json, 'tiles')) {
     $tiles = $json->{'tiles'};
-    if (!is_object($tiles)) {
+    if (!is_array($tiles)) {
       error_log('Bad tiles2: '.$contents, 0);
 	}
   } else {
