@@ -43,15 +43,15 @@ $contents = file_get_contents($baseURL);
 $json = json_decode($contents);
 ini_set('log_errors_max_len', 0);
 if (!is_object($json)) {
-  error_log('Bad tiles: '.$contents, 0);
+  error_log('Bad tiles1: '.$contents, 0);
 } else {
   if (property_exists($json, 'tiles')) {
     $tiles = $json->{'tiles'};
     if (!is_object($tiles)) {
-      error_log('Bad tiles: '.$contents, 0);
+      error_log('Bad tiles2: '.$contents, 0);
 	}
   } else {
-    error_log('Bad tiles: '.$contents, 0);
+    error_log('Bad tiles3: '.$contents, 0);
   }
 }
 ?>
