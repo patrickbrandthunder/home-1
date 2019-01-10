@@ -50,8 +50,6 @@ if (!is_object($json)) {
     if (!is_array($tiles)) {
       error_log('Bad tiles2: '.$contents, 0);
 	}
-  } else {
-    error_log('Bad tiles3: '.$contents, 0);
   }
 }
 ?>
