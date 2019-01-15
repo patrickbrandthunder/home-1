@@ -249,6 +249,7 @@ if ( isset($customSearchCode) ) {
    </style>
 </head>
 <body>
+  <img width="100" height="100" style="position: absolute; left: 10px; top: 10px" src="../global/images/newtabgallery.png">
   <div id="body">
 	<div id="body-spacer">
 
