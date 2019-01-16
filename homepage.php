@@ -260,7 +260,7 @@ if ( isset($customSearchCode) ) {
 
         <div id="header">
   <?php
-if (isset($tiles)) {
+if (0) {
 	?>
 		  <a href="https://brandthunder_banner.ampxdirect.com/hrblock?sub1=newtabgallery&sub2=hrblock"><img width="899" src="../global/images/hrblock.png"></a>
 		  <?php } ?>
