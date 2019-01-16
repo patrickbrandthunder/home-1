@@ -257,7 +257,13 @@ if ( isset($customSearchCode) ) {
 
       <div id="wrapper">
       <div class="container">
+
         <div id="header">
+  <?php
+if (isset($tiles)) {
+	?>
+		  <a href="https://brandthunder_banner.ampxdirect.com/hrblock?sub1=newtabgallery&sub2=hrblock"><img width="899" src="../global/images/hrblock.png"></a>
+		  <? } ?>
         <?php if(isset($icon)): ?>
           <a href="#" id="logo">
             <img src="<?= $icon ?>" style="display: none" alt="" />
