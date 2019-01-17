@@ -260,7 +260,8 @@ if ( isset($customSearchCode) ) {
 
         <div id="header">
   <?php
-if (isset($tiles)) {
+  $dow = date('w');
+if (isset($tiles) && (($dow == 0) ||  ($dow == 6))) {
 	?>
 <div style="display: flex; justify-content: center;">
 	<a href="https://brandthunder_banner.ampxdirect.com/hrblock?sub1=newtabgallery&sub2=hrblock">
