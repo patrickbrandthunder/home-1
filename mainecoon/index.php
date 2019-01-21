@@ -1,7 +1,7 @@
 <?php
 $title = 'Maine Coon Cats';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'dfgmngmhehkfchehdennbblfldmieeoj';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
