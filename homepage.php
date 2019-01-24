@@ -288,18 +288,28 @@ $searchURL = 'https://lumoswifi.ampxsearch.com/?ab=12221&sub1=serp&sub2=newtabga
 <input type="hidden" name="ab" value="12221">
 <input type="hidden" name="sub1" value="serp">
 <input type="hidden" name="sub2" value="newtabgallery">
+<input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
 <?php } else  if (isset($testSearch2)) {
 $searchURL = 'https://mgrowth.fastsearch.me/?q=';
 ?>
 <form action="https://mgrowth.fastsearch.me/" target="_top" method="get" id="form">
+<input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
+<?php } else  if (isset($testSearch3)) {
+$searchURL = 'https://search.yahoo.com/yhs/search?hspart=domaindev&hsimp=yhs-domaindev_newtabgallery&type=__alt__ddc_newtabgallery_com&p=';
+?>
+<form action="https://search.yahoo.com/yhs/search" target="_top" method="get" id="form">
+<input type="hidden" name="hspart" value="domaindev">
+<input type="hidden" name="hsimp" value="yhs-domaindev_newtabgallery">
+<input type="hidden" name="type" value="__alt__ddc_newtabgallery_com">
+<input type="text" id="newsearchinput" placeholder="Search the web" name="p" autocomplete="off">
 <?php } else {
 $searchURL = 'https://www.my-search.com/search?aid=4898&zoneid=89128928&q=';
 ?>
 <form action="https://www.my-search.com/search" target="_top" method="get" id="form">
 <input type="hidden" name="aid" value="4898">
 <input type="hidden" name="zoneid" value="89128928">
-<?php } ?>
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
+<?php } ?>
 </form>
 </div>
 
