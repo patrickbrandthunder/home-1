@@ -1,7 +1,7 @@
 <?php
 $title = 'Fishdom';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'ngppbnplgeppdceolphnmlamdkalfjgc';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
