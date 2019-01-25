@@ -1,7 +1,7 @@
 <?php
 $title = 'Dizzy Knight';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'immlfkknhnmfkidpbfalmiliimgldiol';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
