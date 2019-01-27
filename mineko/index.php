@@ -1,7 +1,7 @@
 <?php
-$title = 'Mineko's Night Markey';
+$title = 'Minekos Night Market';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'gpncffbkfempglimnngopkjjkpoojkoh';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
