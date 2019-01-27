@@ -1,7 +1,7 @@
 <?php
 $title = 'Evoland';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'lhggdgaogmaoblehjcfnnkghjkkaibcm';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
