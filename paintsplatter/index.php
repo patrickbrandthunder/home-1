@@ -2,7 +2,7 @@
 $title = 'Liquid Paint Splatter';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'kgefbnnnfdlffblfgmopnnoodbehafhm';
-$testSearch3 = true;
+$testSearch2 = true;
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
