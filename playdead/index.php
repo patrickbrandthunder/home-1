@@ -1,7 +1,7 @@
 <?php
-$title = 'Playdead's Inside';
+$title = 'Playdeads Inside';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'iemfgemdeimcdobbfdopabohcbcmflnc';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
