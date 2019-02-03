@@ -2,7 +2,7 @@
 <?php
 $title = 'Dead Trigger 2';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'efbpkidikhkhgenajkpbahmpccmfmjlb';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
