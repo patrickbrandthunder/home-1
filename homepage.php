@@ -372,7 +372,6 @@ new autoComplete({
 <div id="buttons" style="width: 100%; text-align: center">
   <?php
 if (isset($tiles)) {
-	echo '<a href="http://redirect.viglink.com?key=8860b76d9d55e5e067640b5beb7354ca&u=http%3A%2F%2Fwww.facebook.com"><img class="tile" height="50" width="50" alt="Facebook" title="Facebook" src="https://home.newtabgallery.com/global/images/facebook.png"></a>';
     function outputTile($tile) {
         if (property_exists($tile, 'image_url')) {
           echo '<a href="'.$tile->{'click_url'}.'"><img class="tile" height="50" width="50" alt="'.$tile->{'name'}.'" title="'.$tile->{'name'}.'" src="'.$tile->{'image_url'}.'"></a>';
@@ -395,6 +394,7 @@ if (isset($tiles)) {
     foreach ($stickyArray as $tile) {
       outputTile($tile);
     }
+	echo '<a href="http://redirect.viglink.com?key=8860b76d9d55e5e067640b5beb7354ca&u=http%3A%2F%2Fwww.facebook.com"><img class="tile" height="50" width="50" alt="Facebook" title="Facebook" src="https://home.newtabgallery.com/global/images/facebook.png"></a>';
     $count = min(sizeof($tiles), 9);
     $rand_keys = array_rand($tiles, $count);
     for ($i = 0; $i < $count; $i++) {
