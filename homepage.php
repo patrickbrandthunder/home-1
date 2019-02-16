@@ -1,4 +1,5 @@
 <?php
+/* Update to test push */
 /*
 if (strlen($_SERVER['REQUEST_URI']) > 1 || isset($_GET['tid'])) {
   $newtabgallery = json_decode(file_get_contents('http://home.newtabgallery.com/newtabgallery.php'));
