@@ -1,7 +1,7 @@
 <?php
 $title = 'Kash Doll';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'opajhjemeacafobhldhlagocelpgcpbg';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
