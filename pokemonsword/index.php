@@ -1,7 +1,7 @@
 <?php
 $title = 'Pokemon Sword';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'jhhmkahegdbdoiibmpdnolldeniamlil';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
