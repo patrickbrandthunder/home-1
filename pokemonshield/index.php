@@ -1,7 +1,7 @@
 <?php
 $title = 'Pokemon Shield';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'jgpkjfjjkfeonmjchimmkcnfhdphjdki';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
