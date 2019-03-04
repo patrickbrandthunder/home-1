@@ -1,7 +1,7 @@
 <?php
 $title = 'Dragons Titan Uprising';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'ejfmbjniladikchfihgjllihofdceapl';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
