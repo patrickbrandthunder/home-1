@@ -396,7 +396,7 @@ if (isset($tiles)) {
       outputTile($tile);
     }
 	echo '<a href="http://redirect.viglink.com?key=8860b76d9d55e5e067640b5beb7354ca&u=http%3A%2F%2Fwww.walmart.com "><img class="tile" height="50" width="50" alt="Walmart" title="Walmart" src="https://home.newtabgallery.com/global/images/walmart.png"></a>';
-	echo '<a href="http://redirect.viglink.com?key=8860b76d9d55e5e067640b5beb7354ca&u=http%3A%2F%2Fwww.parachutehome.com"><img class="tile" height="50" width="50" alt="Parachute Home" title="Parachute Home" src="https://home.newtabgallery.com/global/images/parachute.png"></a>';
+	echo '<a href="http://redirect.viglink.com?key=28c634f697c4e8fe096a7a65030ecc1d&u=http%3A%2F%2Fhrblock.com"><img class="tile" height="50" width="50" alt="H&R Block" title="H&R Block" src="https://home.newtabgallery.com/global/images/hrblock_icon.png"></a>';
     $count = min(sizeof($tiles), 8);
     $rand_keys = array_rand($tiles, $count);
     for ($i = 0; $i < $count; $i++) {
