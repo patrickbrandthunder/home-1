@@ -1,7 +1,7 @@
 <?php
 $title = 'Arena of Valor';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'epfjepaikailajdikdmdcibobbmpiphp';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
