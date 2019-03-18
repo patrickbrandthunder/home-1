@@ -1,7 +1,7 @@
 <?php
 $title = 'King Of Avalon';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'mopdcgocjidmbgaajkodjcifnlcindal';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
