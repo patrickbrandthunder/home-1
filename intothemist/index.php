@@ -1,5 +1,5 @@
 <?php
-$title = 'Ito THe Mist';
+$title = 'Into THe Mist';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'dlaclmmkgakhfgehfanfedhbfekicdji';
 $tid = basename(__DIR__);
