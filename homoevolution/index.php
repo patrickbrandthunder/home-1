@@ -2,7 +2,7 @@
 <?php
 $title = 'Home Evolution';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'kpemilogbglbldhoeooaeigkliedgifg';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
