@@ -2,7 +2,7 @@
 <?php
 $title = 'MLB Perfect Inning';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'dodgkceaellkgdplfjanfgoedmpfcdhl';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
