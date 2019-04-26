@@ -1,4 +1,7 @@
 <?php
+  if (isset($welcomePage)) {
+	return;
+  }
 /* Update to test push */
 /*
 if (strlen($_SERVER['REQUEST_URI']) > 1 || isset($_GET['tid'])) {
