@@ -2,6 +2,7 @@
 $title = 'Alienware';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'efjgbapjfmoibkojlfompcmghcceonno';
+$searchExtensionID = 'pponppbjnnmoihkhgoelcdapidljcdpk';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>

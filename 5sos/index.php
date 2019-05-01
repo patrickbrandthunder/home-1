@@ -2,6 +2,7 @@
 $title = '5 seconds of summer';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'emaeaiiccgepejpfpfepajogieoliblc';
+$searchExtensionID = 'bbpmkaccndceagbpphmlleahbcgchogk';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>

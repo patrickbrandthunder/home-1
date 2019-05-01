@@ -2,6 +2,7 @@
 $title = 'Gunna';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'kcjholkkgkkaeoaijkimfkdbgeeheiha';
+$searchExtensionID = 'lfgekfphpfcafebmmfnmfjkcobefgilf';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>

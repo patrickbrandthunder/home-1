@@ -2,7 +2,7 @@
 $title = 'Lazar Beam 2';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'cpjadiiighmadfgfielfcdpakgighech';
+$searchExtensionID = 'nakmclhbklacfcckijiicclaggphmnhf';
 $tid = basename(__DIR__);
-$testSearch2  = true;
 include('../homepage.php');
 ?>

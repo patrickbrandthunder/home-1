@@ -2,7 +2,7 @@
 $title = 'Into THe Mist';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'dlaclmmkgakhfgehfanfedhbfekicdji';
+$searchExtensionID = 'hgmdkggaclnchnbfgnaflfgflfgmdblc';
 $tid = basename(__DIR__);
-$testSearch2  = true;
 include('../homepage.php');
 ?>
