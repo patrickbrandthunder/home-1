@@ -143,8 +143,10 @@ if ( isset($customSearchCode) ) {
 		<link rel="icon" type="image/png" href="https://home.newtabgallery.com/<?=$tid?>/icon32.png">
     <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/styles.css" type="text/css">
     <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/auto-complete.css" type="text/css">
+    <link rel="stylesheet" href="https://home.newtabgallery.com/global/css/simpleLightbox.css">
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/<?=$extensionID?>">
 	<script src="https://home.newtabgallery.com/global/js/auto-complete.js"></script>
+	<script src="https://home.newtabgallery.com/global/js/simpleLightbox.js"></script>
 
     <?php //css overrides ?>
 		<?php
@@ -476,5 +478,45 @@ if (isset($extensionID) && ($extensionID != '')) {
 <div id="legal" style="text-align: center">
 &nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;2018 NewTabGallery
 </div>
+<?php
+if (isset($searchExtensionID) && !isset($_COOKIE["searchoffer_052019"])) {
+?>
+<style type="text/css">
+#search_popup {
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+}
+#search_popup a, #search_popup a:visited {
+  text-decoration: none;
+  color: white;
+  line-height: 1.5;
+}
+</style>
+
+<script type="text/javascript">
+function foo() {
+  setCookie("searchoffer_052019", "true", 365);
+}
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  } else {
+    var expires = "";
+  }
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+SimpleLightbox.open({
+    content: '<div id="search_popup"><a onclick="setCookie();" href="https://chrome.google.com/webstore/detail/<?=$searchExtensionID?>">Want more of <?=$title?>?<br/><img class="image" src="icon256.png"><br/>Click here to search with <?=$title?> all day.</a></div>',
+    elementClass: 'slbContentEl',
+    beforeClose: function() {createCookie("searchoffer_052019", "true", 365);},
+    closeOnOverlayClick: false,
+});
+</script>
+<?php
+}
+?>
 </body>
 </html>
