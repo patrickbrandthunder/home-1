@@ -1,7 +1,7 @@
 <?php
 $title = 'Grand Teton';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'emibnpbeajcklaailcmgcdnoeinbpbnd';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
