@@ -1,9 +1,9 @@
 <?php
-if (!isset($_GET['tid'])) {
+if (!isset($_GET['theme_id'])) {
     die();
 }
-$tid = $_GET['tid'];
-chdir($tid);
+$tid = $_GET['theme_id'];
+chdir('../'.$tid);
 $welcomePage = true;
 include('index.php');
 ?>
@@ -30,7 +30,7 @@ include('index.php');
 <body>
 <script type="text/javascript">
 SimpleLightbox.open({
-    content: '<div id="search_popup"><a onclick="setCookie();" href="https://chrome.google.com/webstore/detail/<?=$extensionID?>">Want <?=$title?> on your new tab?<br/><img height="256" width="256" class="image" src="<?=$tid?>/icon256.png"><br/>Click here.</a></div>',
+    content: '<div id="search_popup"><a onclick="setCookie();" href="https://chrome.google.com/webstore/detail/<?=$extensionID?>">Want <?=$title?> on your new tab?<br/><img height="256" width="256" class="image" src="../<?=$tid?>/icon256.png"><br/>Click here.</a></div>',
     closeOnOverlayClick: false,
     closeBtnClass: 'closeBtn',
 });
