@@ -2,6 +2,7 @@
 $title = 'Panamera';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'aofcncaeinkbfcopmopngbilgkmahpoc';
+$searchExtensionID = 'npglbhppcclafhapknhmeahdekkljicn';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
