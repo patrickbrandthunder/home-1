@@ -95,7 +95,6 @@ $backgroundImage = 'https://home.newtabgallery.com/'.$tid.'/'.$images[array_rand
 $backgroundColor = '#000000';
 $backgroundAlign = 'bottom center';
 $backgroundRepeat = 'no-repeat';
-$backgroundSize = 'cover';
 $showGenericAd = true;
 $homeIcon = 'home-black.png';
 $showGenericBannerAd = true;
@@ -183,7 +182,7 @@ if ( isset($customSearchCode) ) {
 		  //  If $backgroundSize is not set in index.php, default it
 		  //  to auto auto
 		  if (!isset($backgroundSize)) {
-		    $backgroundSize = 'auto auto';
+		    $backgroundSize = 'cover';
 		  }
 
 		  //  If $searchBackground is not set in index.php, default it

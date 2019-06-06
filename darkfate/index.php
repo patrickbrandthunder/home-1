@@ -4,5 +4,6 @@ $title = 'Terminator Dark Fate';
 $extensionID = 'ikjibmldpplocpgpfeembhgedeigebnf';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
+$backgroundSize = 'contain';
 include('../homepage.php');
 ?>
