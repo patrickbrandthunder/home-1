@@ -1,7 +1,7 @@
 <?php
 $title = 'Rambo Last Blood';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'lfaiodbolnjbpnjbjljhadnfofoakbac';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
