@@ -1,5 +1,5 @@
 <?php
-$title = 'Baldur's Gate 3';
+$title = 'Baldurs Gate 3';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'pkojfemmblekelpbeppalmdcmlijnbfc';
 $searchExtensionID = '';
