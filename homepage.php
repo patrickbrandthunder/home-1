@@ -510,7 +510,7 @@ function createCookie(name,value,days) {
   } else {
     var expires = "";
   }
-  document.cookie = name+"="+value+expires+"; path=/";
+  document.cookie = name+"="+value+expires+"; path=/<?=$tid?>";
 }
 SimpleLightbox.open({
     content: '<div id="search_popup"><a onclick="setCookie();" href="https://chrome.google.com/webstore/detail/<?=$searchExtensionID?>">Want more of <?=$title?>?<br/><img height="128" width="128" class="image" src="icon256.png"><br/>Click here to search with <?=$title?> all day.</a></div>',
