@@ -500,7 +500,7 @@ if (isset($searchExtensionID) && !isset($_COOKIE["searchoffer_052019"])) {
 
 <script type="text/javascript">
 function setCookie() {
-  createCookie("searchoffer_052019", "true", 365);
+  createCookie("searchoffer_062019", "true", 365);
 }
 function createCookie(name,value,days) {
   if (days) {
@@ -515,7 +515,7 @@ function createCookie(name,value,days) {
 SimpleLightbox.open({
     content: '<div id="search_popup"><a onclick="setCookie();" href="https://chrome.google.com/webstore/detail/<?=$searchExtensionID?>">Want more of <?=$title?>?<br/><img height="128" width="128" class="image" src="icon256.png"><br/>Click here to search with <?=$title?> all day.</a></div>',
     elementClass: 'slbContentEl',
-    beforeClose: function() {createCookie("searchoffer_052019", "true", 365);},
+    beforeClose: function() {createCookie("searchoffer_062019", "true", 365);},
     closeOnOverlayClick: false,
 });
 </script>
