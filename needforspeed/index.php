@@ -2,6 +2,7 @@
 $title = 'Need For Speed No Limits';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'dfjogjepkobhlcfnpaflakcdjonoachh';
+$searchExtensionID = 'oidmknnphmpkomaldfpajcghdgbmnaao';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
