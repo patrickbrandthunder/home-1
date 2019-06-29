@@ -1,7 +1,7 @@
 <?php
 $title = '8 BALL HERO';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'ahpfimpejkabpbidmknamcofhahoinme';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
