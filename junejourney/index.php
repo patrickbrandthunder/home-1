@@ -1,5 +1,5 @@
 <?php
-$title = 'June's Journey';
+$title = 'Junes Journey';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'kiekliglfbbjhaoepkjnnflpppofojfe';
 $tid = basename(__DIR__);
