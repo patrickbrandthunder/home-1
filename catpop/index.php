@@ -1,7 +1,7 @@
 <?php
-$title = 'Simon's Cat Pop Time';
+$title = 'Simons Cat Pop Time';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'gfjaehhjloipicbegkmpejikjijjomfd';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
