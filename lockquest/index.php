@@ -1,7 +1,7 @@
 <?php
-$title = 'Lock's Quest';
+$title = 'Locks Quest';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'epacjaonpibcfpeoplhkpjajnmjgpppb';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
