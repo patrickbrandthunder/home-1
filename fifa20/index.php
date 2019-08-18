@@ -1,7 +1,7 @@
 <?php
-$title = 'FIFA 20';
+$title = 'FIFA 2020';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = 'flmnacamgnhmlajkjjoleekifiklolnj';
+$extensionID = '';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
