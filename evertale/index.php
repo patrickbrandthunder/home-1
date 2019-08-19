@@ -1,7 +1,7 @@
 <?php
 $title = 'Evertale';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'molpnmemaknoofjjjgcndombieegggpj';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
