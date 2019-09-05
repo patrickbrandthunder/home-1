@@ -287,11 +287,9 @@ if (isset($tiles) && (($dow == 0) ||  ($dow == 6))) {
       </div><!-- /social-buttons -->
 <div id="module-search">
 <?php
-$searchURL = 'https://www.my-search.com/search?aid=4898&zoneid=89128928&q=';
+$searchURL = 'https://search.newtabgallery.com/?q=';
 ?>
-<form action="https://www.my-search.com/search" target="_top" method="get" id="form">
-<input type="hidden" name="aid" value="4898">
-<input type="hidden" name="zoneid" value="89128928">
+<form action="https://search.newtabgallery.com/" target="_top" method="get" id="form">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
 </form>
 </div>
