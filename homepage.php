@@ -286,15 +286,12 @@ if (isset($tiles) && (($dow == 0) ||  ($dow == 6))) {
         <?php /*<a target="_top" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.newtabgallery.com/images/weather.png"></a> */ ?>
       </div><!-- /social-buttons -->
 <div id="module-search">
-<?php if (isset($testSearch2)) {
-$searchURL = 'http://bt.fastsearch.me/?q=';
+<?php
+$searchURL = 'https://www.my-search.com/search?aid=4898&zoneid=89128928&q=';
 ?>
-<form action="http://bt.fastsearch.me/" target="_top" method="get" id="form">
-<?php } else {
-$searchURL = 'https://search.newtabgallery.com/'.$tid.'/?q=';
-?>
-<form action="https://search.newtabgallery.com/<?=$tid?>/" target="_top" method="get" id="form">
-<?php } ?>
+<form action="https://www.my-search.com/search" target="_top" method="get" id="form">
+<input type="hidden" name="aid" value="4898">
+<input type="hidden" name="zoneid" value="89128928">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
 </form>
 </div>
