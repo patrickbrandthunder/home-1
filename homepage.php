@@ -291,11 +291,9 @@ $searchURL = 'http://bt.fastsearch.me/?q=';
 ?>
 <form action="http://bt.fastsearch.me/" target="_top" method="get" id="form">
 <?php } else {
-$searchURL = 'https://www.my-search.com/search?aid=4898&zoneid=89128928&q=';
+$searchURL = 'https://search.newtabgallery.com/'.$tid.'/?q=';
 ?>
-<form action="https://www.my-search.com/search" target="_top" method="get" id="form">
-<input type="hidden" name="aid" value="4898">
-<input type="hidden" name="zoneid" value="89128928">
+<form action="https://search.newtabgallery.com/<?=$tid?>/" target="_top" method="get" id="form">
 <?php } ?>
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
 </form>
@@ -483,8 +481,9 @@ if (isset($extensionID) && ($extensionID != '')) {
 &nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;2018 NewTabGallery
 </div>
 <?php
-if (isset($searchExtensionID) && $searchExtensionID != '' && !isset($_COOKIE["searchoffer_052019"])) {
-?>
+//if (isset($searchExtensionID) && $searchExtensionID != '' && !isset($_COOKIE["searchoffer_052019"])) {
+if (0) {
+  ?>
 <style type="text/css">
 #search_popup {
   background-color: black;
