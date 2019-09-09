@@ -1,5 +1,5 @@
 <?php
-$title = 'Name of your new Project';
+$title = 'HOMEWORLD MOBILE';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'lkoaabjacfjkcjicbfdljcihjinlebde';
 $searchExtensionID = '';
