@@ -379,8 +379,8 @@ new autoComplete({
         }
         $count = min(sizeof($tiles), 8);
         $rand_keys = array_rand($tiles, $count);
-        error_log("Filtered Tiles JSON:" . json_encode($stickyArray, JSON_PRETTY_PRINT));
-        error_log("Tiles JSON:" . json_encode($tiles, JSON_PRETTY_PRINT));
+        error_log("Filtered Tiles Size:" . sizeof($stickyArray));
+        error_log("Tiles Size:" . sizeof($tiles));
         for ($i = 0; $i < $count; $i++) {
           $tile = $tiles[$rand_keys[$i]];
           if (!is_object($tile)) {
