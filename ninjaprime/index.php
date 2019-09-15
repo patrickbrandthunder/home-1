@@ -1,0 +1,8 @@
+<?php
+$title = 'Ninja Prime';
+// After extension is loaded to the Chrome store, place the extension ID here.
+$extensionID = 'mpgpkjfpdnpihdebglmjlnaodddlopkh';
+$searchExtensionID = '';
+$tid = basename(__DIR__);
+include('../homepage.php');
+?>

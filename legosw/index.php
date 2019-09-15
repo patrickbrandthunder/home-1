@@ -1,0 +1,8 @@
+<?php
+$title = 'LEGO Star Wars Battles';
+// After extension is loaded to the Chrome store, place the extension ID here.
+$extensionID = 'oldphnnklcggoemjihgjidkimohjeokm';
+$searchExtensionID = '';
+$tid = basename(__DIR__);
+include('../homepage.php');
+?>
