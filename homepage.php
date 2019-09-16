@@ -379,16 +379,15 @@ new autoComplete({
         }
         $count = min(sizeof($tiles), 8);
         $rand_keys = array_rand($tiles, $count);
-        error_log("Filtered Tiles Size:" . sizeof($stickyArray));
-        error_log("Tiles Size:" . sizeof($tiles));
         for ($i = 0; $i < $count; $i++) {
           $tile = $tiles[$rand_keys[$i]];
           if (!is_object($tile)) {
             error_log('Bad tile: '.print_r($tile), 0);
-          }
-          if ($tile->{'name'} != "Amazon" &&
-            $tile->{'name'} != "Samsung - Performics") {
-            outputTile($tile);
+          } else {
+            if ($tile->{'name'} != "Amazon" &&
+              $tile->{'name'} != "Samsung - Performics") {
+              outputTile($tile);
+            }
           }
         }
     }
