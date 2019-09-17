@@ -1,7 +1,7 @@
 <?php
-$title = 'Beto O'Rourke';
+$title = 'Beto ORourke';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'omnlkopjicdboabfjehijfmgchngbacd';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
