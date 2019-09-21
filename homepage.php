@@ -379,32 +379,17 @@ new autoComplete({
           outputTile($tile);
         }
         $count = min(sizeof($tiles), 8);
-        $rand_keys = array_rand($tiles, $count);
+
+        $rand_keys = [0];
+        if ($count > 1) {
+          $rand_keys = array_rand($tiles, $count);
+        }
+
         for ($i = 0; $i < $count; $i++) {
-          if (isset($tiles[$rand_keys[$i]])) {
-            $tile = $tiles[$rand_keys[$i]];
-            if (!is_object($tile)) {
-              error_log('Bad tile: '.print_r($tile), 0);
-            } else {
-              if ($tile->{'name'} != "Amazon" &&
-                $tile->{'name'} != "Samsung - Performics") {
-                outputTile($tile);
-              }
-            }
-          } else {
-            ob_start();
-            var_dump( $tiles );
-            $contents = ob_get_contents();
-            ob_end_clean();
-            error_log( "Tiles: " . $contents );
-
-            ob_start();
-            var_dump( $rand_keys );
-            $contents = ob_get_contents();
-            ob_end_clean();
-            error_log( "RandKeys: " . $contents );
-
-            error_log( "Base URL: " . $baseURL);
+          $tile = $tiles[$rand_keys[$i]];
+          if ($tile->{'name'} != "Amazon" &&
+            $tile->{'name'} != "Samsung - Performics") {
+            outputTile($tile);
           }
         }
     }
