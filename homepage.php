@@ -54,7 +54,7 @@ if (!is_object($json)) {
     $tiles = $json->{'tiles'};
     if (!is_array($tiles)) {
       error_log('Bad tiles2: '.$contents, 0);
-	}
+    }
   }
 }
 ?>
@@ -392,9 +392,19 @@ new autoComplete({
               }
             }
           } else {
-            error_log("RandKeys: " . print_r($rand_keys));
-            error_log("Tiles: " . print_r($tiles));
-            error_log("RandKeys key: " . $rand_keys[$i]);
+            ob_start();
+            var_dump( $tiles );
+            $contents = ob_get_contents();
+            ob_end_clean();
+            error_log( "Tiles: " . $contents );
+
+            ob_start();
+            var_dump( $rand_keys );
+            $contents = ob_get_contents();
+            ob_end_clean();
+            error_log( "RandKeys: " . $contents );
+
+            error_log( "Base URL: " . $baseURL);
           }
         }
     }
