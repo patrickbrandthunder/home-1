@@ -48,6 +48,7 @@ $json = json_decode($contents);
 ini_set('log_errors_max_len', 0);
 if (!is_object($json)) {
   error_log('Bad tiles1: '.$contents, 0);
+  error_log("Base URL: " . $baseURL);
 } else {
   if (property_exists($json, 'tiles')) {
     $tiles = $json->{'tiles'};
@@ -380,14 +381,20 @@ new autoComplete({
         $count = min(sizeof($tiles), 8);
         $rand_keys = array_rand($tiles, $count);
         for ($i = 0; $i < $count; $i++) {
-          $tile = $tiles[$rand_keys[$i]];
-          if (!is_object($tile)) {
-            error_log('Bad tile: '.print_r($tile), 0);
-          } else {
-            if ($tile->{'name'} != "Amazon" &&
-              $tile->{'name'} != "Samsung - Performics") {
-              outputTile($tile);
+          if (isset($tiles[$rand_keys[$i]])) {
+            $tile = $tiles[$rand_keys[$i]];
+            if (!is_object($tile)) {
+              error_log('Bad tile: '.print_r($tile), 0);
+            } else {
+              if ($tile->{'name'} != "Amazon" &&
+                $tile->{'name'} != "Samsung - Performics") {
+                outputTile($tile);
+              }
             }
+          } else {
+            error_log("RandKeys: " . print_r($rand_keys));
+            error_log("Tiles: " . print_r($tiles));
+            error_log("RandKeys key: " . $rand_keys[$i]);
           }
         }
     }
