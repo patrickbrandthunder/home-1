@@ -1,7 +1,7 @@
 <?php
 $title = 'Hot Lava';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'ppbanfahmfmdoanpkmeccagjfonlkaic';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
