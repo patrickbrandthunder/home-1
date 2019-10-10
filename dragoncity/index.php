@@ -2,7 +2,7 @@
 $title = 'Dragon City';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'fhgpghikhcnbnnbackopnadjagfgjkhe';
-$searchExtensionID = '';
+$searchExtensionID = 'oihflpgmomgndfohonoihjfjdmapmdgk';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
