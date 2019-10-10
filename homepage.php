@@ -479,7 +479,7 @@ if (isset($extensionID) && ($extensionID != '')) {
 &nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;2018 NewTabGallery
 </div>
 <?php
-if (isset($searchExtensionID) && $searchExtensionID != '' && !isset($_COOKIE["searchoffer_052019"])) {
+if (isset($searchExtensionID) && $searchExtensionID != '' && !isset($_COOKIE["searchoffer_062019"])) {
   ?>
 <style type="text/css">
 #search_popup {
