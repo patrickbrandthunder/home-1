@@ -1,7 +1,7 @@
 <?php
 $title = 'Cosmos Quest';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'hapcimnkajnblcnialldkimfgaekaepm';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
