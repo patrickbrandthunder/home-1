@@ -2,7 +2,7 @@
 $title = 'Subway Surfers';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'kmeeaaffghooanlgfeebieiifpjjggmf';
-$searchExtensionID = 'ebmnmdimmdaoikbohofhbbfjjkdnegop';
+$searchExtensionID = 'hbagnoeocpaekaaccgbjmhmlfeijfmnf';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
