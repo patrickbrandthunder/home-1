@@ -1,7 +1,7 @@
 <?php
-$title = 'Don't Starve';
+$title = 'Dont Starve';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'lgiecdaendfjandpeeilfdijmlhidkbf';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
