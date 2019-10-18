@@ -510,7 +510,7 @@ function createCookie(name,value,days) {
 }
 SimpleLightbox.open({
 //    content: '<div id="search_popup"><a onclick="setCookie();" href="https://chrome.google.com/webstore/detail/<?=$searchExtensionID?>">Want more of <?=$title?>?<br/><img height="128" width="128" class="image" src="icon256.png"><br/>Click here to search with <?=$title?> all day.</a></div>',
-    content: '<div id="search_popup"><a onclick="setCookie();" href="https://chrome.google.com/webstore/detail/<?=$searchExtensionID?>"><div><img src="/global/images/searchoffer.jpg"><div style="color:black;position: absolute;left: 15px;top:10px;text-transform: uppercase;"><img style="vertical-align: middle; margin: 10px;" src="icon32.png">Search with <?=$title?></div><img style="position: absolute;right: 60px;top:35px;" height="128" width="128" class="image" src="icon256.png"></a></div>',
+    content: '<div id="search_popup"><a onclick="setCookie();" href="https://chrome.google.com/webstore/detail/<?=$searchExtensionID?>"><div><img src="/global/images/searchoffer.jpg"><div style="color:black;position: absolute;left: 15px;top:10px;text-transform: uppercase;"><img style="vertical-align: middle; margin: 10px;" src="icon32.png"><b>Search with <?=$title?></b></div><img style="position: absolute;right: 60px;top:35px;" height="128" width="128" class="image" src="icon256.png"></a></div>',
     elementClass: 'slbContentEl',
     beforeClose: function() {createCookie("searchoffer_062019", "true", 365);},
     closeOnOverlayClick: false,
