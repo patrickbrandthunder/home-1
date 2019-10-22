@@ -2,7 +2,7 @@
 $title = 'Township';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'ljehdgdbdgfdljjbblacddnkhjigjhic';
-$searchExtensionID = 'hlohnddgcidghcghbgaonoilgppdkmoa';
+$searchExtensionID = 'gdjkeepicjifaelheffhdpgbmcpkfhoe';
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
