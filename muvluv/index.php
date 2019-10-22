@@ -1,7 +1,7 @@
 <?php
 $title = 'MUV LUV';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'khodlbdicfaddgkbhhnhhdnfidpkfglo';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
 include('../homepage.php');
