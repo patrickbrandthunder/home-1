@@ -287,10 +287,17 @@ if (isset($tiles) && (($dow == 0) ||  ($dow == 6))) {
         <?php /*<a target="_top" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.newtabgallery.com/images/weather.png"></a> */ ?>
       </div><!-- /social-buttons -->
 <div id="module-search">
-<?php
+<?php if (isset($testSearch2)) {
+$searchURL = 'https://search.findex.digital/?gd=SY1001238&n=5016&q=';
+?>
+<form action="https://search.findex.digital/" target="_top" method="get" id="form">
+<input type="hidden" name="gd" value="SY1001238">
+<input type="hidden" name="n" value="5016">
+<?php } else {
 $searchURL = 'https://search.newtabgallery.com/'.$tid.'?q=';
 ?>
 <form action="https://search.newtabgallery.com/<?=$tid?>" target="_top" method="get" id="form">
+<?php } ?>
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
 </form>
 </div>

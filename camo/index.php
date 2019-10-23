@@ -4,6 +4,5 @@ $title = 'Camo';
 $extensionID = 'kkagabffhemaeaaheboojinebcbfdjea';
 $searchExtensionID = 'cggokcnafdnmjeomjlkcokbbdfopiald';
 $tid = basename(__DIR__);
-$testSearch2 = true;
 include('../homepage.php');
 ?>

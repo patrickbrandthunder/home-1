@@ -4,6 +4,5 @@ $title = 'Black Purple Shards';
 $extensionID = 'kjgodipmpmghghampkfbidjmdofmongj';
 $searchExtensionID = 'cmklebpjdlnfedcojegafbaghcdfcgdl';
 $tid = basename(__DIR__);
-$testSearch2  = true;
 include('../homepage.php');
 ?>
