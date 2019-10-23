@@ -79,8 +79,9 @@ if (empty($images)) {
   for ($i = 0; $i < sizeof($diskimages); $i++) {
 	$imagename = basename($diskimages[$i]);
 	if ($imagename == 'icon256.png' ||
+    $imagename == 'icon128.png' ||
 		$imagename == 'icon32.png') {
-	  continue;
+      continue;
     }
 	array_push($images, $imagename);
   }
