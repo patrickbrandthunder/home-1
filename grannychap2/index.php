@@ -4,5 +4,6 @@ $title = 'Granny Chapter 2';
 $extensionID = 'gddalcehkkjjldidljeeakjommmajpaj';
 $searchExtensionID = 'eaajnjineiclfocnpmedeilmipbnjkpk';
 $tid = basename(__DIR__);
+$testSearch2 = true;
 include('../homepage.php');
 ?>
