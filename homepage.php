@@ -267,16 +267,11 @@ if ( isset($customSearchCode) ) {
       <div class="container">
 
         <div id="header">
-  <?php
-  $dow = date('w');
-if (isset($tiles) && (($dow == 0) ||  ($dow == 6))) {
-	?>
 <div style="display: flex; justify-content: center;">
 	<a href="https://bit.ly/2WrB5bn">
-      <img style="position: absolute; bottom: 0; margin-left: auto; margin-right: auto;left: 0;right: 0;" width="899" src="../global/images/ads/ebay.png">
+      <img style="position: absolute; bottom: 0; margin-left: auto; margin-right: auto;left: 0;right: 0;" src="../global/images/ads/ebay.png">
 	</a>
 </div>
-<?php } ?>
         <?php if(isset($icon)): ?>
           <a href="#" id="logo">
             <img src="<?= $icon ?>" style="display: none" alt="" />
