@@ -1,7 +1,7 @@
 <?php
 $title = 'Toy Story Drop';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'bjnjjmakgfbgeklfflookbjeioofcdag';
 $searchExtensionID = '';
 $bingSearch = true;
 $tid = basename(__DIR__);
