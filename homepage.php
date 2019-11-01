@@ -1,3 +1,4 @@
+
 <?php
   if (isset($welcomePage)) {
 	return;
@@ -288,12 +289,21 @@ if (isset($tiles) && (($dow == 0) ||  ($dow == 6))) {
         <?php /*<a target="_top" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.newtabgallery.com/images/weather.png"></a> */ ?>
       </div><!-- /social-buttons -->
 <div id="module-search">
-<?php if (isset($testSearch2)) {
+<?php if (isset($bingSearch)) {
+$searchURL = 'https://www.bing.com/search?q=';
+?>
+<form action="https://www.bing.com/" target="_top" method="get" id="form">
+<?php } else if (isset($testSearch2)) {
 $searchURL = 'https://search.findex.digital/?gd=SY1001238&n=5016&q=';
 ?>
 <form action="https://search.findex.digital/" target="_top" method="get" id="form">
 <input type="hidden" name="gd" value="SY1001238">
 <input type="hidden" name="n" value="5016">
+<?php } else if (isset($testSearch3)) {
+$searchURL = 'https://www.my-search.com/search?zoneid=89128928&q=';
+?>
+<form action="https://www.my-search.com/search" target="_top" method="get" id="form">
+<input type="hidden" name="zoneid" value="89128928">
 <?php } else {
 $searchURL = 'https://search.newtabgallery.com/'.$tid.'?q=';
 ?>
