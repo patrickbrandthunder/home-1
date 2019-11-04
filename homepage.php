@@ -268,8 +268,8 @@ if ( isset($customSearchCode) ) {
 
         <div id="header">
 <div style="display: flex; justify-content: center;">
-	<a href="https://redirect.viglink.com/?format=go&jsonp=vglnk_157269940016314&key=c854d45afd385a32f8029d3a632d20e7&libId=k2hkj5au0101frvr000DA6419dyqz&loc=https%3A%2F%2Fwww.viglink.com%2Ftrends%2Fexplorer&v=1&out=https%3A%2F%2Fredirect.viglink.com%2F%3Fkey%3D37f3260b8b445a65ad33af1a2a8f11b8%26u%3Dhttps%253A%252F%252Fwww.nike.com%252Ft%252Fair-jordan-1-hi-og-fearless-womens-shoe-h5nxZ0%253Fsdf%26type%3DTO&ref=https%3A%2F%2Fwww.viglink.com%2Ftrends%2Fexplorer%2Fcategory%2FConsumer%2BElectronics&title=Trending%20Products%202019%20-%20VigLink%20Trends%20Explorer&txt=Buy%20Now">
-      <img style="position: absolute; bottom: 0; margin-left: auto; margin-right: auto;left: 0;right: 0;" src="https://images.viglink.com/product/250x250/c-static-nike-com/c978cc0d05a2364cc1ef831def4e864681a5ced6.jpg?url=https%3A%2F%2Fc.static-nike.com%2Fa%2Fimages%2Ft_default%2Fwgxy4y8vyqolhvtekqmn%2Fair-jordan-1-hi-og-fearless-womens-shoe-h5nxZ0.jpg">
+	<a href="https://bit.ly/33fmlzb">
+      <img style="position: absolute; bottom: 0; margin-left: auto; margin-right: auto;left: 0;right: 0;" src="../global/images/ads/avg.jpg">
 	</a>
 </div>
         <?php if(isset($icon)): ?>
