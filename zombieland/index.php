@@ -1,7 +1,7 @@
 <?php
 $title = 'Zombieland Double Tapper';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'cbgfmlkcodmlkgeakccnpbdhghhfghon';
 $searchExtensionID = '';
 $bingSearch = true;
 $tid = basename(__DIR__);
