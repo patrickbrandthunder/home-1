@@ -1,8 +1,9 @@
 <?php
 $title = 'Baker Mayfield';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'epjjmjckfmnimeaihocedidjiogebpco';
 $searchExtensionID = '';
+$bingSearch = true;
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
