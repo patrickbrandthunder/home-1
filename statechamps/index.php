@@ -1,8 +1,9 @@
 <?php
 $title = 'State Champs';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'hmpghddejfliodnioahggiooicofpddo';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
+$bingSearch = true;
 include('../homepage.php');
 ?>
