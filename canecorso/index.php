@@ -4,5 +4,6 @@ $title = 'Cane Corso';
 $extensionID = 'jcppgeehkkmehdioibobklfmdafgfffi';
 $searchExtensionID = 'gjmgokfoechkpicigkkaplfgfaojifbn';
 $tid = basename(__DIR__);
+$testSearch3 = true;
 include('../homepage.php');
 ?>
