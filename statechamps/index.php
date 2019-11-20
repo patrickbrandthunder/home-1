@@ -4,6 +4,6 @@ $title = 'State Champs';
 $extensionID = 'hmpghddejfliodnioahggiooicofpddo';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
-$bingSearch = true;
+$testSearch3 = true;
 include('../homepage.php');
 ?>
