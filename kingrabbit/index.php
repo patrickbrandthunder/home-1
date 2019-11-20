@@ -1,8 +1,9 @@
 <?php
 $title = 'King Rabbit';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'ocnhpcgdnfpnkiclhneodjgmpfebpdnk';
 $searchExtensionID = '';
+$bingSearch = true;
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
