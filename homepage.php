@@ -60,16 +60,18 @@ if (!is_object($json)) {
 }
 $banner_url = 'https://bit.ly/33fmlzb';
 $banner_image = '../global/images/ads/avg.jpg';
-$bannerURL = 'http://brandthunder_banner_api.tiles.ampfeed.com/tiles?partner=brandthunder_banner_api&sub1=10071&sub2=newtabgallery&v=1.3&ip='.get_client_ip_server().'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&rfr='.urlencode('https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-$contents = file_get_contents($bannerURL);
-$json = json_decode($contents);
-if (!is_object($json)) {
-  error_log('Bad banners: '.$contents, 0);
-  error_log("Base URL: " . $baseURL);
-} else {
-  if (property_exists($json, 'tiles')) {
-    $banner_url = $json->{'tiles'}[0]->{'click_url'};
-    $banner_image = $json->{'tiles'}[0]->{'image_url'};
+if ($tid == 'zombieland') {
+  $bannerURL = 'http://brandthunder_banner_api.tiles.ampfeed.com/tiles?partner=brandthunder_banner_api&sub1=10071&sub2=newtabgallery&v=1.3&ip='.get_client_ip_server().'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&rfr='.urlencode('https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+  $contents = file_get_contents($bannerURL);
+  $json = json_decode($contents);
+  if (!is_object($json)) {
+    error_log('Bad banners: '.$contents, 0);
+    error_log("Base URL: " . $baseURL);
+  } else {
+    if (property_exists($json, 'tiles')) {
+      $banner_url = $json->{'tiles'}[0]->{'click_url'};
+      $banner_image = $json->{'tiles'}[0]->{'image_url'};
+    }
   }
 }
 ?>
