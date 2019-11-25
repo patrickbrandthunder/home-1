@@ -297,7 +297,7 @@ if ( isset($customSearchCode) ) {
         </div><!-- /header -->
 
 <?php if (isset($extraafter)) { echo $extraafter; } ?>
-        <?php /*<a target="_top" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.newtabgallery.com/images/weather.png"></a> */ ?>
+        <?php /*<a target="_blank" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.newtabgallery.com/images/weather.png"></a> */ ?>
       </div><!-- /social-buttons -->
 <div id="module-search">
 <?php if (isset($bingSearch)) {
