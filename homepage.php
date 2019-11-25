@@ -284,7 +284,7 @@ if ( isset($customSearchCode) ) {
 
         <div id="header">
 <div style="display: flex; justify-content: center;">
-	<a href="<?=$banner_image?>">
+	<a href="<?=$banner_url?>">
       <img style="position: absolute; bottom: 0; margin-left: auto; margin-right: auto;left: 0;right: 0;" src="<?=$banner_image?>">
 	</a>
 </div>
