@@ -1,8 +1,9 @@
 <?php
 $title = 'Sigma Theory';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'peoejejlfjpdmpbdiplbfhibblcfeaep';
 $searchExtensionID = '';
+$bingSearch = true;
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
