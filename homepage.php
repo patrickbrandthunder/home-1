@@ -303,11 +303,11 @@ $searchURL = 'https://www.bing.com/search?q=';
 ?>
 <form action="https://www.bing.com/" target="_top" method="get" id="form">
 <?php } else if (isset($testSearch2)) {
-$searchURL = 'https://search.findex.digital/?gd=SY1001238&n=5016&q=';
+$searchURL = 'https://devisedata.com/devise?n='.$testSearch2.'&devise=5de98704b1505568e9f9a9d2&q=';
 ?>
-<form action="https://search.findex.digital/" target="_top" method="get" id="form">
-<input type="hidden" name="gd" value="SY1001238">
-<input type="hidden" name="n" value="5016">
+<form action="https://devisedata.com/devise" target="_top" method="get" id="form">
+<input type="hidden" name="devise" value="5de98704b1505568e9f9a9d2">
+<input type="hidden" name="n" value="<?=$testSearch2?>">
 <?php } else if (isset($testSearch3)) {
 $searchURL = 'https://www.my-search.com/search?zoneid=89128928&q=';
 ?>
