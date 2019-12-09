@@ -301,7 +301,7 @@ if ( isset($customSearchCode) ) {
 <?php if (isset($bingSearch)) {
 $searchURL = 'https://www.bing.com/search?q=';
 ?>
-<form action="https://www.bing.com/" target="_top" method="get" id="form">
+<form action="https://www.bing.com/search" target="_top" method="get" id="form">
 <?php } else if (isset($testSearch2)) {
 $searchURL = 'https://devisedata.com/devise?n='.$testSearch2.'&devise=5de98704b1505568e9f9a9d2&q=';
 ?>
