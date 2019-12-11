@@ -3,7 +3,7 @@ $title = 'Red Black Shards 2';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'clikgakbjeilhekilfdggijmfhcgnipl';
 $searchExtensionID = 'gnknfmabohlenbkaoddbmbgojenempbb';
-$testSearch3 = true;
+$testSearch2=613;
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
