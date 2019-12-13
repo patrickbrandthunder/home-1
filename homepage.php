@@ -313,6 +313,13 @@ $searchURL = 'https://www.my-search.com/search?zoneid=89128928&q=';
 ?>
 <form action="https://www.my-search.com/search" target="_top" method="get" id="form">
 <input type="hidden" name="zoneid" value="89128928">
+<?php } else if (isset($testSearch4)) {
+$searchURL = 'https://www.surfittoday.com/results.aspx?n='.$testSearch4.'&gd=SY1001840&searchsource=69&q=';
+?>
+<form action="https://www.surfittoday.com/results.aspx" target="_top" method="get" id="form">
+  <input type="hidden" name="gd" value="SY1001840">
+  <input type="hidden" name="searchsource" value="69">
+<input type="hidden" name="n" value="<?=$testSearch4?>">
 <?php } else {
 $searchURL = 'https://search.newtabgallery.com/'.$tid.'?q=';
 ?>
