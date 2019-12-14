@@ -4,6 +4,6 @@ $title = 'Granny';
 $extensionID = 'mecbngdjmjmalachlibbdehhpojgenhe';
 $searchExtensionID = 'eaajnjineiclfocnpmedeilmipbnjkpk';
 $tid = basename(__DIR__);
-$testSearch3 = true;
+$testSearch4=204;
 include('../homepage.php');
 ?>
