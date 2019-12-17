@@ -321,10 +321,11 @@ $searchURL = 'https://www.surfittoday.com/results.aspx?n='.$testSearch4.'&gd=SY1
   <input type="hidden" name="searchsource" value="69">
 <input type="hidden" name="n" value="<?=$testSearch4?>">
 <?php } else {
-$searchURL = 'https://search.newtabgallery.com/'.$tid.'?q=';
+$searchURL = 'https://search.newtabgallery.com/'.$tid.'?newtab=true&q=';
 ?>
 <form action="https://search.newtabgallery.com/<?=$tid?>" target="_top" method="get" id="form">
 <?php } ?>
+<input type="hidden" name="newtab" value="true">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
 </form>
 </div>
