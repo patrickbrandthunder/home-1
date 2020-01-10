@@ -1,8 +1,9 @@
 <?php
 $title = 'Alex Bregman';
 // After extension is loaded to the Chrome store, place the extension ID here.
-$extensionID = '';
+$extensionID = 'cpoalambbliklkloejjdhdllbbdfnkmh';
 $searchExtensionID = '';
+$bingSearch = true;
 $tid = basename(__DIR__);
 include('../homepage.php');
 ?>
