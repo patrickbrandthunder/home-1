@@ -116,6 +116,16 @@ silverado
 snapon
 zooba
 journey
+6lack
+badbunny
+bhadbarbie
+charlixcx
+fifa19
+khabib
+lazarbeam
+
+
+
 TIDs BEFORE THIS LINE
 EOT;
 
