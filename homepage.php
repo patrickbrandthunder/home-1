@@ -1,8 +1,10 @@
-
 <?php
   if (isset($welcomePage)) {
 	return;
   }
+
+  include_once("search.php");
+
 /* Update to test push */
 /*
 if (strlen($_SERVER['REQUEST_URI']) > 1 || isset($_GET['tid'])) {
@@ -73,7 +75,6 @@ if (!is_object($json)) {
   }
 }
 ?>
-
 <?php
 //error_reporting(E_ALL);
 //ini_set('display_errors', '1');
@@ -293,38 +294,31 @@ if ( isset($customSearchCode) ) {
 		<?php endif; ?>
 
         </div><!-- /header -->
-
 <?php if (isset($extraafter)) { echo $extraafter; } ?>
         <?php /*<a target="_blank" href="https://ww2.weatherbug.com/aff/default.asp?zcode=z6702"><img src="https://home.newtabgallery.com/images/weather.png"></a> */ ?>
       </div><!-- /social-buttons -->
-<div id="module-search">
-<?php if (isset($bingSearch)) {
+<div id="module-search"><?php if (isset($bingSearch)) {
 $searchURL = 'https://www.bing.com/search?q=';
 ?>
-<form action="https://www.bing.com/search" target="_top" method="get" id="form">
-<?php } else if (isset($testSearch2)) {
+<form action="https://www.bing.com/search" target="_top" method="get" id="form"><?php } else if (isset($testSearch2)) {
 $searchURL = 'https://devisedata.com/devise?n='.$testSearch2.'&devise=5de98704b1505568e9f9a9d2&q=';
 ?>
 <form action="https://devisedata.com/devise" target="_top" method="get" id="form">
 <input type="hidden" name="devise" value="5de98704b1505568e9f9a9d2">
-<input type="hidden" name="n" value="<?=$testSearch2?>">
-<?php } else if (isset($testSearch3)) {
+<input type="hidden" name="n" value="<?=$testSearch2?>"><?php } else if (isset($testSearch3)) {
 $searchURL = 'https://www.my-search.com/search?zoneid=89128928&q=';
 ?>
 <form action="https://www.my-search.com/search" target="_top" method="get" id="form">
-<input type="hidden" name="zoneid" value="89128928">
-<?php } else if (isset($testSearch4)) {
+<input type="hidden" name="zoneid" value="89128928"><?php } else if (isset($testSearch4)) {
 $searchURL = 'https://www.surfittoday.com/results.aspx?n='.$testSearch4.'&gd=SY1001840&searchsource=69&q=';
 ?>
 <form action="https://www.surfittoday.com/results.aspx" target="_top" method="get" id="form">
   <input type="hidden" name="gd" value="SY1001840">
   <input type="hidden" name="searchsource" value="69">
-<input type="hidden" name="n" value="<?=$testSearch4?>">
-<?php } else {
+<input type="hidden" name="n" value="<?=$testSearch4?>"><?php } else {
 $searchURL = 'https://search.newtabgallery.com/'.$tid.'?newtab=true&q=';
 ?>
-<form action="https://search.newtabgallery.com/<?=$tid?>" target="_top" method="get" id="form">
-<?php } ?>
+<form action="https://search.newtabgallery.com/<?=$tid?>" target="_top" method="get" id="form"><?php } ?>
 <input type="hidden" name="newtab" value="true">
 <input type="text" id="newsearchinput" placeholder="Search the web" name="q" autocomplete="off">
 </form>
@@ -451,15 +445,13 @@ new autoComplete({
   try {
     document.getElementById("newsearchinput").focus();
   } catch (e) {}
-</script>
-<?php
+</script><?php
 if (isset($addlContent))
   echo $addlContent;
 ?>
 
 </div>
-</div>
-<?php
+</div><?php
 if (isset($extensionID) && ($extensionID != '')) {
 ?>
 
@@ -488,8 +480,7 @@ if (isset($extensionID) && ($extensionID != '')) {
 </script>
 <div id="extension-offer">
 <a href="https://chrome.google.com/webstore/detail/<?=$extensionID?>" target="blank"><img src="https://home.newtabgallery.com/global/images/chromestore.png"></a>
-</div>
-<?php
+</div><?php
 }
 ?>
 <style type="text/css">
@@ -512,8 +503,7 @@ if (isset($extensionID) && ($extensionID != '')) {
 </style>
 <div id="legal" style="text-align: center">
 &nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;2018 NewTabGallery
-</div>
-<?php
+</div><?php
 if (isset($searchExtensionID) && $searchExtensionID != '' && !isset($_COOKIE["searchoffer_062019"])) {
   ?>
 <style type="text/css">
@@ -550,8 +540,7 @@ SimpleLightbox.open({
     beforeClose: function() {createCookie("searchoffer_062019", "true", 365);},
     closeOnOverlayClick: false,
 });
-</script>
-<?php
+</script><?php
 }
 ?>
 </body>

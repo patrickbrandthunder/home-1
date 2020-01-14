@@ -4,6 +4,5 @@ $title = 'John Deere Farming';
 $extensionID = 'dmhcklmgoekigjinailofhnemcombjlo';
 $searchExtensionID = 'dmgakjbaohlpcembegjiamcnknfkaigg';
 $tid = basename(__DIR__);
-$testSearch2=614;
 include('../homepage.php');
 ?>

@@ -4,6 +4,5 @@ $title = 'Monomals';
 $extensionID = 'lfejjcojhddacmajnfmfeapfnoknkfbj';
 $searchExtensionID = '';
 $tid = basename(__DIR__);
-$testSearch3 = true;
 include('../homepage.php');
 ?>

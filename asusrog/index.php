@@ -4,7 +4,6 @@ $title = 'ASUS ROG';
 $extensionID = 'jloneboapdconggolhbngkfknbicddoa';
 $searchExtensionID = 'lmphbmjdbmaobcfhaldoeddjpjipjlac';
 $tid = basename(__DIR__);
-$testSearch3 = true;
 $searchExtensionID = '';
 include('../homepage.php');
 ?>

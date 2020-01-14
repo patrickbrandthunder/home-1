@@ -4,6 +4,5 @@ $title = 'Black Blue Shards 2';
 $extensionID = 'bglakhilkhcagkgefkidanahmlfihpgk';
 $searchExtensionID = 'kliiambfijiclfllpnnkajokjheoapfe';
 $tid = basename(__DIR__);
-$testSearch2=613;
 include('../homepage.php');
 ?>
