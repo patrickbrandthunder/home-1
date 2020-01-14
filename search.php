@@ -47,8 +47,6 @@ mille
 mizuno
 mookie
 naraka
-overwatch2
-SHOULD OVERWATCH2 BE IN SEARCH3?
 pandora
 partynextdoor
 patek
