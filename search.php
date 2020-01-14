@@ -128,6 +128,13 @@ pushat
 quavo
 ozuna
 gunna
+shanedawson
+21savage
+nipseyhussle
+ellamai
+billieellish
+nerfguns
+mia
 TIDs BEFORE THIS LINE
 EOT;
 
@@ -466,6 +473,13 @@ $codeList = [
   "quavo" => 637,
   "ozuna" => 637,
   "gunna" => 637,
+  "shanedawson" => 637,
+  "21savage" => 637,
+  "nipseyhussle" => 637,
+  "ellamai" => 637,
+  "billieellish" => 637,
+  "nerfguns" => 637,
+  "mia" => 637,
 /* testSearch4 */
   "anuelaa" => 205,
   "anuelaa2" => 205,
