@@ -127,6 +127,7 @@ megaman
 pushat
 quavo
 ozuna
+gunna
 TIDs BEFORE THIS LINE
 EOT;
 
@@ -464,6 +465,7 @@ $codeList = [
   "pushat" => 637,
   "quavo" => 637,
   "ozuna" => 637,
+  "gunna" => 637,
 /* testSearch4 */
   "anuelaa" => 205,
   "anuelaa2" => 205,
