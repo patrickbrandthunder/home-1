@@ -126,6 +126,7 @@ lazarbeam
 megaman
 pushat
 quavo
+ozuna
 TIDs BEFORE THIS LINE
 EOT;
 
@@ -462,6 +463,7 @@ $codeList = [
   "megaman" => 637,
   "pushat" => 637,
   "quavo" => 637,
+  "ozuna" => 637,
 /* testSearch4 */
   "anuelaa" => 205,
   "anuelaa2" => 205,
