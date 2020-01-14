@@ -123,9 +123,9 @@ charlixcx
 fifa19
 khabib
 lazarbeam
-
-
-
+megaman
+pushat
+quavo
 TIDs BEFORE THIS LINE
 EOT;
 
@@ -496,6 +496,16 @@ $codeList = [
   "xmaslights" => 208,
   "ynwmelly" => 205,
   "journey" => 635,
+  "6lack" => 637,
+"badbunny" => 637,
+"bhadbarbie" => 637,
+"charlixcx" => 637,
+"fifa19" => 637,
+"khabib" => 637,
+"lazarbeam" => 637,
+"megaman" => 637,
+"pushat" => 637,
+"quavo" => 637,
 ];
 
 if (strstr($bingSearchList, PHP_EOL.$tid.PHP_EOL)) {
