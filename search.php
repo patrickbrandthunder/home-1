@@ -135,6 +135,10 @@ ellamai
 billieellish
 nerfguns
 mia
+cathkidston
+versace
+paintsplatter
+creed
 TIDs BEFORE THIS LINE
 EOT;
 
@@ -480,6 +484,10 @@ $codeList = [
   "billieellish" => 637,
   "nerfguns" => 637,
   "mia" => 637,
+  "cathkidston" => 637,
+  "versace" => 637,
+  "paintsplatter" => 637,
+  "creed" => 637,
 /* testSearch4 */
   "anuelaa" => 205,
   "anuelaa2" => 205,
