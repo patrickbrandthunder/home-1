@@ -413,6 +413,7 @@ warrobots
 wartortise2
 xmaslights
 ynwmelly
+madden19
 TIDs BEFORE THIS LINE
 EOT;
 
@@ -532,6 +533,7 @@ $codeList = [
   "wartortise2" => 212,
   "xmaslights" => 208,
   "ynwmelly" => 205,
+  "madden19" => 213,
 ];
 
 if (strstr($bingSearchList, PHP_EOL.$tid.PHP_EOL)) {
