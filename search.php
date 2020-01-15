@@ -14,7 +14,6 @@ bruni
 burberry
 callaway
 cartier
-coach
 cobragolf
 columbia
 combopanda
