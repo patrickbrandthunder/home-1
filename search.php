@@ -46,6 +46,7 @@ pandora
 partynextdoor
 patek
 ramirez
+seiya
 sherzer
 snackworld
 squirrel
