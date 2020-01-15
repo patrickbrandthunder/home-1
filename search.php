@@ -5,7 +5,6 @@ TIDs AFTER THIS LINE
 7mankind
 aesop
 arenado
-avengersendgame
 babykeem
 babyyoda2
 bregman
@@ -28,13 +27,9 @@ footballstrike
 futurefight
 gijoe
 hotelempire
-ingram
 jackboys
-johnnytrigger
 kingrabbit
 kors
-lacoste
-lavender
 lilmama
 lindor
 lonzoball
@@ -45,24 +40,19 @@ miketrout
 mille
 mizuno
 mookie
-naraka
 pandora
 partynextdoor
 patek
 ramirez
 sherzer
-shovelknightshowdown
-slaythespire
 snackworld
 squirrel
 stormzy
 tagwithryan
 tennisclash
-tiffanys
 tuukka
 ultimaterivals
 unleashlight
-verbradley
 TIDs BEFORE THIS LINE
 EOT;
 
