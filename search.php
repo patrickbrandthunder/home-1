@@ -48,6 +48,7 @@ partynextdoor
 patek
 ramirez
 saintlaurent
+schitts
 seiya
 sherzer
 snackworld
