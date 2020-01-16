@@ -36,6 +36,7 @@ maga
 mikeyshorts
 mille
 mizuno
+monstertruck
 mookie
 pandora
 partynextdoor
