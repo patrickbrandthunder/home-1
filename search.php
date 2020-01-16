@@ -31,6 +31,7 @@ hotelempire
 jackboys
 kingrabbit
 kors
+lanvin
 lilmama
 lindor
 lonzoball
