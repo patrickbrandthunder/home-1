@@ -6,7 +6,6 @@ TIDs AFTER THIS LINE
 aesop
 arenado
 armani
-babykeem
 babyyoda2
 bregman
 breitling
@@ -17,9 +16,7 @@ cartier
 cobragolf
 columbia
 combopanda
-curiousgeorge
 cyberhunter
-dolce
 dsquared
 elieen
 farmingsim20
@@ -28,9 +25,7 @@ footballstrike
 futurefight
 gijoe
 hotelempire
-jackboys
 kingrabbit
-kors
 lanvin
 lilmama
 lindor
@@ -39,7 +34,6 @@ lougotcash
 mackinnon
 maga
 mikeyshorts
-miketrout
 mille
 mizuno
 mookie
@@ -54,7 +48,6 @@ sherzer
 snackworld
 squirrel
 stormzy
-tagwithryan
 tennisclash
 tuukka
 ultimaterivals
