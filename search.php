@@ -138,7 +138,9 @@ TIDs AFTER THIS LINE
 2020corvette
 adamthielen
 alphaputt
+canecorso
 amaricooper
+xmaslights
 andrewluck
 anothereden
 arcana
@@ -368,7 +370,6 @@ brawlhalla2
 brawlstars
 brawlstars2
 candycrushsoda
-canecorso
 coinmaster
 creativedestruction
 dababy
@@ -403,7 +404,6 @@ talkingtom
 traeyoung
 warrobots
 wartortise2
-xmaslights
 ynwmelly
 madden19
 TIDs BEFORE THIS LINE
@@ -493,7 +493,6 @@ $codeList = [
   "brawlstars" => 212,
   "brawlstars2" => 212,
   "candycrushsoda" => 212,
-  "canecorso" => 209,
   "coinmaster" => 212,
   "creativedestruction" => 212,
   "dababy" => 211,
@@ -525,7 +524,6 @@ $codeList = [
   "traeyoung" => 205,
   "warrobots" => 212,
   "wartortise2" => 212,
-  "xmaslights" => 208,
   "ynwmelly" => 205,
   "madden19" => 213,
 ];
