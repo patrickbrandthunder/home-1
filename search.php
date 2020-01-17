@@ -99,7 +99,6 @@ lazarbeam2
 marcecko
 masterchief
 motleycrue
-nikejordan
 panarin
 pickups
 picotanks
@@ -373,6 +372,7 @@ canecorso
 coinmaster
 creativedestruction
 dababy
+nikejordan
 doncic
 dragoncity
 energy2
@@ -488,6 +488,7 @@ $codeList = [
   "bitlife" => 212,
   "brawlhalla" => 212,
   "brawlhalla2" => 212,
+  "nikejordan" => 216, 
   "brawlstars" => 212,
   "brawlstars2" => 212,
   "candycrushsoda" => 212,
