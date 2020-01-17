@@ -64,7 +64,6 @@ $testSearch2List = <<<EOT
 TIDs AFTER THIS LINE
 asphalt9
 asus
-babyyoda
 beybladeburst
 blackblueshards
 blackblueshards2
@@ -361,6 +360,7 @@ $testSearch4List = <<<EOT
 TIDs AFTER THIS LINE
 anuelaa
 anuelaa2
+babyyoda
 battleprime
 bitlife
 brawlhalla
@@ -484,6 +484,7 @@ $codeList = [
 /* testSearch4 */
   "anuelaa" => 205,
   "anuelaa2" => 205,
+  "babyyoda" => 217,
   "battleprime" => 212,
   "bitlife" => 212,
   "brawlhalla" => 212,
