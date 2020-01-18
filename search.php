@@ -79,7 +79,6 @@ arenaallstars
 asusrog
 austonmatthews
 avengersendgame
-azurlane
 azzyland
 badbunny2
 bakermayfield
@@ -201,17 +200,22 @@ $testSearch4List = <<<EOT
 TIDs AFTER THIS LINE
 anuelaa
 anuelaa2
+azurlane
 babyyoda
 battleprime
+beybladeburst
 bitlife
 blackblueshards
+blackgreen
 blackredshards
+bloons
 brawlhalla
 brawlhalla2
 brawlstars
 brawlstars2
 candycrushsoda
 coinmaster
+confederateflag
 creativedestruction
 dababy
 nikejordan
@@ -228,8 +232,10 @@ granny
 granny2
 grannychap2
 gtavice
+harvester
 homepage.php
 jaydayoungan
+johndeere
 lilbaby
 lilbaby2
 liltjay
@@ -239,6 +245,7 @@ monstax
 monsterenergy
 nbayoungboy
 nlechoppa
+redblackshards2
 rodwave
 search.php
 subaruwrx
@@ -257,11 +264,15 @@ $codeList = [
 /* testSearch4 */
   "anuelaa" => 205,
   "anuelaa2" => 205,
+  "azurlane" => 212,
   "babyyoda" => 217,
   "battleprime" => 212,
+  "beybladeburst" => 212,
   "bitlife" => 212,
   "blackblueshards" => 218,
+  "blackgreen" => 218,
   "blackredshards" => 218,
+  "bloons" => 212,
   "brawlhalla" => 212,
   "brawlhalla2" => 212,
   "nikejordan" => 216, 
@@ -269,6 +280,7 @@ $codeList = [
   "brawlstars2" => 212,
   "candycrushsoda" => 212,
   "coinmaster" => 212,
+  "confederateflag" => 218,
   "creativedestruction" => 212,
   "dababy" => 211,
   "doncic" => 214,
@@ -284,7 +296,9 @@ $codeList = [
   "granny2" => 204,
   "grannychap2" => 204,
   "gtavice" => 212,
+  "harvester" => 218,
   "jaydayoungan" => 205,
+  "johndeere" => 218,
   "lilbaby" => 211,
   "lilbaby2" => 211,
   "liltjay" => 205,
@@ -294,6 +308,7 @@ $codeList = [
   "monsterenergy" => 206,
   "nbayoungboy" => 205,
   "nlechoppa" => 201,
+  "redblackshards2" => 218,
   "rodwave" => 205,
   "subaruwrx" => 210,
   "talkingtom" => 212,
