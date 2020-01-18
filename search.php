@@ -204,6 +204,8 @@ anuelaa2
 babyyoda
 battleprime
 bitlife
+blackblueshards
+blackredshards
 brawlhalla
 brawlhalla2
 brawlstars
@@ -218,6 +220,7 @@ dragoncity
 energy2
 eveechoes
 fifa20
+gacha
 garena
 garena2
 goat
@@ -257,6 +260,8 @@ $codeList = [
   "babyyoda" => 217,
   "battleprime" => 212,
   "bitlife" => 212,
+  "blackblueshards" => 218,
+  "blackredshards" => 218,
   "brawlhalla" => 212,
   "brawlhalla2" => 212,
   "nikejordan" => 216, 
@@ -271,6 +276,7 @@ $codeList = [
   "energy2" => 206,
   "eveechoes" => 212,
   "fifa20" => 203,
+  "gacha" => 212,
   "garena" => 202,
   "garena2" => 202,
   "goat" => 212,
