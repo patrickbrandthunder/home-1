@@ -502,7 +502,7 @@ if (isset($extensionID) && ($extensionID != '')) {
   }
 </style>
 <div id="legal" style="text-align: center">
-&nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;2018 NewTabGallery
+&nbsp;<a href="https://newtabgallery.com/license/" target="blank">License</a> | <a href="https://newtabgallery.com/privacy/" target="blank">Privacy</a> | <a href="https://newtabgallery.com/contact/" target="blank">Contact</a>&nbsp;<br/>&copy;<?=date("Y");?> NewTabGallery
 </div><?php
 if (isset($searchExtensionID) && $searchExtensionID != '' && !isset($_COOKIE["searchoffer_062019"])) {
   ?>
