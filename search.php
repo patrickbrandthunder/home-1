@@ -15,6 +15,7 @@ cartier
 cobragolf
 columbia
 combopanda
+cosette
 dsquared
 elieen
 farmingsim20
