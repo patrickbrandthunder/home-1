@@ -7,7 +7,6 @@ aesop
 arenado
 armani
 babyyoda2
-bregman
 breitling
 bruni
 burberry
@@ -16,7 +15,6 @@ cartier
 cobragolf
 columbia
 combopanda
-cyberhunter
 dsquared
 elieen
 farmingsim20
@@ -49,11 +47,9 @@ sherzer
 snackworld
 squirrel
 stormzy
-tennisclash
 tetris99
 tokyomirage
 tuukka
-ultimaterivals
 unleashlight
 warface
 westofdead
@@ -213,10 +209,12 @@ brawlhalla
 brawlhalla2
 brawlstars
 brawlstars2
+bregman
 candycrushsoda
 coinmaster
 confederateflag
 creativedestruction
+cyberhunter
 dababy
 nikejordan
 doncic
@@ -250,7 +248,9 @@ rodwave
 search.php
 subaruwrx
 talkingtom
+tennisclash
 traeyoung
+ultimaterivals
 warrobots
 wartortise2
 ynwmelly
@@ -275,6 +275,7 @@ $codeList = [
   "bloons" => 212,
   "brawlhalla" => 212,
   "brawlhalla2" => 212,
+  "bregman" => 214,
   "nikejordan" => 216, 
   "brawlstars" => 212,
   "brawlstars2" => 212,
@@ -282,6 +283,7 @@ $codeList = [
   "coinmaster" => 212,
   "confederateflag" => 218,
   "creativedestruction" => 212,
+  "cyberhunter" => 212,
   "dababy" => 211,
   "doncic" => 214,
   "dragoncity" => 212,
@@ -312,7 +314,9 @@ $codeList = [
   "rodwave" => 205,
   "subaruwrx" => 210,
   "talkingtom" => 212,
+  "tennisclash" => 212,
   "traeyoung" => 205,
+  "ultimaterivals" => 212,
   "warrobots" => 212,
   "wartortise2" => 212,
   "ynwmelly" => 205,
