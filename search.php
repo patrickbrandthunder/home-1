@@ -24,6 +24,7 @@ futurefight
 gijoe
 hotelempire
 kingrabbit
+kingscastle
 lanvin
 lilmama
 lindor
