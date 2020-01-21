@@ -22,6 +22,7 @@ elieen
 farmingsim20
 fivio
 footballstrike
+freefall
 futurefight
 gijoe
 hotelempire
@@ -133,7 +134,6 @@ fivefinger
 fledgling
 fordf150
 fournette
-freefall
 frenchies2
 geometrydash
 glokknine
