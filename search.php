@@ -1,21 +1,17 @@
 <?php
 $bingSearchList = <<<EOT
 TIDs AFTER THIS LINE
-2020calendar
 7mankind
 aesop
 afkarena
 arenado
 armani
 babyyoda2
-breitling
 bruni
 burberry
 callaway
 cartier
-cobragolf
 columbia
-combopanda
 cosette
 dsquared
 elieen
@@ -24,8 +20,6 @@ fivio
 footballstrike
 freefall
 futurefight
-gijoe
-hotelempire
 kingrabbit
 kingscastle
 lanvin
@@ -39,7 +33,6 @@ mikeyshorts
 mille
 mizuno
 monstertruck
-mookie
 pandora
 partynextdoor
 patek
@@ -201,6 +194,7 @@ EOT;
 
 $testSearch4List = <<<EOT
 TIDs AFTER THIS LINE
+2020calendar
 anuelaa
 anuelaa2
 azurlane
@@ -216,9 +210,12 @@ brawlhalla
 brawlhalla2
 brawlstars
 brawlstars2
+breitling
 bregman
 candycrushsoda
+cobragolf
 coinmaster
+combopanda
 confederateflag
 creativedestruction
 cyberhunter
@@ -239,6 +236,7 @@ grannychap2
 gtavice
 harvester
 homepage.php
+hotelempire
 jaydayoungan
 johndeere
 lilbaby
@@ -262,6 +260,7 @@ warrobots
 wartortise2
 ynwmelly
 madden19
+mookie
 TIDs BEFORE THIS LINE
 EOT;
 
@@ -327,7 +326,14 @@ $codeList = [
   "warrobots" => 212,
   "wartortise2" => 212,
   "ynwmelly" => 205,
-  "madden19" => 213,
+  "breitling" => 218,
+  "cobragolf" => 218,
+  "mookie" => 214,
+  "2020calendar" => 218,
+  "combopanda" => 212,
+  "hotelempire" => 212,
+  "gijoe" => 212,
+  "madden19" => 212,
 ];
 
 if (strstr($bingSearchList, PHP_EOL.$tid.PHP_EOL)) {
