@@ -38,6 +38,7 @@ partynextdoor
 patek
 pubgspring
 ramirez
+rulessurvival
 saintlaurent
 schitts
 seiya
