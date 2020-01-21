@@ -133,6 +133,7 @@ fivefinger
 fledgling
 fordf150
 fournette
+freefall
 frenchies2
 geometrydash
 glokknine
