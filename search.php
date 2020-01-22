@@ -25,7 +25,6 @@ kingscastle
 lanvin
 lilmama
 lindor
-lonzoball
 lougotcash
 mackinnon
 maga
@@ -244,6 +243,7 @@ johndeere
 lilbaby
 lilbaby2
 liltjay
+lonzoball
 madden20
 madden19
 mookie
@@ -312,6 +312,7 @@ $codeList = [
   "lilbaby" => 211,
   "lilbaby2" => 211,
   "liltjay" => 205,
+  "lonzoball" => 214
   "madden20" => 207,
   "meganthee" => 205,
   "monstax" => 205,
