@@ -11,6 +11,7 @@ burberry
 callaway
 columbia
 cosette
+dior
 dsquared
 farmingsim20
 fivio
