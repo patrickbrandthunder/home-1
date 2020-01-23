@@ -14,6 +14,7 @@ cosette
 dior
 dsquared
 farmingsim20
+fireboy
 fivio
 footballstrike
 freefall
