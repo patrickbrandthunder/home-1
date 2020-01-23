@@ -28,6 +28,7 @@ mikeyshorts
 mille
 mizuno
 monstertruck
+nickbosa
 pandora
 patek
 piratesoutlaws
