@@ -53,6 +53,7 @@ tyreekhill
 unleashlight
 vex4
 warface
+warorder
 westofdead
 TIDs BEFORE THIS LINE
 EOT;
