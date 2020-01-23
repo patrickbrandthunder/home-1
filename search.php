@@ -10,7 +10,6 @@ babyyoda2
 bruni
 burberry
 callaway
-cartier
 columbia
 cosette
 dsquared
@@ -24,7 +23,6 @@ kingrabbit
 kingscastle
 lanvin
 lilmama
-lindor
 lougotcash
 mackinnon
 maga
@@ -33,7 +31,6 @@ mille
 mizuno
 monstertruck
 pandora
-partynextdoor
 patek
 piratesoutlaws
 pubgspring
@@ -214,7 +211,9 @@ brawlstars
 brawlstars2
 breitling
 bregman
+burberry
 candycrushsoda
+cartier
 cobragolf
 coinmaster
 combopanda
@@ -244,6 +243,7 @@ johndeere
 lilbaby
 lilbaby2
 liltjay
+lindor
 lonzoball
 madden20
 madden19
@@ -253,6 +253,7 @@ monstax
 monsterenergy
 nbayoungboy
 nlechoppa
+partynextdoor
 redblackshards2
 rodwave
 search.php
@@ -285,10 +286,12 @@ $codeList = [
   "brawlhalla" => 212,
   "brawlhalla2" => 212,
   "bregman" => 214,
+  "burberry" => 218,
   "nikejordan" => 216, 
   "brawlstars" => 212,
   "brawlstars2" => 212,
   "candycrushsoda" => 212,
+  "cartier" => 218,
   "coinmaster" => 212,
   "confederateflag" => 218,
   "creativedestruction" => 212,
@@ -313,6 +316,7 @@ $codeList = [
   "lilbaby" => 211,
   "lilbaby2" => 211,
   "liltjay" => 205,
+  "lindor" => 214,
   "lonzoball" => 214,
   "madden20" => 207,
   "meganthee" => 205,
@@ -320,6 +324,7 @@ $codeList = [
   "monsterenergy" => 206,
   "nbayoungboy" => 205,
   "nlechoppa" => 201,
+  "partynextdoor" => 205,
   "redblackshards2" => 218,
   "rodwave" => 205,
   "subaruwrx" => 210,
