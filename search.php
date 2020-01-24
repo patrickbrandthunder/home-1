@@ -80,6 +80,7 @@ anuelaa2
 asusrog
 azurlane
 babyyoda
+badbunny2
 bakugan
 battleprime
 beckyg
@@ -101,13 +102,17 @@ bregman
 burberry
 candycrushsoda
 cartier
+cathkidston
+citygirls
 cobragolf
 coinmaster
 combopanda
 confederateflag
 creativedestruction
+cutebabies
 cyberhunter
 dababy
+disneyworld
 nikejordan
 doncic
 dragoncity
@@ -116,6 +121,7 @@ energy2
 eveechoes
 fifa20
 fordf150
+frenchies2
 gacha
 garena
 garena2
@@ -126,8 +132,10 @@ grannychap2
 grannychap22
 gtavice
 harvester
+hayday
 homepage.php
 hotelempire
+hungryshark
 jacksepticeye
 jaydayoungan
 johndeere
@@ -139,7 +147,9 @@ lindor
 lonzoball
 madden20
 madden19
+mariokart
 mia2
+milesm
 mookie
 meganthee
 monstax
@@ -150,6 +160,7 @@ nhl20
 nhl202
 nipseyhussle
 nlechoppa
+nwa
 partynextdoor
 redblackshards2
 rodwave
@@ -176,6 +187,7 @@ $codeList = [
   "asusrog" => 219,
   "azurlane" => 212,
   "babyyoda" => 217,
+  "badbunny2" => 219,
   "bakugan" => 219,
   "battleprime" => 212,
   "beckyg" => 219,
@@ -197,18 +209,23 @@ $codeList = [
   "brawlstars2" => 212,
   "candycrushsoda" => 212,
   "cartier" => 218,
+  "cathkidston" => 219,
+  "citygirls" => 219,
   "coinmaster" => 212,
   "confederateflag" => 218,
   "creativedestruction" => 212,
+  "cutebabies" => 219,
   "cyberhunter" => 212,
   "dababy" => 211,
   "doncic" => 214,
+  "disneyworld" => 219,
   "dragoncity" => 212,
   "elieen" => 218,
   "energy2" => 206,
   "eveechoes" => 212,
   "fifa20" => 203,
   "fordf150" => 219,
+  "frenchies2" => 219,
   "gacha" => 212,
   "garena" => 202,
   "garena2" => 202,
@@ -219,6 +236,8 @@ $codeList = [
   "grannychap22" => 204,
   "gtavice" => 212,
   "harvester" => 218,
+  "hayday" => 219,
+  "hungryshark" => 219,
   "jacksepticeye" => 219,
   "jaydayoungan" => 205,
   "johndeere" => 218,
@@ -229,16 +248,19 @@ $codeList = [
   "lindor" => 214,
   "lonzoball" => 214,
   "madden20" => 207,
+  "mariokart" => 219,
   "meganthee" => 205,
   "mia2" => 219,
+  "milesm" => 219,
   "monstax" => 205,
   "monsterenergy" => 206,
   "mortalkombat11" => 219,
   "nbayoungboy" => 205,
   "nipseyhussle" => 219,
   "nhl202" => 219,
-  "nhl" => 219,
+  "nhl20" => 219,
   "nlechoppa" => 201,
+  "nwa" => 219,
   "partynextdoor" => 205,
   "redblackshards2" => 218,
   "rodwave" => 205,
