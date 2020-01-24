@@ -300,22 +300,32 @@ if ( isset($customSearchCode) ) {
 <div id="module-search"><?php if (isset($bingSearch)) {
 $searchURL = 'https://www.bing.com/search?q=';
 ?>
-<form action="https://www.bing.com/search" target="_top" method="get" id="form"><?php } else if (isset($testSearch2)) {
+<form action="https://www.bing.com/search" target="_top" method="get" id="form">
+<?php } else if (isset($testSearch2)) {
 $searchURL = 'https://devisedata.com/devise?n='.$testSearch2.'&devise=5de98704b1505568e9f9a9d2&q=';
 ?>
 <form action="https://devisedata.com/devise" target="_top" method="get" id="form">
-<input type="hidden" name="devise" value="5de98704b1505568e9f9a9d2">
-<input type="hidden" name="n" value="<?=$testSearch2?>"><?php } else if (isset($testSearch3)) {
+  <input type="hidden" name="devise" value="5de98704b1505568e9f9a9d2">
+  <input type="hidden" name="n" value="<?=$testSearch2?>">
+<?php } else if (isset($testSearch3)) {
 $searchURL = 'https://www.my-search.com/search?zoneid=89128928&q=';
 ?>
 <form action="https://www.my-search.com/search" target="_top" method="get" id="form">
-<input type="hidden" name="zoneid" value="89128928"><?php } else if (isset($testSearch4)) {
+  <input type="hidden" name="zoneid" value="89128928">
+<?php } else if (isset($testSearch4)) {
 $searchURL = 'https://www.surfittoday.com/results.aspx?n='.$testSearch4.'&gd=SY1001840&searchsource=69&q=';
 ?>
 <form action="https://www.surfittoday.com/results.aspx" target="_top" method="get" id="form">
   <input type="hidden" name="gd" value="SY1001840">
   <input type="hidden" name="searchsource" value="69">
-<input type="hidden" name="n" value="<?=$testSearch4?>"><?php } else {
+  <input type="hidden" name="n" value="<?=$testSearch4?>">
+<?php } else if (isset($testSearch5)) {
+$searchURL = 'http://www.bing.com/search?PC=ATBT&FORM=BTBR01&q=';
+?>
+<form action="http://www.bing.com/search" target="_top" method="get" id="form">
+  <input type="hidden" name="PC" value="ATBT">
+  <input type="hidden" name="FORM" value="BTBR01">
+<?php } else {
 $searchURL = 'https://search.newtabgallery.com/'.$tid.'?newtab=true&q=';
 ?>
 <form action="https://search.newtabgallery.com/<?=$tid?>" target="_top" method="get" id="form"><?php } ?>

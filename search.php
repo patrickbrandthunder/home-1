@@ -2,6 +2,7 @@
 $bingSearchList = <<<EOT
 TIDs AFTER THIS LINE
 7mankind
+// YOU CAN ADD ANY COMMENTS YOU WANT
 aesop
 afkarena
 armani
@@ -182,6 +183,12 @@ ynwmelly
 TIDs BEFORE THIS LINE
 EOT;
 
+$testSearch5List = <<<EOT
+TIDs AFTER THIS LINE
+TIDs BEFORE THIS LINE
+EOT;
+
+
 $codeList = [
 /* testSearch2 */
   "asphalt9" => 635,
@@ -305,5 +312,7 @@ if (strstr($bingSearchList, PHP_EOL.$tid.PHP_EOL)) {
   if (array_key_exists($tid, $codeList)) {
     $testSearch4 = $codeList[$tid];
   }
+} else if (strstr($testSearch5List, PHP_EOL.$tid.PHP_EOL)) {
+  $testSearch5 = true;
 }
 ?>
