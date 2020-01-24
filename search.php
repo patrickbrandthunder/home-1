@@ -2,11 +2,13 @@
 $bingSearchList = <<<EOT
 TIDs AFTER THIS LINE
 7mankind
-// YOU CAN ADD ANY COMMENTS YOU WANT
+// BING FOR LAUNCH
+aaronjones
 aesop
 afkarena
 armani
 babyyoda2
+bendel
 bruni
 burberry
 butterroyale
@@ -24,6 +26,7 @@ futurefight
 kareemhunt
 kingrabbit
 kingscastle
+knightsquad
 lanvin
 lilmama
 lougotcash
