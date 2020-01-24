@@ -241,7 +241,6 @@ $codeList = [
   "fifa20" => 203,
   "fordf150" => 219,
   "frenchies2" => 219,
-  "gacha" => 212,
   "garena" => 202,
   "garena2" => 202,
   "goat" => 212,
