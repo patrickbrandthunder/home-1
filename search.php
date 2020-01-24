@@ -23,6 +23,7 @@ fivio
 footballstrike
 freefall
 futurefight
+ji
 kareemhunt
 kingrabbit
 kingscastle
@@ -54,6 +55,7 @@ squirrel
 stormzy
 tetris99
 tokyomirage
+toyblast
 treebranches
 tuukka
 tyreekhill
