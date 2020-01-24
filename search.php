@@ -50,7 +50,6 @@ tokyomirage
 treebranches
 tuukka
 tyreekhill
-unleashlight
 vex4
 warface
 warorder
@@ -267,6 +266,7 @@ talkingtom
 tennisclash
 traeyoung
 ultimaterivals
+unleashlight
 warrobots
 wartortise2
 ynwmelly
@@ -339,6 +339,7 @@ $codeList = [
   "tennisclash" => 212,
   "traeyoung" => 205,
   "ultimaterivals" => 212,
+  "unleashlight" => 212,
   "warrobots" => 212,
   "wartortise2" => 212,
   "ynwmelly" => 205,
