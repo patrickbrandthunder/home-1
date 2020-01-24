@@ -158,9 +158,11 @@ meganthee
 monstax
 monsterenergy
 mortalkombat11
+monsterlegends
 nbayoungboy
 nhl20
 nhl202
+nikeair
 nipseyhussle
 nlechoppa
 nwa
@@ -260,11 +262,13 @@ $codeList = [
   "milesm" => 219,
   "monstax" => 205,
   "monsterenergy" => 206,
+  "monsterlegends" => 219,
   "mortalkombat11" => 219,
   "nbayoungboy" => 205,
   "nipseyhussle" => 219,
   "nhl202" => 219,
   "nhl20" => 219,
+  "nikeair" => 219,
   "nlechoppa" => 201,
   "nwa" => 219,
   "partynextdoor" => 205,
