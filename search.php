@@ -126,7 +126,6 @@ eveechoes
 fifa20
 fordf150
 frenchies2
-gacha
 garena
 garena2
 goat
@@ -185,6 +184,7 @@ EOT;
 
 $testSearch5List = <<<EOT
 TIDs AFTER THIS LINE
+gacha
 TIDs BEFORE THIS LINE
 EOT;
 
