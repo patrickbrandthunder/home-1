@@ -79,6 +79,7 @@ anuelaa
 anuelaa2
 azurlane
 babyyoda
+bakugan
 battleprime
 beybladeburst
 bitlife
@@ -160,6 +161,7 @@ $codeList = [
   "arenado" => 214,
   "azurlane" => 212,
   "babyyoda" => 217,
+  "bakugan" => 219,
   "battleprime" => 212,
   "beybladeburst" => 212,
   "bitlife" => 212,
