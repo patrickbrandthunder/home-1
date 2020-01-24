@@ -123,10 +123,12 @@ goat
 granny
 granny2
 grannychap2
+grannychap22
 gtavice
 harvester
 homepage.php
 hotelempire
+jacksepticeye
 jaydayoungan
 johndeere
 lilbaby
@@ -142,6 +144,7 @@ mookie
 meganthee
 monstax
 monsterenergy
+mortalkombat11
 nbayoungboy
 nhl20
 nhl202
@@ -213,8 +216,10 @@ $codeList = [
   "granny" => 204,
   "granny2" => 204,
   "grannychap2" => 204,
+  "grannychap22" => 204,
   "gtavice" => 212,
   "harvester" => 218,
+  "jacksepticeye" => 219,
   "jaydayoungan" => 205,
   "johndeere" => 218,
   "lilbaby" => 211,
@@ -228,6 +233,7 @@ $codeList = [
   "mia2" => 219,
   "monstax" => 205,
   "monsterenergy" => 206,
+  "mortalkombat11" => 219,
   "nbayoungboy" => 205,
   "nipseyhussle" => 219,
   "nhl202" => 219,
