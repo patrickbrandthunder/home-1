@@ -143,6 +143,8 @@ meganthee
 monstax
 monsterenergy
 nbayoungboy
+nhl20
+nhl202
 nipseyhussle
 nlechoppa
 partynextdoor
@@ -228,6 +230,8 @@ $codeList = [
   "monsterenergy" => 206,
   "nbayoungboy" => 205,
   "nipseyhussle" => 219,
+  "nhl202" => 219,
+  "nhl" => 219,
   "nlechoppa" => 201,
   "partynextdoor" => 205,
   "redblackshards2" => 218,
