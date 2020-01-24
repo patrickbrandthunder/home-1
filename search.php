@@ -137,6 +137,7 @@ lindor
 lonzoball
 madden20
 madden19
+mia2
 mookie
 meganthee
 monstax
@@ -222,6 +223,7 @@ $codeList = [
   "lonzoball" => 214,
   "madden20" => 207,
   "meganthee" => 205,
+  "mia2" => 219,
   "monstax" => 205,
   "monsterenergy" => 206,
   "nbayoungboy" => 205,
