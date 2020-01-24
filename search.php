@@ -77,16 +77,21 @@ TIDs AFTER THIS LINE
 2020calendar
 anuelaa
 anuelaa2
+asusrog
 azurlane
 babyyoda
 bakugan
 battleprime
+beckyg
 beybladeburst
+billieellish
 bitlife
 blackblueshards
 blackgreen
 blackredshards
 bloons
+bobross
+bobross2
 brawlhalla
 brawlhalla2
 brawlstars
@@ -110,6 +115,7 @@ elieen
 energy2
 eveechoes
 fifa20
+fordf150
 gacha
 garena
 garena2
@@ -125,6 +131,7 @@ jaydayoungan
 johndeere
 lilbaby
 lilbaby2
+liltecca
 liltjay
 lindor
 lonzoball
@@ -135,6 +142,7 @@ meganthee
 monstax
 monsterenergy
 nbayoungboy
+nipseyhussle
 nlechoppa
 partynextdoor
 redblackshards2
@@ -159,16 +167,21 @@ $codeList = [
   "anuelaa" => 205,
   "anuelaa2" => 205,
   "arenado" => 214,
+  "asusrog" => 219,
   "azurlane" => 212,
   "babyyoda" => 217,
   "bakugan" => 219,
   "battleprime" => 212,
+  "beckyg" => 219,
+  "billieellish" => 219,
   "beybladeburst" => 212,
   "bitlife" => 212,
   "blackblueshards" => 218,
   "blackgreen" => 218,
   "blackredshards" => 218,
   "bloons" => 212,
+  "bobross" => 219,
+  "bobross2" => 219,
   "brawlhalla" => 212,
   "brawlhalla2" => 212,
   "bregman" => 214,
@@ -188,7 +201,8 @@ $codeList = [
   "elieen" => 218,
   "energy2" => 206,
   "eveechoes" => 212,
-  "fifa20" => 203,
+  "fifa20" => 203,]
+  "fordf150" => 219,
   "gacha" => 212,
   "garena" => 202,
   "garena2" => 202,
@@ -202,6 +216,7 @@ $codeList = [
   "johndeere" => 218,
   "lilbaby" => 211,
   "lilbaby2" => 211,
+  "liltecca" => 219,
   "liltjay" => 205,
   "lindor" => 214,
   "lonzoball" => 214,
@@ -210,6 +225,7 @@ $codeList = [
   "monstax" => 205,
   "monsterenergy" => 206,
   "nbayoungboy" => 205,
+  "nipseyhussle" => 219,
   "nlechoppa" => 201,
   "partynextdoor" => 205,
   "redblackshards2" => 218,
