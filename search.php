@@ -91,7 +91,6 @@ billieellish
 bitlife
 blackblueshards
 blackgreen
-blackredshards
 bloons
 bobross
 bobross2
@@ -184,6 +183,7 @@ EOT;
 
 $testSearch5List = <<<EOT
 TIDs AFTER THIS LINE
+blackredshards
 gacha
 TIDs BEFORE THIS LINE
 EOT;
@@ -209,7 +209,6 @@ $codeList = [
   "bitlife" => 212,
   "blackblueshards" => 218,
   "blackgreen" => 218,
-  "blackredshards" => 218,
   "bloons" => 212,
   "bobross" => 219,
   "bobross2" => 219,
