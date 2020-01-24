@@ -82,6 +82,7 @@ azurlane
 babyyoda
 badbunny2
 bakugan
+battlelands
 battleprime
 beckyg
 beybladeburst
@@ -99,6 +100,7 @@ brawlstars
 brawlstars2
 breitling
 bregman
+btsworld
 burberry
 candycrushsoda
 cartier
@@ -115,6 +117,7 @@ dababy
 disneyworld
 nikejordan
 doncic
+dragonballsuper
 dragoncity
 elieen
 energy2
@@ -190,6 +193,7 @@ $codeList = [
   "badbunny2" => 219,
   "bakugan" => 219,
   "battleprime" => 212,
+  "battlelands"  => 219,
   "beckyg" => 219,
   "billieellish" => 219,
   "beybladeburst" => 212,
@@ -203,6 +207,7 @@ $codeList = [
   "brawlhalla" => 212,
   "brawlhalla2" => 212,
   "bregman" => 214,
+  "btsworld" => 219,
   "burberry" => 218,
   "nikejordan" => 216, 
   "brawlstars" => 212,
@@ -219,6 +224,7 @@ $codeList = [
   "dababy" => 211,
   "doncic" => 214,
   "disneyworld" => 219,
+  "dragonballsuper" => 219,
   "dragoncity" => 212,
   "elieen" => 218,
   "energy2" => 206,
