@@ -1,8 +1,8 @@
 <?php
 $bingSearchList = <<<EOT
 TIDs AFTER THIS LINE
-7mankind
 // BING FOR LAUNCH
+7mankind
 aaronjones
 aesop
 afkarena
@@ -70,17 +70,20 @@ TIDs BEFORE THIS LINE
 EOT;
 
 $testSearch2List = <<<EOT
+// MANIC GOOGLE FOR NOW
 TIDs AFTER THIS LINE
 asphalt9
 TIDs BEFORE THIS LINE
 EOT;
 
 $testSearch3List = <<<EOT
+// REDSPARK BING
 TIDs AFTER THIS LINE
 TIDs BEFORE THIS LINE
 EOT;
 
 $testSearch4List = <<<EOT
+// BENSEN BING
 TIDs AFTER THIS LINE
 2020calendar
 anuelaa
@@ -189,6 +192,7 @@ TIDs BEFORE THIS LINE
 EOT;
 
 $testSearch5List = <<<EOT
+// APTITUDE BING
 TIDs AFTER THIS LINE
 blackredshards
 gacha
