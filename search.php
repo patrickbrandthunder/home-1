@@ -23,6 +23,7 @@ fivio
 footballstrike
 freefall
 futurefight
+hotslide
 ji
 justblack
 kareemhunt
