@@ -36,6 +36,7 @@ lougotcash
 machado
 mackinnon
 maga
+magiclegends
 mikeyshorts
 mille
 mizuno
