@@ -12,7 +12,6 @@ bendel
 bruni
 burberry
 butterroyale
-callaway
 columbia
 cosette
 dior
@@ -21,8 +20,6 @@ farmingsim20
 fireboy
 fivio
 footballstrike
-freefall
-futurefight
 hotslide
 ji
 justblack
@@ -32,7 +29,6 @@ kingscastle
 knightsquad
 koji
 lanvin
-lilmama
 lougotcash
 machado
 mackinnon
@@ -40,13 +36,11 @@ maga
 magiclegends
 meteorfall
 mikeyshorts
-mille
 mizuno
 monstertruck
 motox3m
 nickbosa
 pandora
-patek
 piratesoutlaws
 pubgspring
 ramirez
@@ -54,12 +48,9 @@ rulessurvival
 saintlaurent
 schitts
 seiya
-sherzer
 smifwessun
 snackworld
-squirrel
 stanton
-stormzy
 tetris99
 tokyomirage
 toyblast
@@ -68,7 +59,6 @@ trollface
 tuukka
 tyreekhill
 vex4
-warface
 warorder
 westofdead
 yurman
@@ -118,6 +108,7 @@ breitling
 bregman
 btsworld
 burberry
+callaway
 candycrushsoda
 cartier
 cathkidston
@@ -140,7 +131,9 @@ energy2
 eveechoes
 fifa20
 fordf150
+freefall
 frenchies2
+futurefight
 garena
 garena2
 goat
@@ -159,6 +152,7 @@ jaydayoungan
 johndeere
 lilbaby
 lilbaby2
+lilmama
 liltecca
 liltjay
 lindor
@@ -168,6 +162,7 @@ madden19
 mariokart
 mia2
 milesm
+mille
 mookie
 meganthee
 monstax
@@ -185,12 +180,16 @@ partynextdoor
 redblackshards2
 rodwave
 search.php
+sherzer
+squirrel
+stormzy
 subaruwrx
 talkingtom
 tennisclash
 traeyoung
 ultimaterivals
 unleashlight
+warface
 warrobots
 wartortise2
 ynwmelly
@@ -237,6 +236,7 @@ $codeList = [
   "nikejordan" => 216, 
   "brawlstars" => 212,
   "brawlstars2" => 212,
+  "callaway" => 219,
   "candycrushsoda" => 212,
   "cartier" => 218,
   "cathkidston" => 219,
@@ -256,7 +256,9 @@ $codeList = [
   "eveechoes" => 212,
   "fifa20" => 203,
   "fordf150" => 219,
+  "freefall" => 219,
   "frenchies2" => 219,
+  "futurefight" => 219,
   "garena" => 202,
   "garena2" => 202,
   "goat" => 212,
@@ -273,6 +275,7 @@ $codeList = [
   "johndeere" => 218,
   "lilbaby" => 211,
   "lilbaby2" => 211,
+  "lilmama" => 219,
   "liltecca" => 219,
   "liltjay" => 205,
   "lindor" => 214,
@@ -282,6 +285,7 @@ $codeList = [
   "meganthee" => 205,
   "mia2" => 219,
   "milesm" => 219,
+  "mille" => 219,
   "monstax" => 205,
   "monsterenergy" => 206,
   "monsterlegends" => 219,
@@ -294,8 +298,12 @@ $codeList = [
   "nlechoppa" => 201,
   "nwa" => 219,
   "partynextdoor" => 205,
+  "patek" => 219,
   "redblackshards2" => 218,
   "rodwave" => 205,
+  "sherzer" => 219,
+  "squirrel" => 219,
+  "stormzy" => 219,
   "subaruwrx" => 210,
   "talkingtom" => 212,
   "tennisclash" => 212,
@@ -303,6 +311,7 @@ $codeList = [
   "ultimaterivals" => 212,
   "unleashlight" => 212,
   "warrobots" => 212,
+  "warface" => 219,
   "wartortise2" => 212,
   "ynwmelly" => 205,
   "breitling" => 218,
