@@ -18,6 +18,7 @@ dior
 dsquared
 farmingsim20
 fireboy
+fishingclash
 fivio
 footballstrike
 hotslide
