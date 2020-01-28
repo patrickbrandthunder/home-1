@@ -71,19 +71,28 @@ $testSearch2List = <<<EOT
 // MANIC BING GENERICS
 TIDs AFTER THIS LINE
 2020calendar
+birdwatching
 blackblueshards
 blackgreen
 brownowl
+boasnake
+bocceball
+bluejay
+cannons
+chimpanzee
 chipmunks
 confederateflag
 england
 fallcolors
+firefighters
 frenchies2
 guinea
+gummies
 greyhound
 ireland
 lanterns
 meteorshower
+morningdew
 pasta
 redblackshards2
 seafood
@@ -222,19 +231,28 @@ EOT;
 $codeList = [
 /* testSearch2 */
 "2020calendar" => 611,
+"birdwatching" => 611,  
 "blackblueshards"  => 611,
 "blackgreen"  => 611,
+"boasnake" =611,  
 "brownowl" => 611,
+"bluejay" => 611, 
+"bocceball" => 611,
+"cannons" => 611,  
+"chimpanzee" => 611,
 "chipmunks" => 611,
 "confederateflag"  => 611,
 "england" => 611,   
 "fallcolors" => 611,
+"firefighters" => 611,  
 "frenchies2"  => 611,
 "greyhound" => 611,
 "guinea" => 611, 
+"gummies" => 611,
 "ireland" => 611, 
 "lanterns" => 611,
 "meteorshower" => 611,
+"morningdew" => 611,  
 "pasta" => 611,
 "redblackshards2"  => 611,
 "seafood"  => 611,
