@@ -70,7 +70,6 @@ EOT;
 $testSearch2List = <<<EOT
 // MANIC GOOGLE FOR NOW
 TIDs AFTER THIS LINE
-asphalt9
 TIDs BEFORE THIS LINE
 EOT;
 
