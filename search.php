@@ -210,7 +210,6 @@ EOT;
 
 $codeList = [
 /* testSearch2 */
-  "asphalt9" => 635,
 /* testSearch4 */
   "anuelaa" => 205,
   "anuelaa2" => 205,
