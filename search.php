@@ -76,6 +76,7 @@ blackgreen
 brownowl
 chipmunks
 confederateflag
+england
 fallcolors
 frenchies2
 guinea
@@ -226,6 +227,7 @@ $codeList = [
 "brownowl" => 611,
 "chipmunks" => 611,
 "confederateflag"  => 611,
+"england" => 611,   
 "fallcolors" => 611,
 "frenchies2"  => 611,
 "greyhound" => 611,
