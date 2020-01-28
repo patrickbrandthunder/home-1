@@ -73,9 +73,19 @@ TIDs AFTER THIS LINE
 2020calendar
 blackblueshards
 blackgreen
+brownowl
+chipmunks
 confederateflag
+fallcolors
 frenchies2
+guinea
+greyhound
+ireland
+lanterns
+meteorshower
+pasta
 redblackshards2
+seafood
 TIDs BEFORE THIS LINE
 EOT;
 
@@ -213,9 +223,19 @@ $codeList = [
 "2020calendar" => 611,
 "blackblueshards"  => 611,
 "blackgreen"  => 611,
+"brownowl" => 611,
+"chipmunks" => 611,
 "confederateflag"  => 611,
+"fallcolors" => 611,
 "frenchies2"  => 611,
+"greyhound" => 611,
+"guinea" => 611, 
+"ireland" => 611, 
+"lanterns" => 611,
+"meteorshower" => 611,
+"pasta" => 611,
 "redblackshards2"  => 611,
+"seafood"  => 611,
 /* testSearch4 */
   "anuelaa" => 205,
   "anuelaa2" => 205,
