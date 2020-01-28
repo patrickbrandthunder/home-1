@@ -68,8 +68,14 @@ TIDs BEFORE THIS LINE
 EOT;
 
 $testSearch2List = <<<EOT
-// MANIC GOOGLE FOR NOW
+// MANIC BING GENERICS
 TIDs AFTER THIS LINE
+2020calendar
+blackblueshards
+blackgreen
+confederateflag
+frenchies2
+redblackshards2
 TIDs BEFORE THIS LINE
 EOT;
 
@@ -82,7 +88,6 @@ EOT;
 $testSearch4List = <<<EOT
 // BENSEN BING
 TIDs AFTER THIS LINE
-2020calendar
 anuelaa
 anuelaa2
 asusrog
@@ -96,8 +101,6 @@ beckyg
 beybladeburst
 billieellish
 bitlife
-blackblueshards
-blackgreen
 bloons
 bobross
 bobross2
@@ -117,7 +120,6 @@ citygirls
 cobragolf
 coinmaster
 combopanda
-confederateflag
 creativedestruction
 cutebabies
 cyberhunter
@@ -134,7 +136,6 @@ fifa20
 fivio
 fordf150
 freefall
-frenchies2
 futurefight
 garena
 garena2
@@ -179,7 +180,6 @@ nipseyhussle
 nlechoppa
 nwa
 partynextdoor
-redblackshards2
 rodwave
 search.php
 sherzer
@@ -210,6 +210,12 @@ EOT;
 
 $codeList = [
 /* testSearch2 */
+"2020calendar" => 611,
+"blackblueshards"  => 611,
+"blackgreen"  => 611,
+"confederateflag"  => 611,
+"frenchies2"  => 611,
+"redblackshards2"  => 611,
 /* testSearch4 */
   "anuelaa" => 205,
   "anuelaa2" => 205,
