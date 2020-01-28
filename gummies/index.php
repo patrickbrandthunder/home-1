@@ -1,5 +1,5 @@
 <?php
-$title = 'Gummies;
+$title = 'Gummies';
 // After extension is loaded to the Chrome store, place the extension ID here.
 $extensionID = 'njphmnkehfcjpaiaimhkkjaekjkhfjjp';
 $searchExtensionID = '';
