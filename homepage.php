@@ -553,28 +553,5 @@ SimpleLightbox.open({
 </script><?php
 }
 ?>
-<script>var _SWP = {
-    pid: 1292,
-    s1: '', // (optional) publisher-defined subid1
-    s2: '', // (optional) publisher-defined subid2
-    callback: function(result) { // (optional) publisher-defined callback function for subscription
-      if (result && result.success) {
-        if (result.newSubscription) {
-          // new subscription!
-        } else {
-          // existing subscription
-        }
-      } else {
-        // user did not subscribe
-      }
-    },
-  };
-</script>
-<script src='https://pushtoast-a.akamaihd.net/2.0/sw.register.js'
-  data-pta_domain='home.newtabgallery.com'
-  data-pta_owner='d4c20fdd995d'
-  data-pta_id-Site='19103'
-  data-pta_webpushid='web.82.apple.com'>
-</script>
 </body>
 </html>
