@@ -2,6 +2,7 @@
 $bingSearchList = <<<EOT
 TIDs AFTER THIS LINE
 // BING FOR LAUNCH
+2020rat
 7mankind
 aaronjones
 aesop
