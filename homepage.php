@@ -236,15 +236,7 @@ if ( isset($customSearchCode) ) {
 		}
 		</style>
 
-	<script type="text/javascript">
-	var addthis_share = {
-	   url: "https://home.newtabgallery.com/<?=$tid?>",
-	   title: "<?= $title?> New Tab Page"
-	}
-
-	</script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bb95001324284f3"></script>
-   <script type="text/javascript">
+	 <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-127110494-1']);
     _gaq.push(['_trackPageview']);
