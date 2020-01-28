@@ -8,6 +8,7 @@ aesop
 afkarena
 armani
 babyyoda2
+basquiat
 bendel
 bruni
 burberry
@@ -50,7 +51,6 @@ saintlaurent
 schitts
 seiya
 smifwessun
-snackworld
 stanton
 tetris99
 tokyomirage
@@ -182,6 +182,7 @@ redblackshards2
 rodwave
 search.php
 sherzer
+snackworld
 squirrel
 stormzy
 subaruwrx
@@ -303,6 +304,7 @@ $codeList = [
   "redblackshards2" => 218,
   "rodwave" => 205,
   "sherzer" => 219,
+  "snackworld" => 219,
   "squirrel" => 219,
   "stormzy" => 219,
   "subaruwrx" => 210,
