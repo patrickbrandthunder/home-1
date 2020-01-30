@@ -174,6 +174,7 @@ hungryshark
 jacksepticeye
 jaydayoungan
 johndeere
+legobuilder
 lilbaby
 lilbaby2
 lilmama
@@ -324,6 +325,7 @@ $codeList = [
   "jacksepticeye" => 219,
   "jaydayoungan" => 205,
   "johndeere" => 218,
+  "legobuilder" => 219,
   "lilbaby" => 211,
   "lilbaby2" => 211,
   "lilmama" => 219,
