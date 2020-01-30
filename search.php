@@ -210,6 +210,7 @@ stormzy
 subaruwrx
 talkingtom
 tennisclash
+titleist
 traeyoung
 ultimaterivals
 unleashlight
@@ -358,6 +359,7 @@ $codeList = [
   "subaruwrx" => 210,
   "talkingtom" => 212,
   "tennisclash" => 212,
+  "titleist" => 219,
   "traeyoung" => 205,
   "ultimaterivals" => 212,
   "unleashlight" => 212,
