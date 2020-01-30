@@ -64,6 +64,7 @@ tyreekhill
 vex4
 warorder
 westofdead
+yelich
 yurman
 TIDs BEFORE THIS LINE
 EOT;
@@ -368,6 +369,7 @@ $codeList = [
   "warrobots" => 212,
   "warface" => 219,
   "wartortise2" => 212,
+  "yelich" => 219,
   "ynwmelly" => 205,
   "breitling" => 218,
   "cobragolf" => 218,
