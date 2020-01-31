@@ -12,7 +12,6 @@ babyyoda2
 basquiat
 bendel
 bruni
-burberry
 butterroyale
 columbia
 cosette
