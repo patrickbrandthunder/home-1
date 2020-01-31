@@ -72,6 +72,18 @@ EOT;
 $testSearch2List = <<<EOT
 // MANIC BING GENERICS
 TIDs AFTER THIS LINE
+TIDs BEFORE THIS LINE
+EOT;
+
+$testSearch3List = <<<EOT
+// REDSPARK BING
+TIDs AFTER THIS LINE
+TIDs BEFORE THIS LINE
+EOT;
+
+$testSearch4List = <<<EOT
+// BENSEN BING
+TIDs AFTER THIS LINE
 2020calendar
 birdwatching
 blackblueshards
@@ -98,18 +110,6 @@ morningdew
 pasta
 redblackshards2
 seafood
-TIDs BEFORE THIS LINE
-EOT;
-
-$testSearch3List = <<<EOT
-// REDSPARK BING
-TIDs AFTER THIS LINE
-TIDs BEFORE THIS LINE
-EOT;
-
-$testSearch4List = <<<EOT
-// BENSEN BING
-TIDs AFTER THIS LINE
 altuve
 anuelaa
 anuelaa2
@@ -262,6 +262,32 @@ $codeList = [
 "redblackshards2"  => 611,
 "seafood"  => 611,
 /* testSearch4 */
+  "2020calendar" => 219,
+  "birdwatching" => 219,
+  "blackblueshards" => 219,
+  "blackgreen" => 219,
+  "brownowl" => 219,
+  "boasnake" => 219,
+  "bocceball" => 219,
+  "bluejay" => 219,
+  "cannons" => 219,
+  "chimpanzee" => 219,
+  "chipmunks" => 219,
+  "confederateflag" => 219,
+  "england" => 219,
+  "fallcolors" => 219,
+  "firefighters" => 219,
+  "frenchies2" => 219,
+  "guinea" => 219,
+  "gummies" => 219,
+  "greyhound" => 219,
+  "ireland" => 219,
+  "lanterns" => 219,
+  "meteorshower" => 219,
+  "morningdew" => 219,
+  "pasta" => 219,
+  "redblackshards2" => 219,
+  "seafood" => 219,
   "altuve" => 219, 
   "anuelaa" => 205,
   "anuelaa2" => 205,
